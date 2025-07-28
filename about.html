@@ -1,0 +1,764 @@
+<!-- 
+══════════════════════════════════════════════════
+@hopsyder | Data Scientist & Full-Stack Developer
+Nexus Partners - Intelligent Solutions
+══════════════════════════════════════════════════
+Stack: ML/DL • React/Node • Flutter • DevOps
+Philosophy: Clean Code • Innovation • Excellence 
+-->
+
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+
+    <!-- Meta essentiels -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <!-- Titre optimisé SEO -->
+    <title>Art de Vivre - Cabinet de Psychologie à Cotonou | Thérapie Enfants, Adolescents & Adultes au Bénin</title>
+
+    <!-- Meta descriptions et mots-clés optimisés -->
+    <meta name="description"
+        content="Cabinet de psychologie Art de Vivre à Cotonou, Bénin. Accompagnement psychologique professionnel pour enfants, adolescents et adultes. Thérapie de couple, gestion du stress, dépression. Psychologues diplômés, consultations confidentielles. Prenez rendez-vous dès maintenant.">
+
+    <meta name="keywords"
+        content="psychologue Cotonou, cabinet psychologie Bénin, thérapie enfant Cotonou, psychologue adolescent Bénin, thérapie couple Cotonou, dépression anxiété Bénin, consultation psychologique Cotonou, psychothérapie Bénin, burn-out stress Cotonou, psychologue clinicien Bénin, santé mentale Cotonou, accompagnement psychologique Bénin">
+
+    <meta name="author" content="Art de Vivre - Cabinet de Psychologie">
+    <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
+    <meta name="googlebot" content="index, follow">
+
+    <!-- Données structurées pour les moteurs de recherche -->
+    <script type="application/ld+json">
+	{
+		"@context": "https://schema.org",
+		"@type": "MedicalBusiness",
+		"name": "Art de Vivre - Cabinet de Psychologie",
+		"description": "Cabinet de psychologie spécialisé dans l'accompagnement des enfants, adolescents et adultes à Cotonou, Bénin",
+		"url": "https://artdevivre-benin.com",
+		"logo": "https://artdevivre-benin.com/assets/img/logo.png",
+		"image": "https://artdevivre-benin.com/assets/img/cabinet-cotonou.jpg",
+		"telephone": "+229 12 34 56 78",
+		"email": "contact@artdevivre-benin.com",
+		"address": {
+			"@type": "PostalAddress",
+			"streetAddress": "Rue 456, Quartier Haie Vive",
+			"addressLocality": "Cotonou",
+			"addressCountry": "BJ",
+			"postalCode": ""
+		},
+		"geo": {
+			"@type": "GeoCoordinates",
+			"latitude": "6.3654",
+			"longitude": "2.4183"
+		},
+		"openingHours": [
+			"Mo-Fr 08:00-19:00",
+			"Sa 09:00-15:00"
+		],
+		"priceRange": "$$",
+		"medicalSpecialty": [
+			"Psychologie clinique",
+			"Psychothérapie",
+			"Thérapie familiale",
+			"Psychologie de l'enfant"
+		],
+		"areaServed": {
+			"@type": "City",
+			"name": "Cotonou, Bénin"
+		},
+		"sameAs": [
+			"https://facebook.com/artdevivrebenin",
+			"https://instagram.com/artdevivrebenin",
+			"https://linkedin.com/company/artdevivrebenin"
+		]
+	}
+	</script>
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://artdevivre-benin.com">
+    <meta property="og:title" content="Art de Vivre - Cabinet de Psychologie à Cotonou, Bénin">
+    <meta property="og:description"
+        content="Accompagnement psychologique professionnel pour enfants, adolescents et adultes. Psychologues diplômés à Cotonou. Consultations confidentielles.">
+    <meta property="og:image" content="https://artdevivre-benin.com/assets/img/og-image.jpg">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta property="og:locale" content="fr_FR">
+    <meta property="og:site_name" content="Art de Vivre">
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:url" content="https://artdevivre-benin.com">
+    <meta name="twitter:title" content="Art de Vivre - Cabinet de Psychologie à Cotonou, Bénin">
+    <meta name="twitter:description"
+        content="Accompagnement psychologique professionnel pour enfants, adolescents et adultes. Psychologues diplômés à Cotonou.">
+    <meta name="twitter:image" content="https://artdevivre-benin.com/assets/img/twitter-image.jpg">
+
+    <!-- Géolocalisation et langue -->
+    <meta name="geo.region" content="BJ-LI">
+    <meta name="geo.placename" content="Cotonou">
+    <meta name="geo.position" content="6.3654;2.4183">
+    <meta name="ICBM" content="6.3654, 2.4183">
+    <meta name="language" content="fr">
+    <meta name="coverage" content="Worldwide">
+    <meta name="distribution" content="Global">
+
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://artdevivre-benin.com">
+
+    <!-- Alternate languages (si multilingue) -->
+    <link rel="alternate" hreflang="fr" href="https://artdevivre-benin.com">
+    <link rel="alternate" hreflang="fr-BJ" href="https://artdevivre-benin.com">
+    <link rel="alternate" hreflang="x-default" href="https://artdevivre-benin.com">
+
+    <!-- Favicons optimisés pour tous les appareils -->
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/img/favicons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/img/favicons/favicon-16x16.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/img/favicons/apple-touch-icon.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="assets/img/favicons/apple-touch-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="assets/img/favicons/apple-touch-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="assets/img/favicons/apple-touch-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="assets/img/favicons/apple-touch-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="assets/img/favicons/apple-touch-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="assets/img/favicons/apple-touch-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="assets/img/favicons/apple-touch-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="57x57" href="assets/img/favicons/apple-touch-icon-57x57.png">
+    <link rel="manifest" href="assets/img/favicons/site.webmanifest">
+    <link rel="mask-icon" href="assets/img/favicons/safari-pinned-tab.svg" color="#2c3e50">
+    <meta name="msapplication-TileColor" content="#2c3e50">
+    <meta name="msapplication-config" content="assets/img/favicons/browserconfig.xml">
+    <meta name="theme-color" content="#2c3e50">
+
+    <!-- Preconnect pour optimiser le chargement des polices -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="dns-prefetch" href="https://fonts.googleapis.com">
+    <link rel="dns-prefetch" href="https://fonts.gstatic.com">
+
+    <!-- Polices optimisées avec display=swap pour de meilleures performances -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&family=Lato:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700&family=Raleway:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap"
+        rel="stylesheet">
+
+    <!-- Preload des ressources critiques -->
+    <link rel="preload" href="assets/css/main.css" as="style">
+    <link rel="preload" href="assets/vendor/bootstrap/css/bootstrap.min.css" as="style">
+    <link rel="preload" href="assets/img/health/showcase-1.webp" as="image">
+
+    <!-- CSS Vendor Files avec intégrité et performance -->
+    <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet" media="all">
+    <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet" media="all">
+    <link href="assets/vendor/aos/aos.css" rel="stylesheet" media="all">
+    <link href="assets/vendor/fontawesome-free/css/all.min.css" rel="stylesheet" media="all">
+    <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet" media="all">
+    <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet" media="all">
+
+    <!-- CSS principal -->
+    <link href="assets/css/main.css" rel="stylesheet" media="all">
+
+    <!-- Verification des outils de webmaster -->
+    <meta name="google-site-verification" content="votre-code-verification-google">
+    <meta name="msvalidate.01" content="votre-code-verification-bing">
+    <meta name="yandex-verification" content="votre-code-verification-yandex">
+
+    <!-- RGPD et cookies - Conformité légale -->
+    <meta name="cookie-consent" content="required">
+    <meta name="privacy-policy" content="https://artdevivre-benin.com/privacy">
+    <meta name="terms-of-service" content="https://artdevivre-benin.com/terms">
+
+    <!-- Performance et sécurité -->
+    <meta http-equiv="Content-Security-Policy"
+        content="default-src 'self'; img-src 'self' data: https:; script-src 'self' 'unsafe-inline' https://fonts.googleapis.com; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com https://fonts.gstatic.com;">
+    <meta name="referrer" content="strict-origin-when-cross-origin">
+
+    <!-- Mobile et PWA -->
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta name="apple-mobile-web-app-title" content="Art de Vivre">
+    <meta name="application-name" content="Art de Vivre">
+
+    <!-- Contrôle du cache -->
+    <meta http-equiv="Cache-Control" content="public, max-age=31536000">
+    <meta http-equiv="Expires" content="Tue, 28 Jul 2026 00:00:00 GMT">
+
+    <!-- Analytics et monitoring (à remplacer par vos vrais codes) -->
+    <!-- Google Analytics 4 -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=GA_MEASUREMENT_ID"></script>
+    <script>
+        // @hopsyder - Analytics optimisé pour la performance
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+        gtag('config', 'GA_MEASUREMENT_ID', {
+            page_title: 'Accueil - Art de Vivre',
+            page_location: window.location.href,
+            anonymize_ip: true, // RGPD
+            cookie_flags: 'SameSite=None;Secure'
+        });
+    </script>
+
+    <!-- Balises pour le référencement local -->
+    <meta name="geo.region" content="BJ">
+    <meta name="geo.placename" content="Cotonou, Littoral, Bénin">
+    <meta name="geo.position" content="6.3654;2.4183">
+    <meta name="ICBM" content="6.3654, 2.4183">
+
+    <!-- Rich Snippets pour les avis clients -->
+    <script type="application/ld+json">
+	{
+		"@context": "https://schema.org",
+		"@type": "LocalBusiness",
+		"name": "Art de Vivre",
+		"aggregateRating": {
+			"@type": "AggregateRating",
+			"ratingValue": "4.8",
+			"reviewCount": "127"
+		}
+	}
+	</script>
+
+</head>
+
+<body class="about-page">
+
+    <header id="header" class="header d-flex align-items-center fixed-top">
+        <div
+            class="header-container container-fluid container-xl position-relative d-flex align-items-center justify-content-between">
+            <a href="index.html" class="logo d-flex align-items-center me-auto me-xl-0">
+                <svg class="my-icon" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                        d="M12 2C6.477 2 2 6.477 2 12s4.477 10 10 10 10-4.477 10-10S17.523 2 12 2zm0 18c-4.418 0-8-3.582-8-8s3.582-8 8-8 8 3.582 8 8-3.582 8-8 8z"
+                        fill="currentColor" />
+                    <path
+                        d="M12 6c-3.313 0-6 2.687-6 6s2.687 6 6 6 6-2.687 6-6-2.687-6-6-6zm0 10c-2.206 0-4-1.794-4-4s1.794-4 4-4 4 1.794 4 4-1.794 4-4 4z"
+                        fill="currentColor" />
+                    <path d="M12 10c-1.103 0-2 .897-2 2s.897 2 2 2 2-.897 2-2-.897-2-2-2z" fill="currentColor" />
+                </svg>
+                <h1 class="sitename">Art de Vivre</h1>
+            </a>
+
+            <nav id="navmenu" class="navmenu">
+                <ul>
+                    <li><a href="index.html">Accueil</a></li>
+                    <li><a href="about.html" class="active">Notre Approche</a></li>
+                    <li><a href="services.html">Nos Services</a></li>
+                    <li><a href="blog.html">Articles</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+                <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
+            </nav>
+
+            <a class="btn-getstarted" href="appointment.html">Prendre RDV</a>
+        </div>
+    </header>
+
+    <main class="main">
+        <!-- Page Title -->
+        <div class="page-title">
+            <div class="breadcrumbs">
+                <nav aria-label="breadcrumb">
+                    <ol class="breadcrumb">
+                        <li class="breadcrumb-item">
+                            <a href="index.html"><i class="bi bi-house"></i> Accueil</a>
+                        </li>
+                        <li class="breadcrumb-item active current">Notre Approche</li>
+                    </ol>
+                </nav>
+            </div>
+
+            <div class="title-wrapper">
+                <h1>Notre Approche Thérapeutique</h1>
+                <p>
+                    Un accompagnement personnalisé pour votre bien-être psychologique à Cotonou
+                </p>
+            </div>
+        </div>
+        <!-- End Page Title -->
+
+        <!-- About Section -->
+        <section id="about" class="about section">
+            <div class="container" data-aos="fade-up" data-aos-delay="100">
+
+                <div class="row gy-4">
+                    <div class="col-lg-6">
+                        <div class="content">
+                            <h2>Qui sommes-nous ?</h2>
+                            <p>
+                                Le cabinet Art de Vivre est un espace d'écoute et d'accompagnement psychologique situé
+                                au cœur de Cotonou.
+                                Fondé en 2015, notre cabinet réunit des psychologues cliniciens formés aux meilleures
+                                pratiques internationales
+                                tout en ayant une profonde compréhension des réalités socioculturelles béninoises.
+                            </p>
+                            <p>
+                                Notre mission est d'offrir un soutien psychologique accessible et de qualité à tous les
+                                âges de la vie,
+                                dans un cadre bienveillant et strictement confidentiel. Nous croyons que chaque individu
+                                possède en lui
+                                les ressources nécessaires pour surmonter ses difficultés, et notre rôle est de l'aider
+                                à les découvrir.
+                            </p>
+
+                            <div class="stats-container" data-aos="fade-up" data-aos-delay="200">
+                                <div class="row gy-4">
+                                    <div class="col-sm-6 col-lg-12 col-xl-6">
+                                        <div class="stat-item">
+                                            <div class="stat-number">
+                                                <span data-purecounter-start="0" data-purecounter-end="8"
+                                                    data-purecounter-duration="1" class="purecounter"></span>+
+                                            </div>
+                                            <div class="stat-label">Ans d'expérience</div>
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-6 col-lg-12 col-xl-6">
+                                        <div class="stat-item">
+                                            <div class="stat-number">
+                                                <span data-purecounter-start="0" data-purecounter-end="2000"
+                                                    data-purecounter-duration="2" class="purecounter"></span>+
+                                            </div>
+                                            <div class="stat-label">Patients accompagnés</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="cta-buttons" data-aos="fade-up" data-aos-delay="300">
+                                <a href="team.html" class="btn-primary">Rencontrer notre équipe</a>
+                                <a href="services.html" class="btn-secondary">Découvrir nos services</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-6">
+                        <div class="image-section" data-aos="fade-left" data-aos-delay="200">
+                            <div class="main-image">
+                                <img src="assets/img/health/consultation-3.webp"
+                                    alt="Cabinet psychologique Art de Vivre à Cotonou" class="img-fluid" />
+                            </div>
+                            <div class="image-grid">
+                                <div class="grid-item">
+                                    <img src="assets/img/health/facilities-2.webp" alt="Thérapie pour enfants"
+                                        class="img-fluid" />
+                                </div>
+                                <div class="grid-item">
+                                    <img src="assets/img/health/staff-5.webp" alt="Notre équipe de psychologues"
+                                        class="img-fluid" />
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Psychologist Definition Section -->
+                <div class="psychologist-section mt-5" data-aos="fade-up" data-aos-delay="400">
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <div class="section-header">
+                                <h3>Qu'est-ce qu'un psychologue ?</h3>
+                            </div>
+                            <div class="psychologist-content">
+                                <p>
+                                    Le psychologue est un professionnel du comportement, des émotions et de la santé
+                                    mentale.
+                                    Il écoute, accompagne et aide les personnes souffrant de troubles psychiques en
+                                    identifiant
+                                    leurs besoins et en mettant en place des psychothérapies adaptées dans l'objet de
+                                    promouvoir
+                                    leur bien-être et leur autonomie.
+                                </p>
+
+                                <h4 class="mt-4">Nos approches thérapeutiques :</h4>
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <ul class="therapy-list">
+                                            <li><i class="bi bi-check-circle-fill"></i> Thérapies comportementales et
+                                                cognitives (TCC)</li>
+                                            <li><i class="bi bi-check-circle-fill"></i> Psychothérapie de soutien</li>
+                                            <li><i class="bi bi-check-circle-fill"></i> Psychothérapie psycho-dynamique
+                                            </li>
+                                            <li><i class="bi bi-check-circle-fill"></i> Psychothérapie intégrative</li>
+                                            <li><i class="bi bi-check-circle-fill"></i> Psychoéducation</li>
+                                        </ul>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <ul class="therapy-list">
+                                            <li><i class="bi bi-check-circle-fill"></i> Thérapie de couple</li>
+                                            <li><i class="bi bi-check-circle-fill"></i> Entretiens familiaux</li>
+                                            <li><i class="bi bi-check-circle-fill"></i> Art-thérapie</li>
+                                            <li><i class="bi bi-check-circle-fill"></i> Méditation pleine conscience
+                                            </li>
+                                            <li><i class="bi bi-check-circle-fill"></i> Ateliers thématiques</li>
+                                        </ul>
+                                    </div>
+                                </div>
+
+                                <div class="therapy-process mt-4">
+                                    <p>
+                                        En psychothérapie, le thérapeute et le patient travaillent ensemble à résoudre
+                                        un problème spécifique.
+                                        Dès la première séance et à chaque étape, des changements positifs et concrets
+                                        sont observés.
+                                        Pour un bon rétablissement, un travail thérapeutique est fait en séance avec la
+                                        psychologue
+                                        et un travail hors séance (tâches quotidiennes faites par le patient).
+                                    </p>
+                                </div>
+
+                                <h4 class="mt-4">Les compétences du psychologue :</h4>
+                                <div class="skills-grid">
+                                    <div class="skill-item">
+                                        <div class="skill-icon">
+                                            <i class="bi bi-people-fill"></i>
+                                        </div>
+                                        <h5>Sens du contact</h5>
+                                        <p>Une aisance relationnelle naturelle pour échanger avec différentes personnes
+                                        </p>
+                                    </div>
+
+                                    <div class="skill-item">
+                                        <div class="skill-icon">
+                                            <i class="bi bi-ear-fill"></i>
+                                        </div>
+                                        <h5>Écoute active</h5>
+                                        <p>Capacité à déceler des détails importants pour la thérapie</p>
+                                    </div>
+
+                                    <div class="skill-item">
+                                        <div class="skill-icon">
+                                            <i class="bi bi-eye-fill"></i>
+                                        </div>
+                                        <h5>Observation</h5>
+                                        <p>Analyse du comportement corporel et des réactions émotionnelles</p>
+                                    </div>
+
+                                    <div class="skill-item">
+                                        <div class="skill-icon">
+                                            <i class="bi bi-shield-lock"></i>
+                                        </div>
+                                        <h5>Mise en confiance</h5>
+                                        <p>Création d'un espace sécurisé pour le patient</p>
+                                    </div>
+
+                                    <div class="skill-item">
+                                        <div class="skill-icon">
+                                            <i class="bi bi-hourglass"></i>
+                                        </div>
+                                        <h5>Patience</h5>
+                                        <p>Accompagnement au rythme de chaque personne</p>
+                                    </div>
+
+                                    <div class="skill-item">
+                                        <div class="skill-icon">
+                                            <i class="bi bi-emoji-neutral"></i>
+                                        </div>
+                                        <h5>Sang-froid</h5>
+                                        <p>Capacité à garder son calme en toute circonstance</p>
+                                    </div>
+
+                                    <div class="skill-item">
+                                        <div class="skill-icon">
+                                            <i class="bi bi-heart-fill"></i>
+                                        </div>
+                                        <h5>Équilibre émotionnel</h5>
+                                        <p>Stabilité nécessaire pour accompagner efficacement</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- End Psychologist Definition Section -->
+
+            </div>
+        </section>
+        <!-- /About Section -->
+
+        <!-- Section Équipe -->
+        <section id="team" class="team section light-background">
+            <!-- Titre de la section -->
+            <div class="container section-title" data-aos="fade-up">
+                <h2>Notre équipe</h2>
+                <p>Découvrez les professionnels qui vous accompagnent dans votre parcours</p>
+            </div>
+
+            <div class="container" data-aos="fade-up" data-aos-delay="100">
+
+                <!-- Présentation du CEO / Directeur -->
+                <div class="row mb-5 align-items-center">
+                    <div class="col-md-4 text-center" data-aos="fade-right" data-aos-delay="200">
+                        <img src="assets/img/team/directeur.jpg" alt="Dr. Jean-Luc Akpo - Directeur"
+                            class="img-fluid rounded-circle mb-3 team-img"
+                            style="width: 200px; height: 200px; object-fit: cover;">
+                    </div>
+                    <div class="col-md-8" data-aos="fade-left" data-aos-delay="250">
+                        <h3>Dr. Jean-Luc Akpo</h3>
+                        <h5>Directeur Psychologue & Fondateur</h5>
+                        <p><strong>Spécialités :</strong> Thérapie cognitivo-comportementale, gestion du stress,
+                            accompagnement des adultes.</p>
+                        <p>Jean-Luc est diplômé de l’Université de Paris VII en psychologie clinique et a plus de 15 ans
+                            d’expérience dans l'accompagnement individuel et collectif. Passionné par la santé mentale
+                            en Afrique, il allie approche scientifique et sensibilité culturelle pour offrir un cadre
+                            d’écoute sécurisé à chaque patient.</p>
+                        <a href="appointment.html?therapist=jean-luc" class="btn btn-primary">Prendre RDV avec
+                            Jean-Luc</a>
+                    </div>
+                </div>
+
+                <!-- Membres de l'équipe -->
+                <div class="row gy-4">
+
+                    <!-- Membre 1 -->
+                    <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="300">
+                        <div class="member-card text-center">
+                            <img src="assets/img/team/membre1.jpg" alt="Mariam Sow"
+                                class="img-fluid rounded-circle mb-3 team-img"
+                                style="width: 150px; height: 150px; object-fit: cover;">
+                            <h4>Mariam Sow</h4>
+                            <p><em>Psychologue infantile</em></p>
+                            <p>Spécialisée dans le développement chez l’enfant, elle utilise des méthodes ludiques pour
+                                accompagner les jeunes patients dans leur expression émotionnelle.</p>
+                            <a href="appointment.html?therapist=mariam"
+                                class="btn btn-outline-primary btn-sm mt-2">Prendre RDV</a>
+                        </div>
+                    </div>
+
+                    <!-- Membre 2 -->
+                    <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="350">
+                        <div class="member-card text-center">
+                            <img src="assets/img/team/membre2.jpg" alt="Komi Adjanohoun"
+                                class="img-fluid rounded-circle mb-3 team-img"
+                                style="width: 150px; height: 150px; object-fit: cover;">
+                            <h4>Komi Adjanohoun</h4>
+                            <p><em>Psychothérapeute adolescents</em></p>
+                            <p>Komi aide les adolescents à traverser les défis identitaires et sociaux avec empathie. Il
+                                propose également des ateliers de gestion du stress scolaire.</p>
+                            <a href="appointment.html?therapist=komi"
+                                class="btn btn-outline-primary btn-sm mt-2">Prendre RDV</a>
+                        </div>
+                    </div>
+
+                    <!-- Membre 3 -->
+                    <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="400">
+                        <div class="member-card text-center">
+                            <img src="assets/img/team/membre3.jpg" alt="Florence Bello"
+                                class="img-fluid rounded-circle mb-3 team-img"
+                                style="width: 150px; height: 150px; object-fit: cover;">
+                            <h4>Florence Bello</h4>
+                            <p><em>Thérapeute conjugale</em></p>
+                            <p>Florence accompagne les couples dans la résolution de conflits, la communication non
+                                violente et la reconstruction relationnelle après des crises.</p>
+                            <a href="appointment.html?therapist=florence"
+                                class="btn btn-outline-primary btn-sm mt-2">Prendre RDV</a>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+        <!-- /Section Équipe -->
+
+        <!-- Call To Action Section -->
+        <section id="call-to-action" class="call-to-action section">
+
+            <div class="container" data-aos="fade-up" data-aos-delay="100">
+
+                <div class="row justify-content-center">
+                    <div class="col-lg-8 text-center">
+                        <h2 data-aos="fade-up" data-aos-delay="200">Prenez soin de votre santé mentale</h2>
+                        <p data-aos="fade-up" data-aos-delay="250">Chez Art de Vivre, nous croyons que chaque individu
+                            mérite un
+                            accompagnement psychologique de qualité, adapté à ses besoins et à sa culture.</p>
+
+                        <div class="cta-buttons" data-aos="fade-up" data-aos-delay="300">
+                            <a href="appointment.html" class="btn-primary">Prendre rendez-vous</a>
+                            <a href="contact.html" class="btn-secondary">Nous contacter</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="emergency-alert" data-aos="zoom-in" data-aos-delay="500">
+                    <div class="row align-items-center">
+                        <div class="col-lg-8">
+                            <div class="emergency-content">
+                                <div class="emergency-icon">
+                                    <i class="bi bi-exclamation-triangle"></i>
+                                </div>
+                                <div class="emergency-text">
+                                    <h4>Urgence psychologique ?</h4>
+                                    <p>Si vous ou un proche êtes en détresse immédiate, contactez notre ligne d'urgence
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 text-end">
+                            <a href="tel:22912345678" class="emergency-btn">
+                                <i class="bi bi-telephone-fill"></i>
+                                Appeler le +229 12 34 56 78
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+        </section><!-- /Call To Action Section -->
+
+    </main>
+
+    <footer id="footer" class="footer position-relative light-background">
+        <div class="container footer-top">
+            <div class="row gy-4">
+                <div class="col-lg-4 col-md-6 footer-about">
+                    <a href="index.html" class="logo d-flex align-items-center">
+                        <span class="sitename">Art de Vivre</span>
+                    </a>
+                    <div class="footer-contact pt-3">
+                        <p>Rue 456, Quartier Haie Vive</p>
+                        <p>Cotonou, Bénin</p>
+                        <p class="mt-3">
+                            <strong>Téléphone:</strong> <span>+229 12 34 56 78</span>
+                        </p>
+                        <p><strong>Email:</strong> <span>contact@artdevivre-benin.com</span></p>
+                    </div>
+                    <div class="social-links d-flex mt-4">
+                        <a href=""><i class="bi bi-facebook"></i></a>
+                        <a href=""><i class="bi bi-instagram"></i></a>
+                        <a href=""><i class="bi bi-linkedin"></i></a>
+                        <a href=""><i class="bi bi-whatsapp"></i></a>
+                    </div>
+                </div>
+
+                <div class="col-lg-2 col-md-3 footer-links">
+                    <h4>Liens utiles</h4>
+                    <ul>
+                        <li><a href="index.html">Accueil</a></li>
+                        <li><a href="about.html">Notre approche</a></li>
+                        <li><a href="services.html">Nos services</a></li>
+                        <li><a href="blog.html">Articles</a></li>
+                        <li><a href="faq.html">FAQ</a></li>
+                    </ul>
+                </div>
+
+                <div class="col-lg-2 col-md-3 footer-links">
+                    <h4>Nos services</h4>
+                    <ul>
+                        <li><a href="enfants.html">Enfants</a></li>
+                        <li><a href="adolescents.html">Adolescents</a></li>
+                        <li><a href="adultes.html">Adultes</a></li>
+                        <li><a href="couples.html">Couples</a></li>
+                        <li><a href="bilans.html">Bilans psychologiques</a></li>
+                    </ul>
+                </div>
+
+                <div class="col-lg-2 col-md-3 footer-links">
+                    <h4>Ressources</h4>
+                    <ul>
+                        <li><a href="blog.html">Blog</a></li>
+                        <li><a href="testimonials.html">Témoignages</a></li>
+                        <li><a href="glossary.html">Lexique</a></li>
+                        <li><a href="books.html">Livres recommandés</a></li>
+                        <li><a href="links.html">Liens utiles</a></li>
+                    </ul>
+                </div>
+
+                <div class="col-lg-2 col-md-3 footer-links">
+                    <h4>Légal</h4>
+                    <ul>
+                        <li><a href="privacy.html">Confidentialité</a></li>
+                        <li><a href="terms.html">Conditions</a></li>
+                        <li><a href="cookies.html">Cookies</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="container copyright text-center mt-4">
+            <p>
+                © <span>Copyright</span>
+                <strong class="px-1 sitename">Art de Vivre</strong>
+                <span>Tous droits réservés</span> <span id="current-year">2025</span>
+            </p>
+            <div class="credits">
+                Conçu avec <i class="bi bi-heart-fill"></i> à Cotonou
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scroll Top -->
+    <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i
+            class="bi bi-arrow-up-short"></i></a>
+
+    <!-- Preloader -->
+    <div id="preloader"></div>
+
+    <!-- Vendor JS Files -->
+    <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/vendor/php-email-form/validate.js"></script>
+    <script src="assets/vendor/aos/aos.js"></script>
+    <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
+    <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+    <script src="assets/vendor/imagesloaded/imagesloaded.pkgd.min.js"></script>
+    <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+    <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+
+    <!-- Main JS File -->
+    <script src="assets/js/main.js"></script>
+
+    <script>
+        // Set current year in footer
+        document.getElementById('current-year').textContent = new Date().getFullYear();
+    </script>
+
+
+
+</body>
+
+<script>
+
+    // Psychologist Section Animations
+    document.addEventListener('DOMContentLoaded', function () {
+        // Animate elements when they come into view
+        const animateOnScroll = function () {
+            const psychologistSection = document.querySelector('.psychologist-section');
+            if (psychologistSection) {
+                const elements = psychologistSection.querySelectorAll('.skill-item, .therapy-process, .section-header');
+
+                const observer = new IntersectionObserver((entries) => {
+                    entries.forEach(entry => {
+                        if (entry.isIntersecting) {
+                            entry.target.classList.add('animate__animated', 'animate__fadeInUp');
+                            observer.unobserve(entry.target);
+                        }
+                    });
+                }, {
+                    threshold: 0.1
+                });
+
+                elements.forEach(element => {
+                    observer.observe(element);
+                });
+            }
+        };
+
+        // Initialize animations
+        animateOnScroll();
+
+        // Smooth scroll for internal links
+        document.querySelectorAll('.psychologist-section a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    });
+
+</script>
+
+</html>

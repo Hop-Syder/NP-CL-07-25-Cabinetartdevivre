@@ -1,18 +1,17 @@
-/**
-* Template Name: MediTrust
-* Template URL: https://bootstrapmade.com/meditrust-bootstrap-hospital-website-template/
-* Updated: Jul 03 2025 with Bootstrap v5.3.7
-* Author: BootstrapMade.com
-* License: https://bootstrapmade.com/license/
-*/
+/*--------------------------------------------------------------
+══════════════════════════════════════════════════
+@hopsyder | Data Scientist & Full-Stack Developer
+Nexus Partners - Intelligent Solutions
+══════════════════════════════════════════════════
+Philosophy: Clean Code • Innovation • Excellence
+--------------------------------------------------------------*/
+
 
 @charset "UTF-8";
 
-/*--------------------------------------------------------------
-# Font & Color Variables
-# Help: https://bootstrapmade.com/color-system/
---------------------------------------------------------------*/
+/*-------------------------------------------------------------*/
 /* Fonts */
+
 :root {
   --default-font: "Roboto", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   --heading-font: "Raleway", sans-serif;
@@ -27,7 +26,7 @@
   /* Default color used for the majority of the text content across the entire website */
   --heading-color: #18444c;
   /* Color for headings, subheadings and title throughout the website */
-  --accent-color: #049ebb;
+  --accent-color: #035eb1;
   /* Accent color that represents your brand on the website. It's used for buttons, links, and other elements that need to stand out */
   --surface-color: #ffffff;
   /* The surface color is used as a background of boxed elements within sections, such as cards, icon boxes, or other elements that require a visual separation from the global background. */
@@ -177,8 +176,8 @@ h6 {
 }
 
 .header .logo img {
-  max-height: 36px;
-  margin-right: 8px;
+  max-height: 60px;
+  margin-right: 2px;
 }
 
 .header .logo svg {

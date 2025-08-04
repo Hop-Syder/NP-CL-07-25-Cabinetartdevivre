@@ -3,7 +3,7 @@
 @hopsyder | Data Scientist & Full-Stack Developer
 Nexus Partners - Intelligent Solutions
 ══════════════════════════════════════════════════
-Philosophy: Clean Code • Innovation • Excellence 
+Stack: ML/DL • React/Node • Flutter • DevOps 
 -->
 
 <!DOCTYPE html>
@@ -41,7 +41,7 @@ Philosophy: Clean Code • Innovation • Excellence
 		"founder": "Stéphanie GBEHOUNHESSI",
 		"description": "Cabinet de psychologie spécialisé dans les thérapies individuelles, familiales, de couple et interventions en entreprise ou en milieu éducatif.",
 		"url": "https://www.cabinetartdevivre.com",
-		"email": "cabinetpsy@cabinetartdevivre.com",
+		"email": "psy@cabinetartdevivre.com",
 		"telephone": "+2290197155452",
 		"address": {
 			"@type": "PostalAddress",
@@ -74,9 +74,9 @@ Philosophy: Clean Code • Innovation • Excellence
 	<meta property="og:title" content="ART DE VIVRE - Cabinet de Psychologie">
 	<meta property="og:description"
 		content="Thérapie, accompagnement et bien-être psychologique. Consultations en ligne ou en cabinet.">
-	<meta property="og:image" content="assets/img/og-image.png">
+	<meta property="og:image" content="https://www.cabinetartdevivre.com/assets/img/logo.png">
 	<meta property="og:locale" content="fr_FR">
-	<meta property="og:site_name" content="ART DE VIVRE">
+	<meta property="og:site_name" content="Cabinet ART DE VIVRE">
 
 
 	<!-- Adresse & géolocalisation -->
@@ -90,52 +90,137 @@ Philosophy: Clean Code • Innovation • Excellence
 	<link rel="icon" href="assets/img/favicon-32x32.png" sizes="32x32" type="image/png">
 	<link rel="apple-touch-icon" href="assets/img/apple-touch-icon.png">
 
-	<!-- Polices Google Fonts -->
-	<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+	<!-- Géolocalisation et langue -->
+	<meta name="geo.region" content="BJ-LI">
+	<meta name="geo.placename" content="Cotonou">
+	<meta name="geo.position" content="6.3654;2.4183">
+	<meta name="ICBM" content="6.3654, 2.4183">
+	<meta name="language" content="fr">
+	<meta name="coverage" content="Worldwide">
+	<meta name="distribution" content="Global">
 
-	<!-- CSS Vendor -->
-	<link rel="stylesheet" href="assets/vendor/bootstrap/css/bootstrap.min.css">
-	<link rel="stylesheet" href="assets/vendor/fontawesome-free/css/all.min.css">
-	<link rel="stylesheet" href="assets/css/main.css">
+	<!-- Canonical URL -->
+	<link rel="canonical" href="https://www.cabinetartdevivre.com">
 
-	<!-- Sécurité & RGPD -->
-	<meta name="theme-color" content="#2c3e50">
-	<meta name="referrer" content="strict-origin-when-cross-origin">
-	<meta http-equiv="Content-Security-Policy"
-		content="default-src 'self'; img-src * data:; script-src 'self' 'unsafe-inline' https://fonts.googleapis.com; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com https://fonts.gstatic.com;">
+	<!-- Alternate languages (si multilingue) -->
+	<link rel="alternate" hreflang="fr" href="https://cabinetartdevivre-benin.com">
+	<link rel="alternate" hreflang="fr-BJ" href="https://cabinetartdevivre-benin.com">
+	<link rel="alternate" hreflang="x-default" href="https://cabinetartdevivre-benin.com">
+
+	<!-- Preconnect pour optimiser le chargement des polices -->
+	<link rel="preconnect" href="https://fonts.googleapis.com" crossorigin>
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link rel="dns-prefetch" href="https://fonts.googleapis.com">
+	<link rel="dns-prefetch" href="https://fonts.gstatic.com">
+
+	<!-- Polices optimisées avec display=swap pour de meilleures performances -->
+	<link
+		href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&family=Lato:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700&family=Raleway:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap"
+		rel="stylesheet">
+
+	<!-- Preload des ressources critiques -->
+	<link rel="preload" href="assets/css/main.css" as="style">
+	<link rel="preload" href="assets/vendor/bootstrap/css/bootstrap.min.css" as="style">
+	<link rel="preload" href="assets/img/health/showcase-1.webp" as="image">
+
+	<!-- CSS Vendor Files avec intégrité et performance -->
+	<link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet" media="all">
+	<link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet" media="all">
+	<link href="assets/vendor/aos/aos.css" rel="stylesheet" media="all">
+	<link href="assets/vendor/fontawesome-free/css/all.min.css" rel="stylesheet" media="all">
+	<link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet" media="all">
+	<link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet" media="all">
+
+	<!-- CSS principal -->
+	<link href="assets/css/main.css" rel="stylesheet" media="all">
+
+	<!-- Verification des outils de webmaster -->
+	<meta name="google-site-verification" content="votre-code-verification-google">
+	<meta name="msvalidate.01" content="votre-code-verification-bing">
+	<meta name="yandex-verification" content="votre-code-verification-yandex">
+
+	<!-- RGPD et cookies - Conformité légale -->
 	<meta name="cookie-consent" content="required">
-	<meta name="privacy-policy" content="https://www.cabinetartdevivre.com/privacy">
-	<meta name="terms-of-service" content="https://www.cabinetartdevivre.com/terms">
+	<meta name="privacy-policy" content="https://artdevivre-benin.com/privacy">
+	<meta name="terms-of-service" content="https://artdevivre-benin.com/terms">
 
-	<!-- Analytics (à remplacer par ta vraie ID GA) -->
+	<!-- Performance et sécurité -->
+	<meta http-equiv="Content-Security-Policy"
+		content="default-src 'self'; img-src 'self' data: https:; script-src 'self' 'unsafe-inline' https://fonts.googleapis.com; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com https://fonts.gstatic.com;">
+	<meta name="referrer" content="strict-origin-when-cross-origin">
+
+	<!-- Mobile et PWA -->
+	<meta name="mobile-web-app-capable" content="yes">
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+	<meta name="apple-mobile-web-app-title" content=" Cabinet Art de Vivre">
+	<meta name="application-name" content="Cabinet Art de Vivre">
+
+	<!-- Contrôle du cache -->
+	<meta http-equiv="Cache-Control" content="public, max-age=31536000">
+	<meta http-equiv="Expires" content="Tue, 28 Jul 2026 00:00:00 GMT">
+
+	<!-- Analytics et monitoring (à remplacer par vos vrais codes) -->
+	<!-- Google Analytics 4 -->
 	<script async src="https://www.googletagmanager.com/gtag/js?id=GA_MEASUREMENT_ID"></script>
 	<script>
+		// @hopsyder - Analytics optimisé pour la performance
 		window.dataLayer = window.dataLayer || [];
 		function gtag() { dataLayer.push(arguments); }
 		gtag('js', new Date());
-		gtag('config', 'GA_MEASUREMENT_ID');
+		gtag('config', 'GTM-NN2KF45P', {
+			page_title: 'Accueil - Art de Vivre',
+			page_location: window.location.href,
+			anonymize_ip: true, // RGPD
+			cookie_flags: 'SameSite=None;Secure'
+		});
+	</script>
+
+	<!-- Google Tag Manager -->
+	<script>(function (w, d, s, l, i) {
+			w[l] = w[l] || []; w[l].push({
+				'gtm.start':
+					new Date().getTime(), event: 'gtm.js'
+			}); var f = d.getElementsByTagName(s)[0],
+				j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src =
+					'https://www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f);
+		})(window, document, 'script', 'dataLayer', 'GTM-NN2KF45P');</script>
+	<!-- End Google Tag Manager -->
+
+	<!-- Balises pour le référencement local -->
+	<meta name="geo.region" content="BJ">
+	<meta name="geo.placename" content="Cotonou, Littoral, Bénin">
+	<meta name="geo.position" content="6.3654;2.4183">
+	<meta name="ICBM" content="6.3654, 2.4183">
+
+	<!-- Rich Snippets pour les avis clients -->
+	<script type="application/ld+json">
+	{
+		"@context": "https://schema.org",
+		"@type": "LocalBusiness",
+		"name": "Art de Vivre",
+		"aggregateRating": {
+			"@type": "AggregateRating",
+			"ratingValue": "4.8",
+			"reviewCount": "127"
+		}
+	}
 	</script>
 
 </head>
 
-
 <body class="index-page">
+	<!-- Google Tag Manager (noscript) -->
+	<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-NN2KF45P" height="0" width="0"
+			style="display:none;visibility:hidden"></iframe></noscript>
+	<!-- End Google Tag Manager (noscript) -->
 
 	<header id="header" class="header d-flex align-items-center fixed-top">
 		<div
 			class="header-container container-fluid container-xl position-relative d-flex align-items-center justify-content-between">
 
 			<a href="index.html" class="logo d-flex align-items-center me-auto me-xl-0">
-				<svg class="my-icon" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-					<path
-						d="M12 2C6.477 2 2 6.477 2 12s4.477 10 10 10 10-4.477 10-10S17.523 2 12 2zm0 18c-4.418 0-8-3.582-8-8s3.582-8 8-8 8 3.582 8 8-3.582 8-8 8z"
-						fill="currentColor" />
-					<path
-						d="M12 6c-3.313 0-6 2.687-6 6s2.687 6 6 6 6-2.687 6-6-2.687-6-6-6zm0 10c-2.206 0-4-1.794-4-4s1.794-4 4-4 4 1.794 4 4-1.794 4-4 4z"
-						fill="currentColor" />
-					<path d="M12 10c-1.103 0-2 .897-2 2s.897 2 2 2 2-.897 2-2-.897-2-2-2z" fill="currentColor" />
-				</svg>
-				<h1 class="sitename">Art de Vivre</h1>
+				<img src="assets/img/logo.png" alt="Art de Vivre" class="logo-img">
 			</a>
 
 			<nav id="navmenu" class="navmenu">
@@ -143,7 +228,6 @@ Philosophy: Clean Code • Innovation • Excellence
 					<li><a href="index.html" class="active">Accueil</a></li>
 					<li><a href="about.html">Notre Approche</a></li>
 					<li><a href="services.html">Nos Services</a></li>
-					<li><a href="blog.html">Articles</a></li>
 					<li><a href="contact.html">Contact</a></li>
 				</ul>
 				<i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
@@ -161,8 +245,7 @@ Philosophy: Clean Code • Innovation • Excellence
 			<div class="container-fluid p-0">
 				<div class="hero-wrapper">
 					<div class="hero-image">
-						<img src="assets/img/health/showcase-1.webp" alt="Cabinet psychologique à Cotonou"
-							class="img-fluid">
+						<img src="assets/img/showcase-1.png" alt="Cabinet psychologique Art de Vivre" class="img-fluid">
 					</div>
 
 					<div class="hero-content">
@@ -170,14 +253,13 @@ Philosophy: Clean Code • Innovation • Excellence
 							<div class="row">
 								<div class="col-lg-7 col-md-10" data-aos="fade-right" data-aos-delay="100">
 									<div class="content-box">
-										<span class="badge-accent" data-aos="fade-up"
-											data-aos-delay="150">Accompagnement
-											bienveillant</span>
-										<h1 data-aos="fade-up" data-aos-delay="200">Retrouvez l'équilibre émotionnel à
-											Cotonou</h1>
-										<p data-aos="fade-up" data-aos-delay="250">Un espace d'écoute confidentiel pour
-											enfants, adolescents
-											et adultes. Parcours personnalisé avec des psychologues diplômés.</p>
+										<span class="badge-accent" data-aos="fade-up" data-aos-delay="150">Cabinet de
+											psychologie</span>
+										<h1 data-aos="fade-up" data-aos-delay="200">Révélez votre mieux-être, cultivez
+											votre art de vivre</h1>
+										<p data-aos="fade-up" data-aos-delay="250">Espace de soins psychologiques,
+											d'écoute professionnelle et de développement du bien-être mental et
+											émotionnel pour enfants, adolescents, adultes, couples et familles.</p>
 
 										<div class="cta-group" data-aos="fade-up" data-aos-delay="300">
 											<a href="appointment.html" class="btn btn-primary">Prendre rendez-vous</a>
@@ -188,15 +270,15 @@ Philosophy: Clean Code • Innovation • Excellence
 											<div class="badge-item">
 												<i class="bi bi-telephone-fill"></i>
 												<div class="badge-content">
-													<span>Contact urgent</span>
-													<strong>+229 12 34 56 78</strong>
+													<span>Téléphone</span>
+													<strong>+229 01 97 15 54 52</strong>
 												</div>
 											</div>
 											<div class="badge-item">
-												<i class="bi bi-clock-fill"></i>
+												<i class="bi bi-whatsapp"></i>
 												<div class="badge-content">
-													<span>Horaires</span>
-													<strong>Lun-Ven: 8h-19h</strong>
+													<span>WhatsApp</span>
+													<strong>+229 01 97 15 54 52</strong>
 												</div>
 											</div>
 										</div>
@@ -213,8 +295,9 @@ Philosophy: Clean Code • Innovation • Excellence
 												<i class="bi bi-emoji-smile"></i>
 											</div>
 											<div class="feature-text">
-												<h3>Thérapie enfants</h3>
-												<p>Approche par le jeu et méthodes adaptées aux jeunes patients</p>
+												<h3>Enfants</h3>
+												<p>Difficultés scolaires, troubles du sommeil, troubles relationnels,
+													séparation mal vécue</p>
 											</div>
 										</div>
 									</div>
@@ -226,7 +309,8 @@ Philosophy: Clean Code • Innovation • Excellence
 											</div>
 											<div class="feature-text">
 												<h3>Adolescents</h3>
-												<p>Accompagnement des défis de l'adolescence dans un cadre neutre</p>
+												<p>Désintérêt scolaire, changement de comportement, conduites à risque,
+													questionnement sur l'avenir</p>
 											</div>
 										</div>
 									</div>
@@ -237,8 +321,9 @@ Philosophy: Clean Code • Innovation • Excellence
 												<i class="bi bi-heart"></i>
 											</div>
 											<div class="feature-text">
-												<h3>Adultes</h3>
-												<p>Soutien psychologique pour traverser les épreuves de la vie</p>
+												<h3>Adultes & Couples</h3>
+												<p>Stress, anxiété, burn-out, difficultés relationnelles,
+													questionnements personnels</p>
 											</div>
 										</div>
 									</div>
@@ -260,27 +345,27 @@ Philosophy: Clean Code • Innovation • Excellence
 				<div class="row gy-5 align-items-center">
 					<div class="col-lg-6" data-aos="fade-right" data-aos-delay="200">
 						<div class="about-image">
-							<img src="assets/img/health/facilities-1.webp" alt="Cabinet Art de Vivre à Cotonou"
+							<img src="assets/img/health/facilities-1.webp" alt="Cabinet Art de Vivre"
 								class="img-fluid rounded-3 mb-4">
 							<div class="experience-badge">
-								<span class="years">15+</span>
-								<span class="text">Ans d'expérience</span>
+								<span class="years">3+</span>
+								<span class="text">de ans</span>
 							</div>
 						</div>
 					</div>
 
 					<div class="col-lg-6" data-aos="fade-left" data-aos-delay="300">
 						<div class="about-content">
-							<h2>Votre bien-être psychologique à Cotonou</h2>
-							<p class="lead">Le cabinet Art de Vivre offre un accompagnement psychologique personnalisé
-								pour tous les
-								âges dans un cadre chaleureux et confidentiel.</p>
+							<h2>Cabinet ART DE VIVRE</h2>
+							<p class="lead" style="text-align: justify;">Fondé le 08 juin 2022, notre cabinet est dirigé
+								par
+								Stéphanie GBEHOUNHESSI,
+								psychologue clinicienne et art-thérapeute, dédiée à votre bien-être psychologique.</p>
 
-							<p>Notre équipe de psychologues cliniciens formés en Europe et en Afrique vous reçoit dans
-								notre espace
-								dédié au cœur de Cotonou. Nous combinons approches occidentales et compréhension des
-								réalités
-								socio-culturelles béninoises.</p>
+							<p style="text-align: justify;">Nous proposons un accompagnement personnalisé dans un cadre
+								chaleureux et confidentiel,
+								combinant des approches thérapeutiques éprouvées comme les Thérapies Cognitives et
+								Comportementales, l'art-thérapie et la méditation de pleine conscience.</p>
 
 							<div class="row g-4 mt-4">
 								<div class="col-md-6" data-aos="fade-up" data-aos-delay="400">
@@ -306,32 +391,11 @@ Philosophy: Clean Code • Innovation • Excellence
 
 							<div class="cta-wrapper mt-4">
 								<a href="about.html" class="btn btn-primary">Notre approche</a>
-								<a href="team.html" class="btn btn-outline">Notre équipe</a>
+								<a href="#team" class="btn btn-outline">Notre équipe</a>
 							</div>
 						</div>
 					</div>
 				</div>
-
-				<div class="row mt-5 pt-4 certifications-row" data-aos="fade-up" data-aos-delay="600">
-					<div class="col-12 text-center mb-4">
-						<h4 class="certification-title">Nos accréditations</h4>
-					</div>
-					<div class="col-12">
-						<div class="certifications">
-							<div class="certification-item" data-aos="zoom-in" data-aos-delay="700">
-								<img src="assets/img/clients/ordre-psychologues-benin.webp"
-									alt="Ordre des Psychologues du Bénin">
-							</div>
-							<div class="certification-item" data-aos="zoom-in" data-aos-delay="800">
-								<img src="assets/img/clients/afpsy.webp" alt="Association Francophone de Psychologie">
-							</div>
-							<div class="certification-item" data-aos="zoom-in" data-aos-delay="900">
-								<img src="assets/img/clients/who.webp" alt="Partenariat Santé Mentale OMS">
-							</div>
-						</div>
-					</div>
-				</div>
-
 			</div>
 
 		</section><!-- /Home About Section -->
@@ -349,6 +413,7 @@ Philosophy: Clean Code • Innovation • Excellence
 
 				<div class="row gy-4">
 
+					<!-- Carte Psychologie infantile -->
 					<div class="col-lg-6" data-aos="fade-up" data-aos-delay="200">
 						<div class="service-card">
 							<div class="service-icon">
@@ -356,22 +421,20 @@ Philosophy: Clean Code • Innovation • Excellence
 							</div>
 							<div class="service-content">
 								<h3>Psychologie infantile</h3>
-								<p>Prise en charge des troubles du développement, difficultés scolaires, anxiété de
-									séparation ou
-									traumatismes chez l'enfant.</p>
+								<p>Espace de parole bienveillant pour évoquer les souffrances de l'enfant : difficultés
+									scolaires, troubles du sommeil, troubles relationnels (isolement, repli sur soi,
+									agressivité) ou séparation mal vécue (divorce des parents, décès dans la famille).
+								</p>
 								<ul class="service-features">
 									<li><i class="fas fa-check-circle"></i>Thérapie par le jeu</li>
-									<li><i class="fas fa-check-circle"></i>Bilan psychologique</li>
+									<li><i class="fas fa-check-circle"></i>Approche bienveillante</li>
 									<li><i class="fas fa-check-circle"></i>Guidance parentale</li>
 								</ul>
-								<a href="enfants.html" class="service-btn">
-									En savoir plus
-									<i class="fas fa-arrow-right"></i>
-								</a>
 							</div>
 						</div>
 					</div><!-- End Service Card -->
 
+					<!-- Carte Adolescence -->
 					<div class="col-lg-6" data-aos="fade-up" data-aos-delay="300">
 						<div class="service-card">
 							<div class="service-icon">
@@ -379,22 +442,20 @@ Philosophy: Clean Code • Innovation • Excellence
 							</div>
 							<div class="service-content">
 								<h3>Adolescence</h3>
-								<p>Accompagnement des crises identitaires, troubles du comportement, phobie scolaire ou
-									difficultés
-									relationnelles.</p>
+								<p>Accompagnement des défis de l'adolescence : désintérêt pour les études, changement de
+									comportement (repli sur soi ou agressivité), conflits familiaux, conduites à risque,
+									addictions (alcool, cannabis, jeux vidéo, internet) ou questionnement sur l'avenir.
+								</p>
 								<ul class="service-features">
 									<li><i class="fas fa-check-circle"></i>Thérapie cognitive</li>
 									<li><i class="fas fa-check-circle"></i>Gestion du stress</li>
 									<li><i class="fas fa-check-circle"></i>Prévention des addictions</li>
 								</ul>
-								<a href="adolescents.html" class="service-btn">
-									En savoir plus
-									<i class="fas fa-arrow-right"></i>
-								</a>
 							</div>
 						</div>
 					</div><!-- End Service Card -->
 
+					<!-- Carte Psychologie adulte -->
 					<div class="col-lg-6" data-aos="fade-up" data-aos-delay="400">
 						<div class="service-card">
 							<div class="service-icon">
@@ -402,22 +463,19 @@ Philosophy: Clean Code • Innovation • Excellence
 							</div>
 							<div class="service-content">
 								<h3>Psychologie adulte</h3>
-								<p>Soutien pour dépression, anxiété, burn-out, traumatismes ou difficultés d'adaptation
-									aux changements
-									de vie.</p>
+								<p>Soutien pour stress, anxiété, fatigue, troubles du sommeil, difficultés
+									émotionnelles, changements familiaux, difficultés professionnelles, épuisement
+									professionnel (Burn-out) ou risques psychosociaux (RPS).</p>
 								<ul class="service-features">
-									<li><i class="fas fa-check-circle"></i>Thérapie brève</li>
-									<li><i class="fas fa-check-circle"></i>Approche systémique</li>
+									<li><i class="fas fa-check-circle"></i>Thérapie brève efficace</li>
+									<li><i class="fas fa-check-circle"></i>Approche intégrative</li>
 									<li><i class="fas fa-check-circle"></i>Gestion des émotions</li>
 								</ul>
-								<a href="adultes.html" class="service-btn">
-									En savoir plus
-									<i class="fas fa-arrow-right"></i>
-								</a>
 							</div>
 						</div>
 					</div><!-- End Service Card -->
 
+					<!-- Carte Thérapie de couple -->
 					<div class="col-lg-6" data-aos="fade-up" data-aos-delay="500">
 						<div class="service-card">
 							<div class="service-icon">
@@ -425,18 +483,53 @@ Philosophy: Clean Code • Innovation • Excellence
 							</div>
 							<div class="service-content">
 								<h3>Thérapie de couple</h3>
-								<p>Médiation pour conflits conjugaux, problèmes de communication, séparation ou
-									reconstruction après
-									infidélité.</p>
+								<p>Accompagnement pour améliorer la communication, résoudre les conflits, traverser les
+									tensions ou reconstruire après des crises dans le couple.</p>
 								<ul class="service-features">
 									<li><i class="fas fa-check-circle"></i>Communication non-violente</li>
 									<li><i class="fas fa-check-circle"></i>Gestion des conflits</li>
-									<li><i class="fas fa-check-circle"></i>Approche interculturelle</li>
+									<li><i class="fas fa-check-circle"></i>Approche bienveillante</li>
 								</ul>
-								<a href="couples.html" class="service-btn">
-									En savoir plus
-									<i class="fas fa-arrow-right"></i>
-								</a>
+							</div>
+						</div>
+					</div><!-- End Service Card -->
+
+					<!-- Interventions en entreprise -->
+					<div class="col-lg-6" data-aos="fade-up" data-aos-delay="600">
+						<div class="service-card">
+							<div class="service-icon">
+								<i class="fas fa-building"></i>
+							</div>
+							<div class="service-content">
+								<h3>Entreprises</h3>
+								<p>Prévention et gestion des Risques Psychosociaux (RPS) : consultations individuelles,
+									ateliers thématiques (stress, burn-out, communication) et interventions
+									post-traumatiques.</p>
+								<ul class="service-features">
+									<li><i class="fas fa-check-circle"></i>Ateliers sur mesure</li>
+									<li><i class="fas fa-check-circle"></i>Méditation en entreprise</li>
+									<li><i class="fas fa-check-circle"></i>Gestion des crises</li>
+								</ul>
+							</div>
+						</div>
+					</div><!-- End Service Card -->
+
+					<!-- Milieux éducatifs -->
+					<div class="col-lg-6" data-aos="fade-up" data-aos-delay="700">
+						<div class="service-card">
+							<div class="service-icon">
+								<i class="fas fa-graduation-cap"></i>
+							</div>
+							<div class="service-content">
+								<h3>Écoles & Universités</h3>
+								<p>Accompagnement des élèves/étudiants et sensibilisation aux défis éducatifs :
+									difficultés d'apprentissage, stress académique, orientation professionnelle et
+									bien-être mental.</p>
+								<ul class="service-features">
+									<li><i class="fas fa-check-circle"></i>Thérapie individuelle</li>
+									<li><i class="fas fa-check-circle"></i>Ateliers collectifs</li>
+									<li><i class="fas fa-check-circle"></i>Prévention du décrochage</li>
+								</ul>
 							</div>
 						</div>
 					</div><!-- End Service Card -->
@@ -448,7 +541,7 @@ Philosophy: Clean Code • Innovation • Excellence
 		</section><!-- /Featured Services Section -->
 
 		<!-- Section Équipe -->
-		<section id="team" class="team section light-background">
+		<section id="team" class="team section">
 			<!-- Titre de la section -->
 			<div class="container section-title" data-aos="fade-up">
 				<h2>Notre équipe</h2>
@@ -460,25 +553,25 @@ Philosophy: Clean Code • Innovation • Excellence
 				<!-- Présentation du CEO / Directeur -->
 				<div class="row mb-5 align-items-center">
 					<div class="col-md-4 text-center" data-aos="fade-right" data-aos-delay="200">
-						<img src="assets/img/team/directeur.jpg" alt="Dr. Jean-Luc Akpo - Directeur"
+						<img src="assets/img/ceo.png" alt="Stéphanie GBEHOUNHESSI - Fondatrice"
 							class="img-fluid rounded-circle mb-3 team-img"
-							style="width: 200px; height: 200px; object-fit: cover;">
+							style="width: 250px; height: 250px; object-fit: cover;">
 					</div>
 					<div class="col-md-8" data-aos="fade-left" data-aos-delay="250">
-						<h3>Dr. Jean-Luc Akpo</h3>
-						<h5>Directeur Psychologue & Fondateur</h5>
-						<p><strong>Spécialités :</strong> Thérapie cognitivo-comportementale, gestion du stress,
-							accompagnement des adultes.</p>
-						<p>Jean-Luc est diplômé de l’Université de Paris VII en psychologie clinique et a plus de 15 ans
-							d’expérience dans l'accompagnement individuel et collectif. Passionné par la santé mentale
-							en Afrique, il allie approche scientifique et sensibilité culturelle pour offrir un cadre
-							d’écoute sécurisé à chaque patient.</p>
-						<a href="appointment.html?therapist=jean-luc" class="btn btn-primary">Prendre RDV avec
-							Jean-Luc</a>
+						<h3>Stéphanie GBEHOUNHESSI</h3>
+						<h5>Psychologue clinicienne & Art-thérapeute - Fondatrice</h5>
+						<p><strong>Spécialités :</strong> Thérapies comportementales et cognitives (TCC), Psychothérapie
+							intégrative, Art-thérapie, Méditation pleine conscience, Thérapie de couple et familiale.
+						</p>
+						<p>Stéphanie est la fondatrice du Cabinet ART DE VIVRE, créé le 08 juin 2022. Diplômée en
+							psychologie clinicienne et art-thérapie, elle combine des approches thérapeutiques éprouvées
+							pour offrir un accompagnement personnalisé dans un cadre chaleureux et confidentiel.</p>
+						<a href="appointment.html?therapist=stephanie" class="btn btn-primary">Prendre RDV avec
+							Stéphanie</a>
 					</div>
 				</div>
 
-				<!-- Membres de l'équipe -->
+				<!-- Membres de l'équipe - Exemple (à adapter selon votre équipe réelle) -->
 				<div class="row gy-4">
 
 					<!-- Membre 1 -->
@@ -489,8 +582,8 @@ Philosophy: Clean Code • Innovation • Excellence
 								style="width: 150px; height: 150px; object-fit: cover;">
 							<h4>Mariam Sow</h4>
 							<p><em>Psychologue infantile</em></p>
-							<p>Spécialisée dans le développement chez l’enfant, elle utilise des méthodes ludiques pour
-								accompagner les jeunes patients dans leur expression émotionnelle.</p>
+							<p>Spécialisée dans l'accompagnement des enfants, elle utilise des approches adaptées pour
+								aider les jeunes patients à exprimer leurs émotions et surmonter leurs difficultés.</p>
 							<a href="appointment.html?therapist=mariam"
 								class="btn btn-outline-primary btn-sm mt-2">Prendre RDV</a>
 						</div>
@@ -504,8 +597,8 @@ Philosophy: Clean Code • Innovation • Excellence
 								style="width: 150px; height: 150px; object-fit: cover;">
 							<h4>Komi Adjanohoun</h4>
 							<p><em>Psychothérapeute adolescents</em></p>
-							<p>Komi aide les adolescents à traverser les défis identitaires et sociaux avec empathie. Il
-								propose également des ateliers de gestion du stress scolaire.</p>
+							<p>Expert dans l'accompagnement des adolescents, il les aide à traverser les défis de cette
+								période délicate avec empathie et compréhension.</p>
 							<a href="appointment.html?therapist=komi"
 								class="btn btn-outline-primary btn-sm mt-2">Prendre RDV</a>
 						</div>
@@ -519,8 +612,8 @@ Philosophy: Clean Code • Innovation • Excellence
 								style="width: 150px; height: 150px; object-fit: cover;">
 							<h4>Florence Bello</h4>
 							<p><em>Thérapeute conjugale</em></p>
-							<p>Florence accompagne les couples dans la résolution de conflits, la communication non
-								violente et la reconstruction relationnelle après des crises.</p>
+							<p>Spécialisée dans l'accompagnement des couples, elle propose des outils pour améliorer la
+								communication et résoudre les conflits relationnels.</p>
 							<a href="appointment.html?therapist=florence"
 								class="btn btn-outline-primary btn-sm mt-2">Prendre RDV</a>
 						</div>
@@ -534,101 +627,128 @@ Philosophy: Clean Code • Innovation • Excellence
 
 	</main>
 
-	<footer id="footer" class="footer position-relative bg-light py-5">
-		<div class="container footer-top">
-			<div class="row gy-4 gx-5 align-items-start">
-				<!-- Section principale - Art de Vivre -->
-				<div class="col-lg-4 col-md-6 footer-about pe-lg-5">
-					<div class="d-flex align-items-center mb-3">
-						<i class="bi bi-heart-fill text-primary fs-4 me-2"></i>
-						<span class="sitename fs-4 fw-bold">Art de Vivre</span>
+	<footer id="footer" class="footer bg-light py-5">
+		<div class="container">
+			<div class="row gy-4 gx-lg-5">
+
+				<!-- Colonne Contact -->
+				<div class="col-lg-4 col-md-6">
+					<div class="footer-brand mb-4">
+						<span class="fs-4 fw-bold">Cabinet Art de Vivre</span>
 					</div>
-					<p class="text-muted mb-4">
-						Votre partenaire bien-être au Bénin. Nous vous accompagnons dans votre quête d'une vie épanouie
-						et harmonieuse.
-					</p>
-					<div class="footer-contact">
-						<p class="mb-2"><i class="bi bi-geo-alt-fill me-2 text-secondary"></i>Rue 456, Quartier Haie
-							Vive</p>
-						<p class="mb-3"><i class="bi bi-geo-alt me-2 text-secondary"></i>Cotonou, Bénin</p>
+
+					<div class="footer-contact mb-4">
 						<p class="mb-2">
-							<i class="bi bi-telephone-fill me-2 text-secondary"></i>
-							<strong>Téléphone:</strong> +229 12 34 56 78
+							<i class="bi bi-geo-alt-fill me-2 text-primary"></i>
+							<span>2ème arrondissement GANKPODO C/811/M-ODOULAMI, Cotonou, Bénin
 						</p>
+
+						<p class="mb-2">
+							<i class="bi bi-telephone-fill me-2 text-primary"></i>
+							<a href="tel:+2290197155452" class="text-decoration-none">+229 01 97 15 54 52</a>
+						</p>
+
 						<p class="mb-0">
-							<i class="bi bi-envelope-fill me-2 text-secondary"></i>
-							<strong>Email:</strong> contact@artdevivre-benin.com
+							<i class="bi bi-envelope-fill me-2 text-primary"></i>
+							<a href="mailto:psy@cabinetartdevivre.com"
+								class="text-decoration-none">psy@cabinetartdevivre.com</a>
 						</p>
 					</div>
+
 					<div class="social-links d-flex mt-4">
-						<a href="#" class="me-3" title="Facebook"><i class="bi bi-facebook fs-5"></i></a>
-						<a href="#" class="me-3" title="Instagram"><i class="bi bi-instagram fs-5"></i></a>
+						<a href="https://www.facebook.com/profile.php?id=100094118202012" class="me-3"
+							title="Facebook"><i class="bi bi-facebook fs-5"></i></a>
 						<a href="#" class="me-3" title="LinkedIn"><i class="bi bi-linkedin fs-5"></i></a>
-						<a href="#" title="WhatsApp"><i class="bi bi-whatsapp fs-5"></i></a>
+						<a href="https://wa.me/2290197155452" title="WhatsApp"><i class="bi bi-whatsapp fs-5"></i></a>
 					</div>
 				</div>
 
-				<!-- Navigation rapide -->
-				<div class="col-lg-2 col-md-3 footer-links ps-lg-4">
-					<h4 class="h5 mb-4"><i class="bi bi-compass me-2 text-primary"></i>Navigation</h4>
+				<!-- Colonne Navigation -->
+				<div class="col-lg-2 col-md-6">
+					<h5 class="h5 mb-4">
+						<i class="bi bi-compass me-2 text-primary"></i>Navigation
+					</h5>
 					<ul class="list-unstyled">
-						<li class="mb-2"><a href="index.html" class="text-decoration-none"><i
-									class="bi bi-house me-2"></i>Accueil</a></li>
-						<li class="mb-2"><a href="about.html" class="text-decoration-none"><i
-									class="bi bi-info-circle me-2"></i>Notre approche</a></li>
-						<li class="mb-2"><a href="services.html" class="text-decoration-none"><i
-									class="bi bi-gear me-2"></i>Nos services</a></li>
-						<li><a href="contact.html" class="text-decoration-none"><i
-									class="bi bi-envelope me-2"></i>Contact</a></li>
+						<li class="mb-2">
+							<a href="index.html" class="text-decoration-none">
+								<i class="bi bi-house me-2"></i>Accueil
+							</a>
+						</li>
+						<li class="mb-2">
+							<a href="about.html" class="text-decoration-none">
+								<i class="bi bi-info-circle me-2"></i>Notre approche
+							</a>
+						</li>
+						<li class="mb-2">
+							<a href="services.html" class="text-decoration-none">
+								<i class="bi bi-gear me-2"></i>Services
+							</a>
+						</li>
+						<li>
+							<a href="contact.html" class="text-decoration-none">
+								<i class="bi bi-envelope me-2"></i>Contact
+							</a>
+						</li>
 					</ul>
 				</div>
 
-				<!-- Ressources -->
-				<div class="col-lg-2 col-md-3 footer-links ps-lg-4">
-					<h4 class="h5 mb-4"><i class="bi bi-journal-text me-2 text-primary"></i>Ressources</h4>
+				<!-- Colonne Ressources -->
+				<div class="col-lg-2 col-md-6">
+					<h5 class="h5 mb-4">
+						<i class="bi bi-journal-text me-2 text-primary"></i>Ressources
+					</h5>
 					<ul class="list-unstyled">
-						<li class="mb-2"><a href="blog.html" class="text-decoration-none"><i
-									class="bi bi-pen me-2"></i>Blog & Actualités</a></li>
-						<li class="mb-2"><a href="testimonials.html" class="text-decoration-none"><i
-									class="bi bi-chat-quote me-2"></i>Témoignages</a></li>
-						<li class="mb-2"><a href="faq.html" class="text-decoration-none"><i
-									class="bi bi-question-circle me-2"></i>FAQ</a></li>
+						<li class="mb-2">
+							<a href="blog.html" class="text-decoration-none">
+								<i class="bi bi-pen me-2"></i>Blog
+							</a>
+						</li>
+						<li class="mb-2">
+							<a href="testimonials.html" class="text-decoration-none">
+								<i class="bi bi-chat-quote me-2"></i>Témoignages
+							</a>
+						</li>
+						<li>
+							<a href="faq.html" class="text-decoration-none">
+								<i class="bi bi-question-circle me-2"></i>FAQ
+							</a>
+						</li>
 					</ul>
 				</div>
 
-				<!-- Newsletter et horaires -->
-				<div class="col-lg-4 col-md-6 ps-lg-5 mt-md-0 mt-4">
+				<!-- Colonne Horaires -->
+				<div class="col-lg-4 col-md-6">
 					<div class="mb-4">
-						<h4 class="h5 mb-3"><i class="bi bi-clock me-2 text-primary"></i>Horaires</h4>
-						<ul class="list-unstyled text-muted small">
-							<li class="mb-2"><strong>Lun - Ven:</strong> 8h00 - 18h00</li>
-							<li class="mb-2"><strong>Samedi:</strong> 9h00 - 15h00</li>
-							<li><strong>Dimanche:</strong> Fermé</li>
+						<h5 class="h5 mb-3">
+							<i class="bi bi-clock me-2 text-primary"></i>Horaires
+						</h5>
+						<ul class="list-unstyled">
+							<li class="mb-2">
+								<span class="fw-bold">Lun-Ven:</span> 8h00 - 18h00
+							</li>
+							<li class="mb-2">
+								<span class="fw-bold">Samedi:</span> 9h00 - 15h00
+							</li>
+							<li>
+								<span class="fw-bold">Dimanche:</span> Fermé
+							</li>
 						</ul>
 					</div>
-
 				</div>
 			</div>
-		</div>
 
-		<!-- Copyright -->
-		<div class="container copyright text-center mt-5 pt-4 border-top">
-			<p class="mb-2">
-				© <span>Copyright</span> <strong class="px-1 sitename">Art de Vivre</strong>
-				<span>Tous droits réservés</span> -
-				<span id="current-year">2025</span>
-			</p>
-			<div class="credits small text-muted">
-				<i class="bi bi-code-slash me-1"></i>
-				Développé avec passion par <strong class="px-1">Nexus Partners</strong>
-				<i class="bi bi-geo-alt ms-1 me-1"></i> Cotonou, Bénin
-				<div class="mt-1">
-					<small>
-						<a href="https://github.com/Hop-Syder" target="_blank" rel="noopener noreferrer"
-							class="text-decoration-none text-muted">
-							@hopsyder
-						</a> - Solutions digitales innovantes
-					</small>
+			<!-- Copyright -->
+			<div class="copyright text-center mt-5 pt-4 border-top">
+				<p class="mb-2 small">
+					© <span id="current-year">2025</span>
+					<strong class="px-1">Cabinet Art de Vivre</strong> -
+					Tous droits réservés
+				</p>
+				<div class="credits small text-muted">
+					<i class="bi bi-code-slash me-1"></i>
+					Développé par
+					<a href="https://github.com/Hop-Syder" target="_blank" class="text-decoration-none">Nexus
+						Partners | @HOP-SYDER</a>
 				</div>
 			</div>
 		</div>

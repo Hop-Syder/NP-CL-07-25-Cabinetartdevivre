@@ -32,51 +32,42 @@ Philosophy: Clean Code • Innovation • Excellence
     <meta name="googlebot" content="index, follow">
 
     <!-- Données structurées pour les moteurs de recherche -->
+    <!-- Structured Data -->
     <script type="application/ld+json">
-	{
-		"@context": "https://schema.org",
-		"@type": "MedicalBusiness",
-		"name": "Art de Vivre - Cabinet de Psychologie",
-		"description": "Cabinet de psychologie spécialisé dans l'accompagnement des enfants, adolescents et adultes à Cotonou, Bénin",
-		"url": "https://artdevivre-benin.com",
-		"logo": "https://artdevivre-benin.com/assets/img/logo.png",
-		"image": "https://artdevivre-benin.com/assets/img/cabinet-cotonou.jpg",
-		"telephone": "+229 12 34 56 78",
-		"email": "contact@artdevivre-benin.com",
-		"address": {
-			"@type": "PostalAddress",
-			"streetAddress": "Rue 456, Quartier Haie Vive",
-			"addressLocality": "Cotonou",
-			"addressCountry": "BJ",
-			"postalCode": ""
-		},
-		"geo": {
-			"@type": "GeoCoordinates",
-			"latitude": "6.3654",
-			"longitude": "2.4183"
-		},
-		"openingHours": [
-			"Mo-Fr 08:00-19:00",
-			"Sa 09:00-15:00"
-		],
-		"priceRange": "$$",
-		"medicalSpecialty": [
-			"Psychologie clinique",
-			"Psychothérapie",
-			"Thérapie familiale",
-			"Psychologie de l'enfant"
-		],
-		"areaServed": {
-			"@type": "City",
-			"name": "Cotonou, Bénin"
-		},
-		"sameAs": [
-			"https://facebook.com/artdevivrebenin",
-			"https://instagram.com/artdevivrebenin",
-			"https://linkedin.com/company/artdevivrebenin"
-		]
-	}
-	</script>
+        {
+            "@context": "https://schema.org",
+            "@type": "CabinetdePsy",
+            "name": "ART DE VIVRE - Cabinet de Psychologie",
+            "legalName": "Cabinet ART DE VIVRE",
+            "founder": "Stéphanie GBEHOUNHESSI",
+            "description": "Cabinet de psychologie spécialisé dans les thérapies individuelles, familiales, de couple et interventions en entreprise ou en milieu éducatif.",
+            "url": "https://www.cabinetartdevivre.com",
+            "email": "psy@cabinetartdevivre.com",
+            "telephone": "+2290197155452",
+            "address": {
+                "@type": "PostalAddress",
+                "streetAddress": "C/370 Lom-Nava",
+                "addressLocality": "Cotonou",
+                "addressRegion": "Littoral",
+                "postalCode": "",
+                "addressCountry": "BJ"
+            },
+            "openingHours": [
+                "Mo-Fr 09:00-18:00",
+                "Sa ByAppointmentOnly"
+            ],
+            "geo": {
+                "@type": "GeoCoordinates",
+                "latitude": "6.3654",
+                "longitude": "2.4183"
+            },
+            "sameAs": [
+                "https://www.facebook.com/profile.php?id=100094118202012",
+                "https://www.linkedin.com/company/cabinet-art-de-vivre"
+            ],
+            "image": "assets/img/logo2.png", "taxID": "0202112864719", "identifier": "RB/COT/22 A80522"
+        }
+        </script>
 
     <!-- Open Graph / Facebook -->
     <meta property="og:type" content="website">
@@ -447,13 +438,14 @@ Philosophy: Clean Code • Innovation • Excellence
             <div class="row gy-4">
                 <div class="col-lg-4 col-md-6 footer-about">
                     <a href="index.html" class="logo d-flex align-items-center">
-                        <span class="sitename">MediTrust</span>
+                        <span class="sitename">Cabinet Art de Vivre</span>
                     </a>
                     <div class="footer-contact pt-3">
-                        <p>A108 Adam Street</p>
-                        <p>New York, NY 535022</p>
-                        <p class="mt-3"><strong>Phone:</strong> <span>+1 5589 55488 55</span></p>
-                        <p><strong>Email:</strong> <span>info@example.com</span></p>
+                        <p>C/370 Lom-Nava</p>
+                        <p>Cotonou, Bénin</p>
+                        <p class="mt-3"><strong>Téléphone:</strong> <span>+229 01 97 15 54 52</span></p>
+                        <p><strong>Email:</strong> <span>psy@cabinetartdevivre.com</span></p>
+                        <p class="mt-2 small text-muted">N° RCCM: RB/COT/22 A80522<br>IFU: 0202112864719</p>
                     </div>
                     <div class="social-links d-flex mt-4">
                         <a href=""><i class="bi bi-twitter-x"></i></a>
@@ -498,8 +490,8 @@ Philosophy: Clean Code • Innovation • Excellence
         </div>
 
         <div class="container copyright text-center mt-4">
-            <p>© <span>Copyright</span> <strong class="px-1 sitename">MediTrust</strong> <span>All Rights
-                    Reserved</span></p>
+            <p>© <span>Copyright</span> <strong class="px-1 sitename">Cabinet Art de Vivre</strong> <span>Tous droits
+                    réservés</span></p>
         </div>
 
     </footer>

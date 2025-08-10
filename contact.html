@@ -45,7 +45,7 @@ Stack: ML/DL • React/Node • Flutter • DevOps
 		"telephone": "+2290197155452",
 		"address": {
 			"@type": "PostalAddress",
-			"streetAddress": "GANKPODO C/811/M-ODOULAMI",
+			"streetAddress": "C/370 Lom-Nava",
 			"addressLocality": "Cotonou",
 			"addressRegion": "Littoral",
 			"postalCode": "",
@@ -64,7 +64,7 @@ Stack: ML/DL • React/Node • Flutter • DevOps
 			"https://www.facebook.com/profile.php?id=100094118202012",
 			"https://www.linkedin.com/company/cabinet-art-de-vivre"
 		],
-		"image": "assets/img/logo.png"
+		"image": "assets/img/logo.png", "taxID": "0202112864719", "identifier": "RB/COT/22 A80522"
 	}
 	</script>
 
@@ -146,8 +146,7 @@ Stack: ML/DL • React/Node • Flutter • DevOps
 
     <!-- Performance et sécurité -->
     <meta http-equiv="Content-Security-Policy"
-        content="default-src 'self'; img-src 'self' data: https:; script-src 'self' 'unsafe-inline' https://fonts.googleapis.com; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com https://fonts.gstatic.com;">
-    <meta name="referrer" content="strict-origin-when-cross-origin">
+        content="default-src 'self' https://www.google.com https://maps.google.com; img-src 'self' data: https:; script-src 'self' 'unsafe-inline' https://fonts.googleapis.com; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com https://fonts.gstatic.com;">
 
     <!-- Mobile et PWA -->
     <meta name="mobile-web-app-capable" content="yes">
@@ -275,7 +274,7 @@ Stack: ML/DL • React/Node • Flutter • DevOps
                                 <div class="icon-container"><i class="bi bi-pin-map-fill"></i></div>
                                 <div class="card-content">
                                     <h4>Adresse</h4>
-                                    <p>C/811/M-ODOULAMI, 2e arrondissement, Cotonou – Bénin</p>
+                                    <p>C/370 Lom-Nava, Cotonou – Bénin</p>
                                 </div>
                             </div>
 
@@ -317,9 +316,12 @@ Stack: ML/DL • React/Node • Flutter • DevOps
 
                     <!-- Formulaire + carte -->
                     <div class="contact-form-panel">
-                        <div class="map-container mb-3">
-                            <iframe src="https://www.google.com/maps?q=Cotonou,+Benin&output=embed" width="100%"
-                                height="100%" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                        <div class="map-container mb-3" style="width:100%;height:350px;min-height:250px;">
+                            <iframe
+                                src="https://www.google.com/maps?q=C%2F370%20Lom-Nava%2C%20Cotonou%2C%20B%C3%A9nin&hl=fr&z=16&output=embed"
+                                width="100%" height="100%" style="border:0;min-height:250px;" allowfullscreen=""
+                                loading="lazy" referrerpolicy="no-referrer-when-downgrade"
+                                title="Localisation Cabinet Art de Vivre à Cotonou"></iframe>
                         </div>
 
                         <div class="form-container">
@@ -385,7 +387,7 @@ Stack: ML/DL • React/Node • Flutter • DevOps
                     <div class="footer-contact mb-4">
                         <p class="mb-2">
                             <i class="bi bi-geo-alt-fill me-2 text-primary"></i>
-                            <span>2ème arrondissement GANKPODO C/811/M-ODOULAMI, Cotonou, Bénin
+                            <span>C/370 Lom-Nava, Cotonou, Bénin
                         </p>
 
                         <p class="mb-2">
@@ -398,6 +400,7 @@ Stack: ML/DL • React/Node • Flutter • DevOps
                             <a href="mailto:psy@cabinetartdevivre.com"
                                 class="text-decoration-none">psy@cabinetartdevivre.com</a>
                         </p>
+                        <p class="mt-2 small text-muted">N° RCCM: RB/COT/22 A80522<br>IFU: 0202112864719</p>
                     </div>
 
                     <div class="social-links d-flex mt-4">

@@ -64,7 +64,7 @@ Stack: ML/DL • React/Node • Flutter • DevOps
 			"https://www.facebook.com/profile.php?id=100094118202012",
 			"https://www.linkedin.com/company/cabinet-art-de-vivre"
 		],
-		"image": "assets/img/logo2.png", "taxID": "0202112864719", "identifier": "RB/COT/22 A80522"
+		"image": "assets/img/logo.png", "taxID": "0202112864719", "identifier": "RB/COT/22 A80522"
 	}
 	</script>
 
@@ -146,8 +146,7 @@ Stack: ML/DL • React/Node • Flutter • DevOps
 
     <!-- Performance et sécurité -->
     <meta http-equiv="Content-Security-Policy"
-        content="default-src 'self'; img-src 'self' data: https:; script-src 'self' 'unsafe-inline' https://fonts.googleapis.com; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com https://fonts.gstatic.com;">
-    <meta name="referrer" content="strict-origin-when-cross-origin">
+        content="default-src 'self' https://www.google.com https://maps.google.com; img-src 'self' data: https:; script-src 'self' 'unsafe-inline' https://fonts.googleapis.com; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com https://fonts.gstatic.com;">
 
     <!-- Mobile et PWA -->
     <meta name="mobile-web-app-capable" content="yes">
@@ -162,7 +161,7 @@ Stack: ML/DL • React/Node • Flutter • DevOps
 
     <!-- Analytics et monitoring (à remplacer par vos vrais codes) -->
     <!-- Google Analytics 4 -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=GTM-NN2KF45P"></script>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=GA_MEASUREMENT_ID"></script>
     <script>
         // @hopsyder - Analytics optimisé pour la performance
         window.dataLayer = window.dataLayer || [];
@@ -225,224 +224,386 @@ Stack: ML/DL • React/Node • Flutter • DevOps
 
             <nav id="navmenu" class="navmenu">
                 <ul>
-                    <li><a href="index.html" class="active">Accueil</a></li>
+                    <li><a href="index.html">Accueil</a></li>
                     <li><a href="about.html">Notre Approche</a></li>
                     <li><a href="services.html">Nos Services</a></li>
                     <li><a href="blog.html"> Nos Articles</a></li>
-                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="contact.html" class="active">Contact</a></li>
                 </ul>
                 <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
             </nav>
 
-            <a class="btn-getstarted" href="contact.html">Prendre RDV</a>
+            <a class="btn-getstarted" href="appointment.html">Prendre RDV</a>
 
         </div>
-    </header <main class="main">
+    </header>
 
-    <!-- Page Title -->
-    <div class="page-title">
-        <div class="breadcrumbs">
-            <nav aria-label="breadcrumb">
-                <ol class="breadcrumb">
-                    <li class="breadcrumb-item"><a href="index.html"><i class="bi bi-house"></i> Home</a></li>
-                    <li class="breadcrumb-item active">Appointment</li>
-                </ol>
-            </nav>
-        </div>
-        <div class="title-wrapper">
-            <h1>Book an Appointment</h1>
-            <p>Schedule your visit with our specialists in just a few clicks</p>
-        </div>
-    </div>
-
-    <!-- Appointment Section -->
-    <section id="appointment" class="appointment section">
-        <div class="container" data-aos="fade-up">
-
-            <div class="row gy-4">
-
-                <!-- Appointment Benefits -->
-                <div class="col-lg-5">
-                    <div class="appointment-benefits">
-                        <h3>Why book with us?</h3>
-
-                        <div class="benefit-item">
-                            <div class="benefit-icon">
-                                <i class="bi bi-clock-history"></i>
-                            </div>
-                            <div class="benefit-content">
-                                <h5>Flexible Scheduling</h5>
-                                <p>Choose from morning, afternoon or evening slots</p>
-                            </div>
-                        </div>
-
-                        <div class="benefit-item">
-                            <div class="benefit-icon">
-                                <i class="bi bi-calendar2-check"></i>
-                            </div>
-                            <div class="benefit-content">
-                                <h5>Instant Confirmation</h5>
-                                <p>Receive immediate booking confirmation</p>
-                            </div>
-                        </div>
-
-                        <div class="benefit-item">
-                            <div class="benefit-icon">
-                                <i class="bi bi-bell"></i>
-                            </div>
-                            <div class="benefit-content">
-                                <h5>Reminder Alerts</h5>
-                                <p>Get SMS/email reminders before your appointment</p>
-                            </div>
-                        </div>
-
-                        <div class="emergency-contact mt-4">
-                            <div class="emergency-card">
-                                <i class="bi bi-telephone"></i>
-                                <div>
-                                    <h6>Emergency?</h6>
-                                    <p>Call: <strong>+1 (555) 123-4567</strong></p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Appointment Form -->
-                <div class="col-lg-7">
-                    <div class="appointment-form-wrapper">
-                        <form id="appointmentForm" class="php-email-form">
-
-                            <div class="form-header">
-                                <h4><i class="bi bi-pencil-square"></i> Patient Information</h4>
-                            </div>
-
-                            <div class="row gy-3">
-                                <div class="col-md-6">
-                                    <input type="text" name="name" class="form-control" placeholder="Full Name"
-                                        required>
-                                </div>
-                                <div class="col-md-6">
-                                    <input type="email" name="email" class="form-control" placeholder="Email" required>
-                                </div>
-                                <div class="col-md-6">
-                                    <input type="tel" name="phone" class="form-control" placeholder="Phone" required>
-                                </div>
-                                <div class="col-md-6">
-                                    <input type="date" name="dob" class="form-control" placeholder="Date of Birth">
-                                </div>
-                            </div>
-
-                            <div class="form-header mt-4">
-                                <h4><i class="bi bi-calendar-event"></i> Appointment Details</h4>
-                            </div>
-
-                            <div class="row gy-3">
-                                <div class="col-md-6">
-                                    <select name="department" class="form-select" required>
-                                        <option value="">Select Department</option>
-                                        <option value="cardiology">Cardiology</option>
-                                        <option value="neurology">Neurology</option>
-                                        <option value="orthopedics">Orthopedics</option>
-                                    </select>
-                                </div>
-                                <div class="col-md-6">
-                                    <select name="doctor" class="form-select" required>
-                                        <option value="">Select Doctor</option>
-                                        <option value="dr-smith">Dr. Smith (Cardiology)</option>
-                                        <option value="dr-jones">Dr. Jones (Neurology)</option>
-                                    </select>
-                                </div>
-                                <div class="col-md-6">
-                                    <input type="date" name="date" class="form-control" min="<?= date('Y-m-d') ?>"
-                                        required>
-                                </div>
-                                <div class="col-md-6">
-                                    <select name="time" class="form-select" required>
-                                        <option value="">Select Time</option>
-                                        <option value="09:00">09:00 AM</option>
-                                        <option value="10:00">10:00 AM</option>
-                                    </select>
-                                </div>
-                                <div class="col-12">
-                                    <textarea name="message" class="form-control" rows="3"
-                                        placeholder="Reason for visit"></textarea>
-                                </div>
-                            </div>
-
-                            <div class="text-center mt-4">
-                                <button type="submit" class="btn-book">
-                                    <i class="bi bi-calendar-check"></i> Book Appointment
-                                </button>
-                            </div>
-                        </form>
-                    </div>
-                </div>
-
+    <main id="main">
+        <!-- Page Title -->
+        <div class="page-title">
+            <div class="breadcrumbs">
+                <nav aria-label="breadcrumb">
+                    <ol class="breadcrumb">
+                        <li class="breadcrumb-item"><a href="index.html"><i class="bi bi-house"></i> Accueil</a></li>
+                        <li class="breadcrumb-item active">Prendre rendez-vous</li>
+                    </ol>
+                </nav>
             </div>
+            <div class="title-wrapper">
+                <h1>Réservez votre séance</h1>
+                <p>Choisissez votre psychologue et partagez vos besoins en toute confidentialité</p>
+            </div>
+        </div>
 
-            <!-- Booking Steps -->
-            <div class="booking-steps mt-5">
-                <div class="row text-center">
-                    <div class="col-md-3 step">
-                        <div class="step-number">1</div>
-                        <h5>Fill Form</h5>
-                        <p>Provide your details</p>
+        <!-- Appointment Section -->
+        <section id="appointment" class="appointment section">
+            <div class="container" data-aos="fade-up">
+
+                <div class="row gy-4">
+                    <!-- Colonne gauche : avantages -->
+                    <div class="col-lg-5">
+                        <div class="appointment-benefits">
+                            <h3>Pourquoi réserver chez nous ?</h3>
+                            <div class="benefit-item">
+                                <div class="benefit-icon"><i class="bi bi-shield-lock"></i></div>
+                                <div class="benefit-content">
+                                    <h5>Confidentialité garantie</h5>
+                                    <p>Votre histoire reste entre vous et votre thérapeute</p>
+                                </div>
+                            </div>
+                            <div class="benefit-item">
+                                <div class="benefit-icon"><i class="bi bi-person-hearts"></i></div>
+                                <div class="benefit-content">
+                                    <h5>Choisissez votre psy</h5>
+                                    <p>Trouvez la personne avec qui vous vous sentez le plus à l’aise</p>
+                                </div>
+                            </div>
+                            <div class="benefit-item">
+                                <div class="benefit-icon"><i class="bi bi-calendar2-check"></i></div>
+                                <div class="benefit-content">
+                                    <h5>Horaires flexibles</h5>
+                                    <p>Matin, après-midi ou soir : à vous de décider</p>
+                                </div>
+                            </div>
+                        </div>
                     </div>
-                    <div class="col-md-3 step">
-                        <div class="step-number">2</div>
-                        <h5>Select Slot</h5>
-                        <p>Choose date & time</p>
-                    </div>
-                    <div class="col-md-3 step">
-                        <div class="step-number">3</div>
-                        <h5>Confirmation</h5>
-                        <p>Get instant booking details</p>
-                    </div>
-                    <div class="col-md-3 step">
-                        <div class="step-number">4</div>
-                        <h5>Visit Us</h5>
-                        <p>Meet your doctor</p>
+
+                    <!-- Colonne droite : formulaire -->
+                    <div class="col-lg-7">
+                        <div class="appointment-form-wrapper">
+                            <form id="appointmentForm">
+                                <div class="form-header">
+                                    <h4><i class="bi bi-pencil-square"></i> Informations patient</h4>
+                                </div>
+
+                                <div class="row gy-3">
+                                    <div class="col-md-6">
+                                        <input type="text" name="name" class="form-control"
+                                            placeholder="Votre nom complet" required>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <input type="email" name="email" class="form-control" placeholder="Votre email"
+                                            required>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <input type="tel" name="phone" class="form-control"
+                                            placeholder="Votre numéro de téléphone" required>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <input type="date" name="dob" class="form-control"
+                                            placeholder="Date de naissance">
+                                    </div>
+                                </div>
+
+                                <div class="form-header mt-4">
+                                    <h4><i class="bi bi-person-badge"></i> Choisissez votre psychologue</h4>
+                                </div>
+
+                                <div class="row gy-3">
+                                    <div class="col-12">
+                                        <select name="psychologist" class="form-select" required>
+                                            <option value="">Sélectionner un psychologue</option>
+                                            <option value="stephanie">Stéphanie GBEHOUNHESSI – Psychologue clinicienne
+                                            </option>
+                                            <option value="rachel">Rachel YABI – Psychologue clinicienne</option>
+                                            <option value="irenee">SOSSA IRÉNÉE TCHAOU – Psychologue clinicien</option>
+                                            <option value="armand">Armand DJOSSOU – Psychologue clinicien</option>
+                                            <option value="fatoumata">Fatoumata SISSOKO – Psychologue clinicienne
+                                            </option>
+                                        </select>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <input type="date" name="date" class="form-control" required>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <select name="time" class="form-select" required>
+                                            <option value="">Sélectionner l’heure</option>
+                                            <option value="09:00">09h00</option>
+                                            <option value="10:30">10h30</option>
+                                            <option value="14:00">14h00</option>
+                                            <option value="16:00">16h00</option>
+                                            <option value="18:00">18h00</option>
+                                        </select>
+                                    </div>
+
+                                    <div class="form-header mt-4">
+                                        <h4><i class="bi bi-chat-square-heart"></i> Parlez-nous de vous</h4>
+                                        <p class="small text-muted">
+                                            Ces questions sont là pour vous aider à exprimer ce que vous ressentez.
+                                            Répondez librement, il n’y a pas de bonne ou mauvaise réponse.
+                                        </p>
+                                    </div>
+
+                                    <div class="row gy-3">
+                                        <div class="col-12">
+                                            <label class="form-label">Qu’est-ce qui vous a motivé à prendre rendez-vous
+                                                aujourd’hui ?</label>
+                                            <textarea name="motivation" class="form-control" rows="3"
+                                                placeholder="Exemple : je me sens stressé au travail, j’ai du mal à dormir, je traverse une séparation…"></textarea>
+                                        </div>
+
+                                        <div class="col-12">
+                                            <label class="form-label">Quelles émotions ressentez-vous le plus souvent en
+                                                ce
+                                                moment ?</label>
+                                            <div class="form-check">
+                                                <input class="form-check-input" type="checkbox" name="emotions"
+                                                    value="Anxiété"> Anxiété / Nervosité
+                                            </div>
+                                            <div class="form-check">
+                                                <input class="form-check-input" type="checkbox" name="emotions"
+                                                    value="Tristesse"> Tristesse
+                                            </div>
+                                            <div class="form-check">
+                                                <input class="form-check-input" type="checkbox" name="emotions"
+                                                    value="Colère"> Colère / Irritation
+                                            </div>
+                                            <div class="form-check">
+                                                <input class="form-check-input" type="checkbox" name="emotions"
+                                                    value="Fatigue"> Fatigue / Épuisement
+                                            </div>
+                                            <div class="form-check">
+                                                <input class="form-check-input" type="checkbox" name="emotions"
+                                                    value="Autre"> Autre
+                                            </div>
+                                        </div>
+
+                                        <div class="col-12">
+                                            <label class="form-label">Depuis combien de temps ressentez-vous cela
+                                                ?</label>
+                                            <select name="duree" class="form-select">
+                                                <option value="">Sélectionner</option>
+                                                <option value="quelques-jours">Quelques jours</option>
+                                                <option value="quelques-semaines">Quelques semaines</option>
+                                                <option value="plusieurs-mois">Plusieurs mois</option>
+                                                <option value="plus-dun-an">Plus d’un an</option>
+                                            </select>
+                                        </div>
+
+                                        <div class="col-12">
+                                            <label class="form-label">Y a-t-il eu un événement déclencheur ?</label>
+                                            <textarea name="declencheur" class="form-control" rows="2"
+                                                placeholder="Exemple : un changement de travail, une rupture, un conflit familial, un deuil…"></textarea>
+                                        </div>
+
+                                        <div class="col-12">
+                                            <label class="form-label">Que souhaiteriez-vous obtenir grâce à cet
+                                                accompagnement ?</label>
+                                            <textarea name="objectif" class="form-control" rows="2"
+                                                placeholder="Exemple : retrouver le sommeil, gérer mon anxiété, mieux communiquer avec mes proches…"></textarea>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-12">
+                                        <textarea name="message" class="form-control" rows="4"
+                                            placeholder="Qu’aimeriez-vous partager avec votre psy ? (Vos attentes, vos émotions, vos difficultés…)"
+                                            required></textarea>
+                                    </div>
+                                </div>
+
+                                <div class="text-center mt-4">
+                                    <button type="submit" class="btn-book"><i class="bi bi-calendar-check"></i>
+                                        Réserver</button>
+                                </div>
+                            </form>
+                        </div>
                     </div>
                 </div>
             </div>
-
-        </div>
-    </section>
+        </section>
 
     </main>
+
 
     <footer id="footer" class="footer bg-light py-5">
         <div class="container">
             <div class="row gy-4 gx-lg-5">
+
+                <!-- Colonne Contact -->
                 <div class="col-lg-4 col-md-6">
                     <div class="footer-brand mb-4">
                         <span class="fs-4 fw-bold">Cabinet Art de Vivre</span>
                     </div>
+
                     <div class="footer-contact mb-4">
-                        <p class="mb-2"><i class="bi bi-geo-alt-fill me-2 text-primary"></i><span>Akpakpa, C/370,
-                                Cotonou, Bénin</span> <a
-                                href="https://maps.google.com/?q=9FG2%2BWV%20Cotonou%2C%20B%C3%A9nin" target="_blank"
-                                rel="noopener" class="ms-2 small">Voir sur Google Maps</a></p>
-                        <p class="mb-2"><i class="bi bi-telephone-fill me-2 text-primary"></i><a
-                                href="tel:+2290197155452" class="text-decoration-none">+229 01 97 15 54 52</a></p>
-                        <p class="mb-0"><i class="bi bi-envelope-fill me-2 text-primary"></i><a
-                                href="mailto:psy@cabinetartdevivre.com"
-                                class="text-decoration-none">psy@cabinetartdevivre.com</a></p>
+                        <p class="mb-2">
+                            <i class="bi bi-geo-alt-fill me-2 text-primary"></i>
+                            <span>Akpakpa, C/370, Cotonou, Bénin <a
+                                    href="https://maps.google.com/?q=9FG2%2BWV%20Cotonou%2C%20B%C3%A9nin"
+                                    target="_blank" rel="noopener" class="ms-2 small">Voir sur Google Maps</a>
+                        </p>
+
+                        <p class="mb-2">
+                            <i class="bi bi-telephone-fill me-2 text-primary"></i>
+                            <a href="tel:+2290197155452" class="text-decoration-none">+229 01 97 15 54 52</a>
+                        </p>
+
+                        <p class="mb-0">
+                            <i class="bi bi-envelope-fill me-2 text-primary"></i>
+                            <a href="mailto:psy@cabinetartdevivre.com"
+                                class="text-decoration-none">psy@cabinetartdevivre.com</a>
+                        </p>
                         <p class="mt-2 small text-muted">N° RCCM: RB/COT/22 A80522<br>IFU: 0202112864719</p>
                     </div>
+
+                    <div class="social-links d-flex mt-4">
+                        <a href="https://www.facebook.com/profile.php?id=100094118202012" class="me-3"
+                            title="Facebook"><i class="bi bi-facebook fs-5"></i></a>
+                        <a href="#" class="me-3" title="LinkedIn"><i class="bi bi-linkedin fs-5"></i></a>
+                        <a href="https://wa.me/2290197155452" title="WhatsApp"><i class="bi bi-whatsapp fs-5"></i></a>
+                    </div>
+                </div>
+
+                <!-- Colonne Navigation -->
+                <div class="col-lg-2 col-md-6">
+                    <h5 class="h5 mb-4">
+                        <i class="bi bi-compass me-2 text-primary"></i>Navigation
+                    </h5>
+                    <ul class="list-unstyled">
+                        <li class="mb-2">
+                            <a href="index.html" class="text-decoration-none">
+                                <i class="bi bi-house me-2"></i>Accueil
+                            </a>
+                        </li>
+                        <li class="mb-2">
+                            <a href="about.html" class="text-decoration-none">
+                                <i class="bi bi-info-circle me-2"></i>Notre approche
+                            </a>
+                        </li>
+                        <li class="mb-2">
+                            <a href="services.html" class="text-decoration-none">
+                                <i class="bi bi-gear me-2"></i>Services
+                            </a>
+                        </li>
+                        <li>
+                            <a href="contact.html" class="text-decoration-none">
+                                <i class="bi bi-envelope me-2"></i>Contact
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Colonne Ressources -->
+                <div class="col-lg-2 col-md-6">
+                    <h5 class="h5 mb-4">
+                        <i class="bi bi-journal-text me-2 text-primary"></i>Ressources
+                    </h5>
+                    <ul class="list-unstyled">
+                        <li class="mb-2">
+                            <a href="blog.html" class="text-decoration-none">
+                                <i class="bi bi-pen me-2"></i>Blog
+                            </a>
+                        </li>
+                        <li class="mb-2">
+                            <a href="testimonials.html" class="text-decoration-none">
+                                <i class="bi bi-chat-quote me-2"></i>Témoignages
+                            </a>
+                        </li>
+                        <li>
+                            <a href="faq.html" class="text-decoration-none">
+                                <i class="bi bi-question-circle me-2"></i>FAQ
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Colonne Horaires -->
+                <div class="col-lg-4 col-md-6">
+                    <div class="mb-4">
+                        <h5 class="h5 mb-3">
+                            <i class="bi bi-clock me-2 text-primary"></i>Horaires
+                        </h5>
+                        <ul class="list-unstyled">
+                            <li class="mb-2">
+                                <span class="fw-bold">Lun-Ven:</span> 8h00 - 18h00
+                            </li>
+                            <li class="mb-2">
+                                <span class="fw-bold">Samedi:</span> 9h00 - 15h00
+                            </li>
+                            <li>
+                                <span class="fw-bold">Dimanche:</span> Fermé
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Copyright -->
+            <div class="copyright text-center mt-5 pt-4 border-top">
+                <p class="mb-2 small">
+                    © <span id="current-year">2025</span>
+                    <strong class="px-1">Cabinet Art de Vivre</strong> -
+                    Tous droits réservés
+                </p>
+                <div class="credits small text-muted">
+                    <i class="bi bi-code-slash me-1"></i>
+                    Développé par
+                    <a href="https://github.com/Hop-Syder" target="_blank" class="text-decoration-none">Nexus
+                        Partners | @HOP-SYDER</a>
                 </div>
             </div>
         </div>
     </footer>
 
+    <script>
+        (function () {
+            emailjs.init("VOTRE_USER_ID"); // Remplacez par votre User ID EmailJS
+        })();
+        document.getElementById("appointmentForm").addEventListener("submit", function (event) {
+            event.preventDefault();
+            emailjs.sendForm("VOTRE_SERVICE_ID", "VOTRE_TEMPLATE_ID", this)
+                .then(function () {
+                    alert("Votre rendez-vous a été enregistré. Nous vous contacterons bientôt.");
+                }, function (error) {
+                    alert("Erreur : " + JSON.stringify(error));
+                });
+        });
+    </script>
 
-    <!-- Scripts -->
-    <script src="assets/js/main.js"></script>
     <script>
         // Date picker min date setting
         document.querySelector('input[name="date"]').min = new Date().toISOString().split('T')[0];
     </script>
+
+    <!-- Scroll Top -->
+    <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i
+            class="bi bi-arrow-up-short"></i></a>
+
+    <!-- Preloader -->
+    <div id="preloader"></div>
+
+    <!-- Vendor JS Files -->
+    <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/vendor/php-email-form/validate.js"></script>
+    <script src="assets/vendor/aos/aos.js"></script>
+    <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
+    <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+    <script src="assets/vendor/imagesloaded/imagesloaded.pkgd.min.js"></script>
+    <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+    <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+
+    <!-- Main JS File -->
+    <script src="assets/js/main.js"></script>
 
 </body>
 

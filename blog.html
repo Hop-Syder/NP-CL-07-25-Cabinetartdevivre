@@ -225,16 +225,16 @@ Stack: ML/DL • React/Node • Flutter • DevOps
 
             <nav id="navmenu" class="navmenu">
                 <ul>
-                    <li><a href="index.html" class="active">Accueil</a></li>
+                    <li><a href="index.html">Accueil</a></li>
                     <li><a href="about.html">Notre Approche</a></li>
                     <li><a href="services.html">Nos Services</a></li>
-                    <li><a href="blog.html"> Nos Articles</a></li>
+                    <li><a href="blog.html" class="active"> Nos Articles</a></li>
                     <li><a href="contact.html">Contact</a></li>
                 </ul>
                 <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
             </nav>
 
-            <a class="btn-getstarted" href="contact.html">Prendre RDV</a>
+            <a class="btn-getstarted" href="404.html">Prendre RDV</a>
 
         </div>
     </header>
@@ -399,70 +399,134 @@ Stack: ML/DL • React/Node • Flutter • DevOps
 
     </main>
 
-    <footer id="footer" class="footer position-relative light-background">
+    <footer id="footer" class="footer bg-light py-5">
+        <div class="container">
+            <div class="row gy-4 gx-lg-5">
 
-        <div class="container footer-top">
-            <div class="row gy-4">
-                <div class="col-lg-4 col-md-6 footer-about">
-                    <a href="index.html" class="logo d-flex align-items-center">
-                        <span class="sitename">Cabinet Art de Vivre</span>
-                    </a>
-                    <div class="footer-contact pt-3">
-                        <p>Akpakpa, C/370</p>
-                        <p>Cotonou, Bénin</p>
-                        <p class="mt-3"><strong>Téléphone:</strong> <span>+229 01 97 15 54 52</span></p>
-                        <p><strong>Email:</strong> <span>psy@cabinetartdevivre.com</span> <a
-                                href="https://maps.google.com/?q=9FG2%2BWV%20Cotonou%2C%20B%C3%A9nin" target="_blank"
-                                rel="noopener" class="ms-2 small">Voir sur Google Maps</a></p>
+                <!-- Colonne Contact -->
+                <div class="col-lg-4 col-md-6">
+                    <div class="footer-brand mb-4">
+                        <span class="fs-4 fw-bold">Cabinet Art de Vivre</span>
+                    </div>
+
+                    <div class="footer-contact mb-4">
+                        <p class="mb-2">
+                            <i class="bi bi-geo-alt-fill me-2 text-primary"></i>
+                            <span>Akpakpa, C/370, Cotonou, Bénin <a
+                                    href="https://maps.google.com/?q=9FG2%2BWV%20Cotonou%2C%20B%C3%A9nin"
+                                    target="_blank" rel="noopener" class="ms-2 small">Voir sur Google Maps</a>
+                        </p>
+
+                        <p class="mb-2">
+                            <i class="bi bi-telephone-fill me-2 text-primary"></i>
+                            <a href="tel:+2290197155452" class="text-decoration-none">+229 01 97 15 54 52</a>
+                        </p>
+
+                        <p class="mb-0">
+                            <i class="bi bi-envelope-fill me-2 text-primary"></i>
+                            <a href="mailto:psy@cabinetartdevivre.com"
+                                class="text-decoration-none">psy@cabinetartdevivre.com</a>
+                        </p>
                         <p class="mt-2 small text-muted">N° RCCM: RB/COT/22 A80522<br>IFU: 0202112864719</p>
                     </div>
+
                     <div class="social-links d-flex mt-4">
-                        <a href=""><i class="bi bi-twitter-x"></i></a>
-                        <a href=""><i class="bi bi-facebook"></i></a>
-                        <a href=""><i class="bi bi-instagram"></i></a>
-                        <a href=""><i class="bi bi-linkedin"></i></a>
+                        <a href="https://www.facebook.com/profile.php?id=100094118202012" class="me-3"
+                            title="Facebook"><i class="bi bi-facebook fs-5"></i></a>
+                        <a href="#" class="me-3" title="LinkedIn"><i class="bi bi-linkedin fs-5"></i></a>
+                        <a href="https://wa.me/2290197155452" title="WhatsApp"><i class="bi bi-whatsapp fs-5"></i></a>
                     </div>
                 </div>
 
-                <div class="col-lg-2 col-md-3 footer-links">
-                    <h4>Useful Links</h4>
-                    <ul>
-                        <li><a href="index.html">Home</a></li>
-                        <li><a href="about.html">About</a></li>
-                        <li><a href="services.html">Services</a></li>
-                        <li><a href="terms.html">Terms</a></li>
-                        <li><a href="privacy.html">Privacy</a></li>
+                <!-- Colonne Navigation -->
+                <div class="col-lg-2 col-md-6">
+                    <h5 class="h5 mb-4">
+                        <i class="bi bi-compass me-2 text-primary"></i>Navigation
+                    </h5>
+                    <ul class="list-unstyled">
+                        <li class="mb-2">
+                            <a href="index.html" class="text-decoration-none">
+                                <i class="bi bi-house me-2"></i>Accueil
+                            </a>
+                        </li>
+                        <li class="mb-2">
+                            <a href="about.html" class="text-decoration-none">
+                                <i class="bi bi-info-circle me-2"></i>Notre approche
+                            </a>
+                        </li>
+                        <li class="mb-2">
+                            <a href="services.html" class="text-decoration-none">
+                                <i class="bi bi-gear me-2"></i>Services
+                            </a>
+                        </li>
+                        <li>
+                            <a href="contact.html" class="text-decoration-none">
+                                <i class="bi bi-envelope me-2"></i>Contact
+                            </a>
+                        </li>
                     </ul>
                 </div>
 
-                <div class="col-lg-2 col-md-3 footer-links">
-                    <h4>Our Services</h4>
-                    <ul>
-                        <li><a href="departments.html">Cardiology</a></li>
-                        <li><a href="departments.html">Neurology</a></li>
-                        <li><a href="departments.html">Pediatrics</a></li>
-                        <li><a href="departments.html">Dermatology</a></li>
-                        <li><a href="departments.html">Orthopedics</a></li>
+                <!-- Colonne Ressources -->
+                <div class="col-lg-2 col-md-6">
+                    <h5 class="h5 mb-4">
+                        <i class="bi bi-journal-text me-2 text-primary"></i>Ressources
+                    </h5>
+                    <ul class="list-unstyled">
+                        <li class="mb-2">
+                            <a href="blog.html" class="text-decoration-none">
+                                <i class="bi bi-pen me-2"></i>Blog
+                            </a>
+                        </li>
+                        <li class="mb-2">
+                            <a href="testimonials.html" class="text-decoration-none">
+                                <i class="bi bi-chat-quote me-2"></i>Témoignages
+                            </a>
+                        </li>
+                        <li>
+                            <a href="faq.html" class="text-decoration-none">
+                                <i class="bi bi-question-circle me-2"></i>FAQ
+                            </a>
+                        </li>
                     </ul>
                 </div>
 
-                <div class="col-lg-4 col-md-12 footer-newsletter">
-                    <h4>Newsletter</h4>
-                    <p>Subscribe to our latest health updates</p>
-                    <form action="#" method="post">
-                        <input type="email" name="email" placeholder="Your Email">
-                        <button type="submit">Subscribe</button>
-                    </form>
+                <!-- Colonne Horaires -->
+                <div class="col-lg-4 col-md-6">
+                    <div class="mb-4">
+                        <h5 class="h5 mb-3">
+                            <i class="bi bi-clock me-2 text-primary"></i>Horaires
+                        </h5>
+                        <ul class="list-unstyled">
+                            <li class="mb-2">
+                                <span class="fw-bold">Lun-Ven:</span> 8h00 - 18h00
+                            </li>
+                            <li class="mb-2">
+                                <span class="fw-bold">Samedi:</span> 9h00 - 15h00
+                            </li>
+                            <li>
+                                <span class="fw-bold">Dimanche:</span> Fermé
+                            </li>
+                        </ul>
+                    </div>
                 </div>
+            </div>
 
+            <!-- Copyright -->
+            <div class="copyright text-center mt-5 pt-4 border-top">
+                <p class="mb-2 small">
+                    © <span id="current-year">2025</span>
+                    <strong class="px-1">Cabinet Art de Vivre</strong> -
+                    Tous droits réservés
+                </p>
+                <div class="credits small text-muted">
+                    <i class="bi bi-code-slash me-1"></i>
+                    Développé par
+                    <a href="https://github.com/Hop-Syder" target="_blank" class="text-decoration-none">Nexus
+                        Partners | @HOP-SYDER</a>
+                </div>
             </div>
         </div>
-
-        <div class="container copyright text-center mt-4">
-            <p>© <span>Copyright</span> <strong class="px-1 sitename">Cabinet Art de Vivre</strong> <span>Tous droits
-                    réservés</span></p>
-        </div>
-
     </footer>
 
     <!-- Scroll Top -->

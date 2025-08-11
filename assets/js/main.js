@@ -265,4 +265,32 @@
   document.addEventListener('DOMContentLoaded', initPsychologistAnimations);
   window.addEventListener('load', initPsychologistAnimations);
 
+  /**
+   * Floating WhatsApp Button
+   */
+  function initWhatsAppFloat() {
+    const phone = '2290197155452'; // International format without '+' and spaces
+    const pageTitle = document.title || 'Cabinet Art de Vivre';
+    const pageUrl = window.location.href;
+    const defaultMessage = `Bonjour, je viens de consulter votre site web "${pageTitle}" (${pageUrl}) et j'aimerais prendre rendez-vous / obtenir des informations.`;
+    const waHref = `https://wa.me/${phone}?text=${encodeURIComponent(defaultMessage)}`;
+
+    // Avoid duplicate
+    if (document.querySelector('#whatsapp-float')) return;
+
+    const a = document.createElement('a');
+    a.id = 'whatsapp-float';
+    a.className = 'whatsapp-float';
+    a.href = waHref;
+    a.target = '_blank';
+    a.rel = 'noopener';
+    a.setAttribute('aria-label', 'Contacter sur WhatsApp');
+    a.innerHTML = '<i class="bi bi-whatsapp" aria-hidden="true"></i>';
+
+    document.body.appendChild(a);
+  }
+
+  document.addEventListener('DOMContentLoaded', initWhatsAppFloat);
+  window.addEventListener('load', initWhatsAppFloat);
+
 })();

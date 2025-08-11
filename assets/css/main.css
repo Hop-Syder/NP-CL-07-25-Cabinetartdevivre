@@ -7,7 +7,6 @@ Philosophy: Clean Code • Innovation • Excellence
 --------------------------------------------------------------*/
 
 
-@charset "UTF-8";
 
 /*-------------------------------------------------------------*/
 /* Fonts */
@@ -6134,4 +6133,55 @@ section,
 
 .member-card:hover {
   box-shadow: 0 0 15px rgba(0, 123, 255, 0.2);
+}
+
+
+
+
+/* Floating WhatsApp Button */
+#whatsapp-float.whatsapp-float {
+  position: fixed;
+  right: 15px;
+  /* Aligné avec scroll-top */
+  bottom: 84px;
+  /* Au-dessus de scroll-top (44px de haut + 15px de marge + ~25px d'espace) */
+  z-index: 100000;
+  /* Au-dessus en superposition si chevauchement */
+  width: 52px;
+  height: 52px;
+  border-radius: 50%;
+  background-color: #25D366;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 6px 24px rgba(0, 0, 0, 0.18);
+  transition: transform .15s ease, box-shadow .15s ease, opacity .2s ease;
+  text-decoration: none;
+  opacity: 0.95;
+}
+
+#whatsapp-float.whatsapp-float:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.22);
+  opacity: 1;
+}
+
+#whatsapp-float.whatsapp-float i {
+  font-size: 28px;
+  line-height: 1;
+}
+
+@media (max-width: 575.98px) {
+  #whatsapp-float.whatsapp-float {
+    right: 15px;
+    bottom: 78px;
+    /* Un peu plus haut sur mobile */
+    width: 48px;
+    height: 48px;
+  }
+
+  #whatsapp-float.whatsapp-float i {
+    font-size: 26px;
+  }
 }

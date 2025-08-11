@@ -1,3 +1,42 @@
+.avatar-rotating-border {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  padding: 4px;
+  /* spacing between ring and photo */
+}
+
+.avatar-rotating-border::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: 50%;
+  padding: 2px;
+  /* ring thickness */
+  background: conic-gradient(var(--accent-color), transparent 25%, var(--accent-color));
+  -webkit-mask: radial-gradient(circle calc(50% - 2px), transparent 98%, #000 100%);
+  mask: radial-gradient(circle calc(50% - 2px), transparent 98%, #000 100%);
+  animation: avatar-rotate 2.5s linear infinite;
+}
+
+.avatar-rotating-border img {
+  position: relative;
+  z-index: 1;
+  /* keep image above the pseudo ring */
+}
+
+@keyframes avatar-rotate {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
+}
+
 /*--------------------------------------------------------------
 ══════════════════════════════════════════════════
 @hopsyder | Data Scientist & Full-Stack Developer

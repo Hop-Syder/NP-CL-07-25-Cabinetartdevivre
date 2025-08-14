@@ -1,3 +1,12 @@
+/*--------------------------------------------------------------
+══════════════════════════════════════════════════
+@hopsyder | Data Scientist & Full-Stack Developer
+Nexus Partners - Intelligent Solutions
+══════════════════════════════════════════════════
+Philosophy: Clean Code • Innovation • Excellence
+--------------------------------------------------------------*/
+
+
 .avatar-rotating-border {
   position: relative;
   display: inline-flex;
@@ -36,16 +45,6 @@
     transform: rotate(360deg);
   }
 }
-
-/*--------------------------------------------------------------
-══════════════════════════════════════════════════
-@hopsyder | Data Scientist & Full-Stack Developer
-Nexus Partners - Intelligent Solutions
-══════════════════════════════════════════════════
-Philosophy: Clean Code • Innovation • Excellence
---------------------------------------------------------------*/
-
-
 
 /*-------------------------------------------------------------*/
 /* Fonts */

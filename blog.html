@@ -288,41 +288,158 @@ Stack: ML/DL • React/Node • Flutter • DevOps
         <!-- Articles Section -->
         <section id="articles" class="articles section">
             <div class="container" data-aos="fade-up" data-aos-delay="100">
+
+                <style>
+                    /* Articles Section */
+                    .article-card {
+                        background: #fff;
+                        border-radius: 12px;
+                        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+                        transition: transform 0.3s ease, box-shadow 0.3s ease;
+                        border: 1px solid #e9ecef;
+                        overflow: hidden;
+                        height: 100%;
+                    }
+
+                    .article-card:hover {
+                        transform: translateY(-5px);
+                        box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+                    }
+
+                    .article-image {
+                        position: relative;
+                        overflow: hidden;
+                    }
+
+                    .article-image img {
+                        width: 100%;
+                        height: 200px;
+                        object-fit: cover;
+                        transition: transform 0.3s ease;
+                    }
+
+                    .article-card:hover .article-image img {
+                        transform: scale(1.05);
+                    }
+
+                    .article-badge {
+                        position: absolute;
+                        top: 12px;
+                        right: 12px;
+                        background: rgba(44, 90, 160, 0.9);
+                        color: white;
+                        padding: 4px 10px;
+                        border-radius: 20px;
+                        font-size: 0.8rem;
+                        font-weight: 500;
+                    }
+
+                    .article-content {
+                        padding: 1.5rem;
+                    }
+
+                    .article-content h3 a {
+                        color: #2c5aa0;
+                        text-decoration: none;
+                        transition: color 0.3s ease;
+                    }
+
+                    .article-content h3 a:hover {
+                        color: #1e3d6f;
+                    }
+
+                    .read-more {
+                        color: #2c5aa0;
+                        text-decoration: none;
+                        font-weight: 500;
+                        transition: color 0.3s ease;
+                    }
+
+                    .read-more:hover {
+                        color: #1e3d6f;
+                    }
+
+                    .read-more i {
+                        transition: transform 0.3s ease;
+                    }
+
+                    .read-more:hover i {
+                        transform: translateX(3px);
+                    }
+
+                    /* Responsive */
+                    @media (max-width: 768px) {
+                        .article-image img {
+                            height: 180px;
+                        }
+
+                        .article-content {
+                            padding: 1rem;
+                        }
+                    }
+                </style>
+
                 <div class="row gy-4">
 
                     <!-- Article 1 -->
-                    <div class="col-lg-6 col-md-6" data-aos="zoom-in" data-aos-delay="200">
-                        <div class="article-card">
+                    <div class="col-lg-4 col-md-6" data-aos="zoom-in" data-aos-delay="200">
+                        <div class="article-card h-100">
                             <div class="article-image">
-                                <img src="assets/img/psy-seance.png" alt="Article 1" class="img-fluid" loading="lazy">
+                                <img src="assets/img/psy-seance.png"
+                                    alt="Comment se déroule une séance avec le psychologue"
+                                    class="img-fluid rounded-top" loading="lazy">
                                 <div class="article-badge">2 Septembre 2025</div>
                             </div>
-                            <div class="article-content">
-                                <h3><a href="article-details-1.html">Comment se déroule une séance avec le
+                            <div class="article-content p-3">
+                                <h3 class="h5"><a href="article-details-1.html"
+                                        class="text-decoration-none text-dark">Comment se déroule une séance avec le
                                         psychologue</a></h3>
-                                <p>Faire le premier pas vers un <strong>psychologue</strong> est souvent une démarche
-                                    courageuse.</p>
-                                <a href="article-details-1.html" class="read-more">Voir plus.<i
-                                        class="bi bi-arrow-right"></i></a>
+                                <p class="mb-2">Faire le premier pas vers un <strong>psychologue</strong> est souvent
+                                    une démarche courageuse.</p>
+                                <a href="article-details-1.html" class="read-more d-inline-flex align-items-center">
+                                    Voir plus <i class="bi bi-arrow-right ms-1"></i>
+                                </a>
                             </div>
                         </div>
                     </div>
 
                     <!-- Article 2 -->
-                    <div class="col-lg-6 col-md-6" data-aos="zoom-in" data-aos-delay="250">
-                        <div class="article-card">
+                    <div class="col-lg-4 col-md-6" data-aos="zoom-in" data-aos-delay="250">
+                        <div class="article-card h-100">
                             <div class="article-image">
-                                <img src="assets/img/bonheur-article.png" alt="Article 2" class="img-fluid"
+                                <img src="assets/img/bonheur-article.png"
+                                    alt="Être heureux : une quête humaine universelle" class="img-fluid rounded-top"
                                     loading="lazy">
                                 <div class="article-badge">22 Septembre 2025</div>
                             </div>
-                            <div class="article-content">
-                                <h3><a href="article-details-2.html">Être heureux : une quête humaine universelle</a>
-                                </h3>
-                                <p>Le bonheur est un mot qui suscite à la fois des rêves, des interrogations et parfois
-                                    des frustrations.</p>
-                                <a href="article-details-2.html" class="read-more">Voir plus.<i
-                                        class="bi bi-arrow-right"></i></a>
+                            <div class="article-content p-3">
+                                <h3 class="h5"><a href="article-details-2.html"
+                                        class="text-decoration-none text-dark">Être heureux : une quête humaine
+                                        universelle</a></h3>
+                                <p class="mb-2">Le bonheur est un mot qui suscite à la fois des rêves, des
+                                    interrogations et parfois des frustrations.</p>
+                                <a href="article-details-2.html" class="read-more d-inline-flex align-items-center">
+                                    Voir plus <i class="bi bi-arrow-right ms-1"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Article 3 -->
+                    <div class="col-lg-4 col-md-6" data-aos="zoom-in" data-aos-delay="300">
+                        <div class="article-card h-100">
+                            <div class="article-image">
+                                <img src="assets/img/article3.jpg" alt="Gestion du stress au quotidien"
+                                    class="img-fluid rounded-top" loading="lazy">
+                                <div class="article-badge">Coming Soon 2025</div>
+                            </div>
+                            <div class="article-content p-3">
+                                <h3 class="h5"><a href="article-details-3.html" class="text-decoration-none text-dark">
+                                        Bientot</a></h3>
+                                <p class="mb-2"></p>
+                                <a href="article-details-3.html" class="read-more d-inline-flex align-items-center">
+                                    Voir plus <i class="bi bi-arrow-right ms-1"></i>
+                                </a>
                             </div>
                         </div>
                     </div>

@@ -1,0 +1,142 @@
+{
+  "name": "Cabinet ART DE VIVRE - Psychologue Clinicienne à Cotonou",
+  "short_name": "Art de Vivre Psy",
+  "description": "Cabinet de psychologie ART DE VIVRE à Cotonou : Stéphanie GBEHOUNHESSI, psychologue clinicienne. Thérapies individuelles, couple, famille. Consultations présentiel/en ligne.",
+  "start_url": "/",
+  "display": "standalone",
+  "orientation": "portrait-primary",
+  "theme_color": "#2c5aa0",
+  "background_color": "#ffffff",
+  "lang": "fr",
+  "scope": "/",
+  "id": "cabinet-art-de-vivre",
+  "categories": ["health", "medical", "lifestyle", "wellness"],
+  "icons": [
+    {
+      "src": "/assets/img/favicon.ico",
+      "sizes": "16x16 32x32",
+      "type": "image/x-icon"
+    },
+    {
+      "src": "/assets/img/favicon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml"
+    },
+    {
+      "src": "/assets/img/apple-touch-icon.png",
+      "sizes": "180x180",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "/assets/img/icon-192x192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "/assets/img/icon-512x512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "/assets/img/logo2.png",
+      "sizes": "400x300",
+      "type": "image/png",
+      "purpose": "any"
+    }
+  ],
+  "screenshots": [
+    {
+      "src": "/assets/img/screenshot-wide.png",
+      "sizes": "1280x720",
+      "type": "image/png",
+      "form_factor": "wide"
+    },
+    {
+      "src": "/assets/img/screenshot-narrow.png",
+      "sizes": "640x1136",
+      "type": "image/png",
+      "form_factor": "narrow"
+    }
+  ],
+  "prefer_related_applications": false,
+  "related_applications": [],
+  "shortcuts": [
+    {
+      "name": "Prendre RDV",
+      "short_name": "RDV",
+      "description": "Prendre rendez-vous rapidement",
+      "url": "/appointment.html",
+      "icons": [
+        {
+          "src": "/assets/img/shortcut-rdv.png",
+          "sizes": "192x192",
+          "type": "image/png"
+        }
+      ]
+    },
+    {
+      "name": "Nos Services",
+      "short_name": "Services",
+      "description": "Découvrir nos services",
+      "url": "/services.html",
+      "icons": [
+        {
+          "src": "/assets/img/shortcut-services.png",
+          "sizes": "192x192",
+          "type": "image/png"
+        }
+      ]
+    },
+    {
+      "name": "Contact",
+      "short_name": "Contact",
+      "description": "Nous contacter",
+      "url": "/contact.html",
+      "icons": [
+        {
+          "src": "/assets/img/shortcut-contact.png",
+          "sizes": "192x192",
+          "type": "image/png"
+        }
+      ]
+    },
+    {
+      "name": "Urgence",
+      "short_name": "Urgence",
+      "description": "Ligne d'urgence psychologique",
+      "url": "tel:+2290197155452",
+      "icons": [
+        {
+          "src": "/assets/img/shortcut-emergency.png",
+          "sizes": "192x192",
+          "type": "image/png"
+        }
+      ]
+    }
+  ],
+  "protocol_handlers": [
+    {
+      "protocol": "mailto",
+      "url": "mailto:psy@cabinetartdevivre.com"
+    },
+    {
+      "protocol": "tel",
+      "url": "tel:+2290197155452"
+    }
+  ],
+  "edge_side_panel": {
+    "preferred_width": 400
+  },
+  "display_override": [
+    "window-controls-overlay",
+    "standalone",
+    "minimal-ui",
+    "browser"
+  ],
+  "launch_handler": {
+    "client_mode": "navigate-new"
+  }
+}

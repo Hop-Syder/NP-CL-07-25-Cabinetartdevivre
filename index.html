@@ -417,12 +417,6 @@ Stack: ML/DL • React/Node • Flutter • DevOps -->
 
 	<!-- Spinner Start -->
 
-	<div id="spinner" aria-busy="true" aria-live="polite"
-		class="show bg-white position-fixed w-100 vh-100 top-0 start-0 d-flex align-items-center justify-content-center">
-		<img src="assets/img/logo_ar.png" alt="Chargement - Art de Vivre" class="spinner-image">
-	</div>
-	<!-- Spinner End -->
-
 	<header id="header" class="header d-flex align-items-center fixed-top">
 		<div
 			class="header-container container-fluid container-xl position-relative d-flex align-items-center justify-content-between">
@@ -442,7 +436,7 @@ Stack: ML/DL • React/Node • Flutter • DevOps -->
 				<i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
 			</nav>
 
-			<a class="btn-getstarted" href="404.html">Prendre RDV</a>
+			<a class="btn-getstarted" href="appointment.html">Prendre RDV</a>
 
 		</div>
 	</header>
@@ -1077,33 +1071,7 @@ Stack: ML/DL • React/Node • Flutter • DevOps -->
 		// Set current year in footer
 		document.getElementById('current-year').textContent = new Date().getFullYear();
 	</script>
-	<script>
-		// Afficher l'image de préchargement 10s, puis masquer et retirer le spinner
-		document.addEventListener("DOMContentLoaded", () => {
-			const spinner = document.getElementById("spinner");
-			const body = document.body;
-			if (!spinner) return;
-			body.classList.add("no-scroll");
 
-			const hideSpinner = () => {
-				spinner.classList.add("fade-out");
-				spinner.addEventListener("transitionend", () => {
-					spinner.remove();
-					body.classList.remove("no-scroll");
-				}, { once: true });
-			};
-
-			setTimeout(hideSpinner, 5000); // 10 secondes
-
-			// Filet de sécurité si la transition ne se déclenche pas
-			setTimeout(() => {
-				if (document.body.contains(spinner)) {
-					spinner.remove();
-					body.classList.remove("no-scroll");
-				}
-			}, 12000);
-		});
-	</script>
 
 </body>
 

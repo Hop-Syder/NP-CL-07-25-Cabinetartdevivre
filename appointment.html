@@ -292,8 +292,9 @@ Stack: ML/DL • React/Node • Flutter • DevOps
                     <div class="col-lg-7">
                         <div class="appointment-form-wrapper">
                             <form id="appointmentForm">
+                                <!-- Informations personnelles -->
                                 <div class="form-header">
-                                    <h4><i class="bi bi-pencil-square"></i> Informations patient</h4>
+                                    <h4><i class="bi bi-pencil-square"></i> Informations personnelles</h4>
                                 </div>
 
                                 <div class="row gy-3">
@@ -315,6 +316,7 @@ Stack: ML/DL • React/Node • Flutter • DevOps
                                     </div>
                                 </div>
 
+                                <!-- Choisir un psychologue et une date -->
                                 <div class="form-header mt-4">
                                     <h4><i class="bi bi-person-badge"></i> Choisissez votre psychologue</h4>
                                 </div>
@@ -345,82 +347,82 @@ Stack: ML/DL • React/Node • Flutter • DevOps
                                             <option value="18:00">18h00</option>
                                         </select>
                                     </div>
+                                </div>
 
-                                    <div class="form-header mt-4">
-                                        <h4><i class="bi bi-chat-square-heart"></i> Parlez-nous de vous</h4>
-                                        <p class="small text-muted">
-                                            Ces questions sont là pour vous aider à exprimer ce que vous ressentez.
-                                            Répondez librement, il n’y a pas de bonne ou mauvaise réponse.
-                                        </p>
+                                <!-- Motivation, émotions et historique -->
+                                <div class="form-header mt-4">
+                                    <h4><i class="bi bi-chat-square-heart"></i> Votre motivation et émotions</h4>
+                                    <p class="small text-muted">
+                                        Répondez librement, il n’y a pas de bonne ou mauvaise réponse.
+                                    </p>
+                                </div>
+
+                                <div class="row gy-3">
+                                    <div class="col-12">
+                                        <label class="form-label">Qu’est-ce qui vous a motivé à prendre rendez-vous
+                                            aujourd’hui ?</label>
+                                        <textarea name="motivation" class="form-control" rows="3"
+                                            placeholder="Exemple : je me sens stressé au travail, j’ai du mal à dormir, je traverse une séparation…"></textarea>
                                     </div>
 
-                                    <div class="row gy-3">
-                                        <div class="col-12">
-                                            <label class="form-label">Qu’est-ce qui vous a motivé à prendre rendez-vous
-                                                aujourd’hui ?</label>
-                                            <textarea name="motivation" class="form-control" rows="3"
-                                                placeholder="Exemple : je me sens stressé au travail, j’ai du mal à dormir, je traverse une séparation…"></textarea>
+                                    <div class="col-12">
+                                        <label class="form-label">Quelles émotions ressentez-vous le plus souvent en ce
+                                            moment ?</label>
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="checkbox" name="emotions"
+                                                value="Anxiété"> Anxiété / Nervosité
                                         </div>
-
-                                        <div class="col-12">
-                                            <label class="form-label">Quelles émotions ressentez-vous le plus souvent en
-                                                ce
-                                                moment ?</label>
-                                            <div class="form-check">
-                                                <input class="form-check-input" type="checkbox" name="emotions"
-                                                    value="Anxiété"> Anxiété / Nervosité
-                                            </div>
-                                            <div class="form-check">
-                                                <input class="form-check-input" type="checkbox" name="emotions"
-                                                    value="Tristesse"> Tristesse
-                                            </div>
-                                            <div class="form-check">
-                                                <input class="form-check-input" type="checkbox" name="emotions"
-                                                    value="Colère"> Colère / Irritation
-                                            </div>
-                                            <div class="form-check">
-                                                <input class="form-check-input" type="checkbox" name="emotions"
-                                                    value="Fatigue"> Fatigue / Épuisement
-                                            </div>
-                                            <div class="form-check">
-                                                <input class="form-check-input" type="checkbox" name="emotions"
-                                                    value="Autre"> Autre
-                                            </div>
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="checkbox" name="emotions"
+                                                value="Tristesse"> Tristesse
                                         </div>
-
-                                        <div class="col-12">
-                                            <label class="form-label">Depuis combien de temps ressentez-vous cela
-                                                ?</label>
-                                            <select name="duree" class="form-select">
-                                                <option value="">Sélectionner</option>
-                                                <option value="quelques-jours">Quelques jours</option>
-                                                <option value="quelques-semaines">Quelques semaines</option>
-                                                <option value="plusieurs-mois">Plusieurs mois</option>
-                                                <option value="plus-dun-an">Plus d’un an</option>
-                                            </select>
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="checkbox" name="emotions"
+                                                value="Colère"> Colère / Irritation
                                         </div>
-
-                                        <div class="col-12">
-                                            <label class="form-label">Y a-t-il eu un événement déclencheur ?</label>
-                                            <textarea name="declencheur" class="form-control" rows="2"
-                                                placeholder="Exemple : un changement de travail, une rupture, un conflit familial, un deuil…"></textarea>
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="checkbox" name="emotions"
+                                                value="Fatigue"> Fatigue / Épuisement
                                         </div>
-
-                                        <div class="col-12">
-                                            <label class="form-label">Que souhaiteriez-vous obtenir grâce à cet
-                                                accompagnement ?</label>
-                                            <textarea name="objectif" class="form-control" rows="2"
-                                                placeholder="Exemple : retrouver le sommeil, gérer mon anxiété, mieux communiquer avec mes proches…"></textarea>
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="checkbox" name="emotions"
+                                                value="Autre"> Autre
                                         </div>
                                     </div>
 
                                     <div class="col-12">
-                                        <textarea name="message" class="form-control" rows="4"
-                                            placeholder="Qu’aimeriez-vous partager avec votre psy ? (Vos attentes, vos émotions, vos difficultés…)"
-                                            required></textarea>
+                                        <label class="form-label">Depuis combien de temps ressentez-vous cela ?</label>
+                                        <select name="duree" class="form-select">
+                                            <option value="">Sélectionner</option>
+                                            <option value="quelques-jours">Quelques jours</option>
+                                            <option value="quelques-semaines">Quelques semaines</option>
+                                            <option value="plusieurs-mois">Plusieurs mois</option>
+                                            <option value="plus-dun-an">Plus d’un an</option>
+                                        </select>
+                                    </div>
+
+                                    <div class="col-12">
+                                        <label class="form-label">Y a-t-il eu un événement déclencheur ?</label>
+                                        <textarea name="declencheur" class="form-control" rows="2"
+                                            placeholder="Exemple : un changement de travail, une rupture, un conflit familial, un deuil…"></textarea>
+                                    </div>
+
+                                    <div class="col-12">
+                                        <label class="form-label">Que souhaiteriez-vous obtenir grâce à cet
+                                            accompagnement ?</label>
+                                        <textarea name="objectif" class="form-control" rows="2"
+                                            placeholder="Exemple : retrouver le sommeil, gérer mon anxiété, mieux communiquer avec mes proches…"></textarea>
                                     </div>
                                 </div>
 
+                                <!-- Message supplémentaire -->
+                                <div class="col-12">
+                                    <textarea name="message" class="form-control" rows="4"
+                                        placeholder="Qu’aimeriez-vous partager avec votre psy ? (Vos attentes, vos émotions, vos difficultés…)"
+                                        required></textarea>
+                                </div>
+
+                                <!-- Bouton de soumission -->
                                 <div class="text-center mt-4">
                                     <button type="submit" class="btn-book"><i class="bi bi-calendar-check"></i>
                                         Réserver</button>
@@ -428,6 +430,7 @@ Stack: ML/DL • React/Node • Flutter • DevOps
                             </form>
                         </div>
                     </div>
+
                 </div>
             </div>
         </section>

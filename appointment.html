@@ -161,7 +161,7 @@ Stack: ML/DL • React/Node • Flutter • DevOps
 
     <!-- Analytics et monitoring (à remplacer par vos vrais codes) -->
     <!-- Google Analytics 4 -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=GA_MEASUREMENT_ID"></script>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=GTM-NN2KF45P"></script>
     <script>
         // @hopsyder - Analytics optimisé pour la performance
         window.dataLayer = window.dataLayer || [];
@@ -289,145 +289,647 @@ Stack: ML/DL • React/Node • Flutter • DevOps
                     </div>
 
                     <!-- Colonne droite : formulaire -->
+                    <style type="text/css">
+                        .appointment-form-wrapper {
+                            background: #ffffff;
+                            padding: 2rem;
+                            border-radius: 10px;
+                            box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+                        }
+
+                        .form-label {
+                            font-weight: 600;
+                            color: #333;
+                            margin-bottom: 0.5rem;
+                        }
+
+                        .form-input,
+                        .form-textarea,
+                        .form-select {
+                            width: 100%;
+                            padding: 12px;
+                            border: 1px solid #ddd;
+                            border-radius: 6px;
+                            margin-bottom: 1rem;
+                            transition: all 0.3s ease;
+                        }
+
+                        .form-input:focus,
+                        .form-textarea:focus,
+                        .form-select:focus {
+                            border-color: #2c5aa0;
+                            box-shadow: 0 0 0 2px rgba(44, 90, 160, 0.2);
+                            outline: none;
+                        }
+
+                        .form-textarea {
+                            min-height: 120px;
+                            resize: vertical;
+                        }
+
+                        .form-select {
+                            appearance: none;
+                            background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3e%3cpolyline points='6 9 12 15 18 9'%3e%3c/polyline%3e%3c/svg%3e");
+                            background-repeat: no-repeat;
+                            background-position: right 1rem center;
+                            background-size: 1em;
+                        }
+
+                        .form-group {
+                            margin-bottom: 1.5rem;
+                        }
+
+                        .form-submit {
+                            background: #2c5aa0;
+                            color: white;
+                            padding: 12px 24px;
+                            border: none;
+                            border-radius: 6px;
+                            cursor: pointer;
+                            font-weight: 600;
+                            width: 100%;
+                            transition: background-color 0.3s ease;
+                        }
+
+                        .form-submit:hover {
+                            background: #234a84;
+                        }
+
+                        /* Styles spécifiques pour JotForm */
+                        .jotform-form {
+                            background: transparent !important;
+                        }
+
+                        .form-all {
+                            box-shadow: none !important;
+                            border: none !important;
+                            padding: 20px !important;
+                        }
+
+                        .form-input-wide {
+                            width: 100% !important;
+                        }
+
+                        .form-line {
+                            padding: 12px 0 !important;
+                            margin: 0 !important;
+                            background: transparent !important;
+                        }
+
+                        .form-label-top {
+                            color: #333 !important;
+                            font-weight: 600 !important;
+                            font-size: 14px !important;
+                        }
+
+                        /* Style pour les champs de texte */
+                        .form-textbox,
+                        .form-textarea {
+                            border: 1px solid #ddd !important;
+                            border-radius: 6px !important;
+                            padding: 10px !important;
+                            transition: all 0.3s ease !important;
+                        }
+
+                        .form-textbox:focus,
+                        .form-textarea:focus {
+                            border-color: #2c5aa0 !important;
+                            box-shadow: 0 0 0 2px rgba(44, 90, 160, 0.2) !important;
+                        }
+
+                        /* Style pour les boutons */
+                        .form-submit-button {
+                            background: #2c5aa0 !important;
+                            color: white !important;
+                            padding: 12px 24px !important;
+                            border: none !important;
+                            border-radius: 6px !important;
+                            font-weight: 600 !important;
+                            width: auto !important;
+                            min-width: 150px !important;
+                            transition: background-color 0.3s ease !important;
+                        }
+
+                        .form-submit-button:hover {
+                            background: #234a84 !important;
+                        }
+
+                        /* Responsive design */
+                        @media (max-width: 768px) {
+                            .appointment-form-wrapper {
+                                padding: 1rem;
+                            }
+
+                            .form-all {
+                                padding: 10px !important;
+                            }
+                        }
+                    </style>
                     <div class="col-lg-7">
                         <div class="appointment-form-wrapper">
-                            <form id="appointmentForm">
-                                <!-- Informations personnelles -->
-                                <div class="form-header">
-                                    <h4><i class="bi bi-pencil-square"></i> Informations personnelles</h4>
+
+                            <script type="text/javascript">	JotForm.newDefaultTheme = true;
+                                JotForm.extendsNewTheme = false;
+                                JotForm.singleProduct = false;
+                                JotForm.newPaymentUIForNewCreatedForms = false;
+                                JotForm.texts = { "confirmEmail": "E-mail does not match", "pleaseWait": "Please wait...", "validateEmail": "You need to validate this e-mail", "confirmClearForm": "Are you sure you want to clear the form", "lessThan": "Your score should be less than or equal to", "incompleteFields": "There are incomplete required fields. Please complete them.", "required": "This field is required.", "requireOne": "At least one field required.", "requireEveryRow": "Every row is required.", "requireEveryCell": "Every cell is required.", "email": "Enter a valid e-mail address", "alphabetic": "This field can only contain letters", "numeric": "This field can only contain numeric values", "alphanumeric": "This field can only contain letters and numbers.", "cyrillic": "This field can only contain cyrillic characters", "url": "This field can only contain a valid URL", "currency": "This field can only contain currency values.", "fillMask": "Field value must fill mask.", "uploadExtensions": "You can only upload following files:", "noUploadExtensions": "File has no extension file type (e.g. .txt, .png, .jpeg)", "uploadFilesize": "File size cannot be bigger than:", "uploadFilesizemin": "File size cannot be smaller than:", "gradingScoreError": "Score total should only be less than or equal to", "inputCarretErrorA": "Input should not be less than the minimum value:", "inputCarretErrorB": "Input should not be greater than the maximum value:", "maxDigitsError": "The maximum digits allowed is", "minCharactersError": "The number of characters should not be less than the minimum value:", "maxCharactersError": "The number of characters should not be more than the maximum value:", "freeEmailError": "Free email accounts are not allowed", "minSelectionsError": "The minimum required number of selections is ", "maxSelectionsError": "The maximum number of selections allowed is ", "pastDatesDisallowed": "Date must not be in the past.", "dateLimited": "This date is unavailable.", "dateInvalid": "This date is not valid. The date format is {format}", "dateInvalidSeparate": "This date is not valid. Enter a valid {element}.", "ageVerificationError": "You must be older than {minAge} years old to submit this form.", "multipleFileUploads_typeError": "{file} has invalid extension. Only {extensions} are allowed.", "multipleFileUploads_sizeError": "{file} is too large, maximum file size is {sizeLimit}.", "multipleFileUploads_minSizeError": "{file} is too small, minimum file size is {minSizeLimit}.", "multipleFileUploads_emptyError": "{file} is empty, please select files again without it.", "multipleFileUploads_uploadFailed": "File upload failed, please remove it and upload the file again.", "multipleFileUploads_onLeave": "The files are being uploaded, if you leave now the upload will be cancelled.", "multipleFileUploads_fileLimitError": "Only {fileLimit} file uploads allowed.", "dragAndDropFilesHere_infoMessage": "Drag and drop files here", "chooseAFile_infoMessage": "Choose a file", "maxFileSize_infoMessage": "Max. file size", "generalError": "There are errors on the form. Please fix them before continuing.", "generalPageError": "There are errors on this page. Please fix them before continuing.", "wordLimitError": "Too many words. The limit is", "wordMinLimitError": "Too few words.  The minimum is", "characterLimitError": "Too many Characters.  The limit is", "characterMinLimitError": "Too few characters. The minimum is", "ccInvalidNumber": "Credit Card Number is invalid.", "ccInvalidCVC": "CVC number is invalid.", "ccInvalidExpireDate": "Expire date is invalid.", "ccInvalidExpireMonth": "Expiration month is invalid.", "ccInvalidExpireYear": "Expiration year is invalid.", "ccMissingDetails": "Please fill up the credit card details.", "ccMissingProduct": "Please select at least one product.", "ccMissingDonation": "Please enter numeric values for donation amount.", "disallowDecimals": "Please enter a whole number.", "restrictedDomain": "This domain is not allowed", "ccDonationMinLimitError": "Minimum amount is {minAmount} {currency}", "requiredLegend": "All fields marked with * are required and must be filled.", "geoPermissionTitle": "Permission Denied", "geoPermissionDesc": "Check your browser's privacy settings.", "geoNotAvailableTitle": "Position Unavailable", "geoNotAvailableDesc": "Location provider not available. Please enter the address manually.", "geoTimeoutTitle": "Timeout", "geoTimeoutDesc": "Please check your internet connection and try again.", "selectedTime": "Selected Time", "formerSelectedTime": "Former Time", "cancelAppointment": "Cancel Appointment", "cancelSelection": "Cancel Selection", "confirmSelection": "Confirm Selection", "noSlotsAvailable": "No slots available", "slotUnavailable": "{time} on {date} has been selected is unavailable. Please select another slot.", "multipleError": "There are {count} errors on this page. Please correct them before moving on.", "oneError": "There is {count} error on this page. Please correct it before moving on.", "doneMessage": "Well done! All errors are fixed.", "invalidTime": "Enter a valid time", "doneButton": "Done", "reviewSubmitText": "Review and Submit", "nextButtonText": "Next", "prevButtonText": "Previous", "seeErrorsButton": "See Errors", "notEnoughStock": "Not enough stock for the current selection", "notEnoughStock_remainedItems": "Not enough stock for the current selection ({count} items left)", "soldOut": "Sold Out", "justSoldOut": "Just Sold Out", "selectionSoldOut": "Selection Sold Out", "subProductItemsLeft": "({count} items left)", "startButtonText": "START", "submitButtonText": "Submit", "submissionLimit": "Sorry! Only one entry is allowed. <br> Multiple submissions are disabled for this form.", "reviewBackText": "Back to Form", "seeAllText": "See All", "progressMiddleText": "of", "fieldError": "field has an error.", "error": "Error" };
+                                JotForm.newPaymentUI = true;
+                                JotForm.originalLanguage = "fr";
+                                JotForm.isFormViewTrackingAllowed = true;
+                                JotForm.replaceTagTest = true;
+                                JotForm.activeRedirect = "thanktext";
+                                JotForm.uploadServerURL = "https://upload.jotform.com/upload";
+                                JotForm.clearFieldOnHide = "disable";
+                                JotForm.submitError = "jumpToFirstError";
+                                window.addEventListener('DOMContentLoaded', function () { window.brandingFooter.init({ "formID": 253072792938064, "campaign": "powered_by_jotform_le", "isCardForm": false, "isLegacyForm": true, "formLanguage": "fr" }) }); JotForm.isFullSource = true;
+
+                                try {
+                                    function isTrackingProhibited() {
+                                        try {
+                                            var isEUDomain = /(?:eu.jotform)|(?:jotformeu.com)/.test(window.location.host);
+                                            var isHipaaDomain = /(?:hipaa.jotform)/.test(window.location.host);
+                                            var isProhibitedParameterExists = /(?:wfTaskID|PCI_preSubmitRequest|wfTaskType)/.test(window.location.search);
+                                            var isEditMode = JotForm.isEditMode();
+                                            var isTrackingProhibited = isEUDomain || isHipaaDomain || isProhibitedParameterExists || isEditMode;
+                                            return isTrackingProhibited;
+                                        } catch (e) {
+                                            console.log(e);
+                                            return true;
+                                        }
+                                    }
+                                    if (!isTrackingProhibited()) {
+                                        var sesApiUrl = /jotform.(pro|dev)/.test(window.location.host) ? '/API' : 'https://api.jotform.com';
+                                        function sendOpenId(uuid, eventType) {
+                                            navigator.sendBeacon(sesApiUrl + '/form/' + 253072792938064 + '/event/' + uuid + '/' + eventType, {});
+                                        }
+                                        var formOpenId = '';
+                                        if (window.crypto) {
+                                            formOpenId = window.crypto.getRandomValues(new BigUint64Array(1)).toString();
+                                        } else {
+                                            formOpenId = (Math.random() * 16).toString(16).slice(2);
+                                        }
+                                        sendOpenId = sendOpenId.bind(this, formOpenId);
+                                        function sendOpenIdOnSubmit() {
+                                            var currentForm = $('253072792938064');
+                                            currentForm.addEventListener('submit', function () { sendOpenId('clientSubmitClick_V5'); });
+                                            var openIdInput = currentForm.querySelector('[name="formOpenId_V5"]');
+                                            if (!openIdInput) {
+                                                openIdInput = document.createElement('input');
+                                                openIdInput.setAttribute('type', 'hidden');
+                                                openIdInput.setAttribute('name', 'formOpenId_V5');
+                                                currentForm.appendChild(openIdInput);
+                                            }
+                                            openIdInput.value = formOpenId;
+                                        }
+                                        sendOpenId('clientFormView_V5');
+                                        if (document.readyState == 'complete' || (this.jsForm && (document.readyState === undefined || document.readyState === 'interactive'))) {
+                                            sendOpenIdOnSubmit();
+                                        } else {
+                                            document.ready(sendOpenIdOnSubmit);
+                                        }
+                                    }
+                                } catch (openIdBlockError) {
+                                    console.log(openIdBlockError);
+                                }
+
+                                JotForm.init(function () {
+                                    /*INIT-START*/
+                                    JotForm.setPhoneMaskingValidator('input_8_full', '\u0028\u0023\u0023\u0023\u0029 \u0023\u0023\u0023\u002d\u0023\u0023\u0023\u0023');
+                                    $('input_7_confirm').hint('example@example.com');
+                                    $$('#input_7_confirm')[0].setAttribute('onPaste', 'return false;');
+
+                                    JotForm.calendarMonths = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
+                                    JotForm.appointmentCalendarMonths = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
+                                    JotForm.appointmentCalendarDays = ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"];
+                                    JotForm.calendarOther = "Today";
+                                    window.initializeAppointment({ "text": { "text": "Question", "value": "Sélectionnez la date et l'heure de votre séance" }, "labelAlign": { "text": "Label Align", "value": "Top", "dropdown": [["Auto", "Auto"], ["Left", "Left"], ["Right", "Right"], ["Top", "Top"]] }, "required": { "text": "Required", "value": "No", "dropdown": [["No", "No"], ["Yes", "Yes"]] }, "description": { "text": "Hover Text", "value": "", "textarea": true }, "slotDuration": { "text": "Slot Duration", "value": "60", "dropdown": [[15, "15 min"], [30, "30 min"], [45, "45 min"], [60, "60 min"], ["custom", "Custom min"]], "hint": "Select how long each slot will be." }, "startDate": { "text": "Start Date", "value": "2025-11-04" }, "endDate": { "text": "End Date", "value": "2026-12-31" }, "intervals": { "text": "Intervals", "value": [{ "from": "09:00", "to": "17:00", "days": ["Mon", "Tue", "Wed", "Thu", "Fri"] }], "hint": "The hours will be applied to the selected days and repeated." }, "useBlockout": { "text": "Blockout Custom Dates", "value": "No", "dropdown": [["No", "No"], ["Yes", "Yes"]], "hint": "Disable certain date(s) in the calendar." }, "blockoutDates": { "text": "Blockout dates", "value": [{ "start": "", "end": "" }] }, "useLunchBreak": { "text": "Lunch Time", "value": "Yes", "dropdown": [["No", "No"], ["Yes", "Yes"]], "hint": "Enable lunchtime in the calendar." }, "lunchBreak": { "text": "Lunchtime hours", "value": [{ "from": "12:00", "to": "14:00" }] }, "timezone": { "text": "Timezone", "value": "Africa\u002FPorto-Novo (GMT+01:00)" }, "timeFormat": { "text": "Time Format", "value": "24 Hour", "dropdown": [["24 Hour", "24 Hour"], ["AM\u002FPM", "AM\u002FPM"]], "icon": "images\u002Fblank.gif", "iconClassName": "toolbar-time_format_24" }, "months": { "value": ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"], "hidden": true }, "days": { "value": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"], "hidden": true }, "startWeekOn": { "text": "Start Week On", "value": "Monday", "dropdown": [["Monday", "Monday"], ["Sunday", "Sunday"]], "toolbar": false }, "rollingDays": { "text": "Rolling Days", "value": "0", "toolbar": false }, "prevMonthButtonText": { "text": "Previous month", "value": "" }, "nextMonthButtonText": { "text": "Next month", "value": "" }, "prevYearButtonText": { "text": "Previous year", "value": "" }, "nextYearButtonText": { "text": "Next year", "value": "" }, "prevDayButtonText": { "text": "Previous day", "value": "" }, "nextDayButtonText": { "text": "Next day", "value": "" }, "appointmentDescription": { "hidden": true, "value": "" }, "appointmentLocation": { "hidden": true, "value": "" }, "appointmentType": { "hidden": true, "value": "single" }, "autoDetectTimezone": { "hidden": true, "value": "No" }, "calendlyAPI": { "hidden": true, "value": "No" }, "calendlyButtonText": { "hidden": true, "value": "Select Date & Time" }, "calendlyEventDescription": { "hidden": true, "value": "Please select an available slot" }, "calendlyEventName": { "hidden": true, "value": "Event" }, "dateFormat": { "hidden": true, "value": "dd\u002Fmm\u002Fyyyy" }, "hidden": { "hidden": true, "value": "Yes" }, "maxAttendee": { "hidden": true, "value": "1" }, "maxEvents": { "hidden": true, "value": "0" }, "minScheduleNotice": { "hidden": true, "value": "3" }, "name": { "hidden": true, "value": "q2_appointment0" }, "order": { "hidden": true, "value": "4" }, "protected": { "hidden": true, "value": "No" }, "qid": { "toolbar": false, "value": "input_2" }, "relatedEmailQid": { "hidden": true, "value": "" }, "relatedFullnameQid": { "hidden": true, "value": "" }, "reminderEmails": { "hidden": true, "value": { "schedule": [{ "value": "2", "unit": "hour" }], "emailSettings": { "PDFPassword": "", "attachPDF": "false", "updateEmail": "true", "type": "APPOINTMENT_REMINDER", "to": [{ "id": "7", "value": "{votreEmail}", "name": "Votre email", "text": "Votre email", "isValid": "true", "isQuestion": "true" }], "subject": "Rappel de votre rendez-vous médical avec {q2_appointment0}", "content": "\u003C!DOCTYPE html\u003E\r\n\u003Chtml\u003E\r\n\u003Chead\u003E\r\n\u003C\u002Fhead\u003E\r\n\u003Cbody\u003E\r\n\u003Ctable width=\"100%\" cellspacing=\"0\" cellpadding=\"0\" bgcolor=\"#ecedf2\"\u003E\r\n\u003Ctbody\u003E\r\n\u003Ctr\u003E\r\n\u003Ctd style=\"width: 32px; min-width: 32px;\" width=\"32\"\u003E&nbsp;\u003C\u002Ftd\u003E\r\n\u003Ctd\u003E\r\n\u003Ctable class=\"jmTable-wrapper\" style=\"width: 100%;\" cellspacing=\"0\" cellpadding=\"0\"\u003E\r\n\u003Ctbody\u003E\r\n\u003Ctr\u003E\r\n\u003Ctd style=\"min-height: 36px;\" height=\"36\"\u003E&nbsp;\u003C\u002Ftd\u003E\r\n\u003C\u002Ftr\u003E\r\n\u003Ctr\u003E\r\n\u003Ctd align=\"center\"\u003E\r\n\u003Ctable id=\"jmLogo-container\" class=\"jmTable\" style=\"min-width: 480px; max-width: 720px; width: 100%; background-color: transparent; text-align: center;\" width=\"100%\" cellspacing=\"0\" cellpadding=\"0\"\u003E\r\n\u003Ctbody\u003E\r\n\u003Ctr\u003E\r\n\u003Ctd style=\"width: 100%; max-width: 100%; min-width: 100%;\"\u003E\u003Cimg src=\"https:\u002F\u002Fwww.jotform.com\u002Fuploads\u002Fdevivre\u002Fform_files\u002Flogo.690a0472a988e3.26579867.png\" alt=\"\" width=\"166\" height=\"72\" \u002F\u003E\u003C\u002Ftd\u003E\r\n\u003C\u002Ftr\u003E\r\n\u003C\u002Ftbody\u003E\r\n\u003C\u002Ftable\u003E\r\n\u003Cbr \u002F\u003E\r\n\u003Ctable id=\"jmOutcome-container\" class=\"jmTable\" style=\"min-width: 480px; max-width: 720px; width: 100%; background-color: transparent;\" width=\"100%\" cellspacing=\"0\" cellpadding=\"0\"\u003E\r\n\u003Ctbody\u003E\r\n\u003Ctr\u003E\r\n\u003Ctd style=\"width: 100%; max-width: 100%; min-width: 100%;\"\u003E\r\n\u003Ctable width=\"100%\" cellspacing=\"0\" cellpadding=\"0\"\u003E\r\n\u003Ctbody\u003E\r\n\u003Ctr style=\"min-height: 26px; background-color: #ffffff; height: 17px;\"\u003E\r\n\u003Ctd style=\"width: 104.097%; height: 17px;\" colspan=\"3\"\u003E&nbsp;\u003C\u002Ftd\u003E\r\n\u003C\u002Ftr\u003E\r\n\u003Ctr style=\"background-color: #ffffff; height: 542px;\"\u003E\r\n\u003Ctd style=\"min-width: 40px; width: 6.94444%; height: 542px;\"\u003E&nbsp;\u003C\u002Ftd\u003E\r\n\u003Ctd id=\"jmButton-container\" style=\"width: 87.1528%; height: 542px;\"\u003E\r\n\u003Ctable class=\"jmTable\" style=\"min-width: 480px; max-width: 720px; width: 100%; background-color: #fff; font-weight: 300;\" width=\"100%\" cellspacing=\"0\" cellpadding=\"0\"\u003E\r\n\u003Ctbody\u003E\r\n\u003Ctr\u003E\r\n\u003Ctd style=\"width: 100%; max-width: 100%; min-width: 100%;\"\u003E\r\n\u003Ctable style=\"height: 715px;\" width=\"461\" cellspacing=\"0\" cellpadding=\"0\"\u003E\r\n\u003Ctbody\u003E\r\n\u003Ctr style=\"height: 110px;\"\u003E\r\n\u003Ctd style=\"height: 110px; width: 507px;\"\u003E\r\n\u003Cp data-start=\"177\" data-end=\"208\"\u003EBonjour &nbsp;\u003Cstrong\u003E{informationsPersonnelles}\u003C\u002Fstrong\u003E,\u003C\u002Fp\u003E\r\n\u003Cp data-start=\"210\" data-end=\"355\"\u003ECeci est un rappel concernant votre rendez-vous pr&eacute;vu le {q2_appointment0}\u003Cstrong data-start=\"267\" data-end=\"287\"\u003E&nbsp;&agrave; \u003C\u002Fstrong\u003E&nbsp;avec \u003Cstrong data-start=\"293\" data-end=\"316\"\u003EDr {choixDu}&nbsp;\u003C\u002Fstrong\u003Eau Cabinet de Phychologique Art de vivre\u003C\u002Fp\u003E\r\n\u003C\u002Ftd\u003E\r\n\u003C\u002Ftr\u003E\r\n\u003Ctr style=\"height: 18px;\"\u003E\r\n\u003Ctd style=\"height: 18px; width: 507px;\"\u003E&nbsp;\u003C\u002Ftd\u003E\r\n\u003C\u002Ftr\u003E\r\n\u003Ctr style=\"height: 210px;\"\u003E\r\n\u003Ctd style=\"height: 210px; width: 507px;\"\u003E\r\n\u003Ctable class=\"jmTable\" style=\"min-width: 100%; max-width: 100%; width: 100%; background-color: rgba(233, 236, 249, 0.4); text-align: center; border-radius: 4px; overflow: hidden;\" width=\"100%\" cellspacing=\"0\" cellpadding=\"0\"\u003E\r\n\u003Ctbody\u003E\r\n\u003Ctr\u003E\r\n\u003Ctd style=\"width: 100%; max-width: 100%; min-width: 100%;\"\u003E\u003Ccenter\u003E\r\n\u003Ctable style=\"width: auto; max-width: 100%; padding: 15px 0;\" cellspacing=\"0\" cellpadding=\"0\"\u003E\r\n\u003Ctbody\u003E\r\n\u003Ctr style=\"vertical-align: text-top;\"\u003E\r\n\u003Ctd\u003E\u003Cimg style=\"margin-right: 5px;\" src=\"https:\u002F\u002Femails.jotform.com\u002Fimg\u002Fappointment\u002Fdate.png?v=1.0\" alt=\"appointment icon\" width=\"14\" \u002F\u003E\u003C\u002Ftd\u003E\r\n\u003Ctd\u003E\r\n\u003Ctable\u003E\r\n\u003Ctbody\u003E\r\n\u003Ctr\u003E\r\n\u003Ctd\u003E\u003Cspan style=\"color: #a5a8b3; font-size: 12px; font-weight: 400; line-height: 20px;\"\u003EAppointment\u003C\u002Fspan\u003E\u003C\u002Ftd\u003E\r\n\u003C\u002Ftr\u003E\r\n\u003Ctr\u003E\r\n\u003Ctd\u003E\u003Cspan style=\"color: #2b3245; font-size: 14px; font-weight: 400; line-height: 20px;\"\u003E{q2_appointment0:date}\u003C\u002Fspan\u003E\u003C\u002Ftd\u003E\r\n\u003C\u002Ftr\u003E\r\n\u003C\u002Ftbody\u003E\r\n\u003C\u002Ftable\u003E\r\n\u003C\u002Ftd\u003E\r\n\u003C\u002Ftr\u003E\r\n\u003Ctr style=\"vertical-align: text-top;\"\u003E\r\n\u003Ctd\u003E\u003Cimg style=\"margin-right: 5px;\" src=\"https:\u002F\u002Femails.jotform.com\u002Fimg\u002Fappointment\u002Fduration.png?v=1.0\" alt=\"appointment icon\" width=\"14\" \u002F\u003E\u003C\u002Ftd\u003E\r\n\u003Ctd\u003E\r\n\u003Ctable\u003E\r\n\u003Ctbody\u003E\r\n\u003Ctr\u003E\r\n\u003Ctd\u003E\u003Cspan style=\"color: #a5a8b3; font-size: 12px; font-weight: 400; line-height: 20px;\"\u003EDuration\u003C\u002Fspan\u003E\u003C\u002Ftd\u003E\r\n\u003C\u002Ftr\u003E\r\n\u003Ctr\u003E\r\n\u003Ctd\u003E\u003Cspan style=\"color: #2b3245; font-size: 14px; font-weight: 400; line-height: 20px;\"\u003E{q2_appointment0:duration}\u003C\u002Fspan\u003E\u003C\u002Ftd\u003E\r\n\u003C\u002Ftr\u003E\r\n\u003C\u002Ftbody\u003E\r\n\u003C\u002Ftable\u003E\r\n\u003C\u002Ftd\u003E\r\n\u003C\u002Ftr\u003E\r\n\u003Ctr style=\"vertical-align: text-top;\"\u003E\r\n\u003Ctd\u003E\u003Cimg style=\"margin-right: 5px;\" src=\"https:\u002F\u002Femails.jotform.com\u002Fimg\u002Fappointment\u002Ftimezone.png?v=1.0\" alt=\"appointment icon\" width=\"14\" \u002F\u003E\u003C\u002Ftd\u003E\r\n\u003Ctd\u003E\r\n\u003Ctable\u003E\r\n\u003Ctbody\u003E\r\n\u003Ctr\u003E\r\n\u003Ctd\u003E\u003Cspan style=\"color: #a5a8b3; font-size: 12px; font-weight: 400; line-height: 20px;\"\u003ETimezone\u003C\u002Fspan\u003E\u003C\u002Ftd\u003E\r\n\u003C\u002Ftr\u003E\r\n\u003Ctr\u003E\r\n\u003Ctd\u003E\u003Cspan style=\"color: #2b3245; font-size: 14px; font-weight: 400; line-height: 20px;\"\u003E{q2_appointment0:timezone}\u003C\u002Fspan\u003E\u003C\u002Ftd\u003E\r\n\u003C\u002Ftr\u003E\r\n\u003C\u002Ftbody\u003E\r\n\u003C\u002Ftable\u003E\r\n\u003C\u002Ftd\u003E\r\n\u003C\u002Ftr\u003E\r\n\u003C\u002Ftbody\u003E\r\n\u003C\u002Ftable\u003E\r\n\u003C\u002Fcenter\u003E\u003C\u002Ftd\u003E\r\n\u003C\u002Ftr\u003E\r\n\u003C\u002Ftbody\u003E\r\n\u003C\u002Ftable\u003E\r\n\u003C\u002Ftd\u003E\r\n\u003C\u002Ftr\u003E\r\n\u003Ctr style=\"height: 18px;\"\u003E\r\n\u003Ctd style=\"height: 18px; width: 507px;\"\u003E\r\n\u003Cp\u003EMerci de vous pr&eacute;senter \u003Cstrong data-start=\"473\" data-end=\"513\"\u003E10 &agrave; 15 minutes avant l&rsquo;heure pr&eacute;vue\u003C\u002Fstrong\u003E afin de faciliter votre accueil.\u003Cbr data-start=\"546\" data-end=\"549\" \u002F\u003E En cas d&rsquo;emp&ecirc;chement, merci de nous pr&eacute;venir &agrave; l&rsquo;avance pour reprogrammer votre s&eacute;ance.\u003C\u002Fp\u003E\r\n\u003Cp data-start=\"640\" data-end=\"688\"\u003ENous vous souhaitons une excellente journ&eacute;e 🌿\u003C\u002Fp\u003E\r\n\u003Cp data-start=\"690\" data-end=\"798\"\u003EBien cordialement,\u003Cbr data-start=\"708\" data-end=\"711\" \u002F\u003E \u003Cstrong data-start=\"711\" data-end=\"765\"\u003EL&rsquo;&eacute;quipe m&eacute;dicale&nbsp;\u003C\u002Fstrong\u003E\u003C\u002Fp\u003E\r\n\u003C\u002Ftd\u003E\r\n\u003C\u002Ftr\u003E\r\n\u003Ctr style=\"height: 20px;\"\u003E\r\n\u003Ctd style=\"height: 20px; width: 507px;\"\u003E\r\n\u003Ctable class=\"jmTable\" style=\"min-width: 480px; max-width: 720px; width: 100%; background-color: #fff; text-align: center; font-size: 14px; line-height: 16px;\" width=\"100%\" cellspacing=\"0\" cellpadding=\"0\"\u003E\r\n\u003Ctbody\u003E\r\n\u003Ctr\u003E\r\n\u003Ctd style=\"width: 100%; max-width: 100%; min-width: 100%;\"\u003EAdd to&nbsp; \u003Ca href=\"{googleCalendarLink:q2_appointment0}\"\u003EGoogle\u003C\u002Fa\u003E &nbsp;&bull;&nbsp; \u003Ca href=\"{outlookLink:q2_appointment0}\"\u003EOutlook\u003C\u002Fa\u003E &nbsp;&bull;&nbsp; \u003Ca href=\"{icalLink:q2_appointment0}\"\u003EiCal\u003C\u002Fa\u003E\u003C\u002Ftd\u003E\r\n\u003C\u002Ftr\u003E\r\n\u003C\u002Ftbody\u003E\r\n\u003C\u002Ftable\u003E\r\n\u003C\u002Ftd\u003E\r\n\u003C\u002Ftr\u003E\r\n\u003Ctr style=\"height: 16px;\"\u003E\r\n\u003Ctd style=\"height: 16px; width: 507px;\"\u003E&nbsp;\u003C\u002Ftd\u003E\r\n\u003C\u002Ftr\u003E\r\n\u003Ctr style=\"height: 13px;\"\u003E\r\n\u003Ctd style=\"height: 13px; width: 507px;\"\u003E\u003Cimg style=\"display: block; margin-left: auto; margin-right: auto;\" src=\"https:\u002F\u002Fwww.jotform.com\u002Fuploads\u002Fdevivre\u002Fform_files\u002Flogo.690a0472a988e3.26579867.png\" alt=\"\" width=\"192\" height=\"83\" \u002F\u003E\u003C\u002Ftd\u003E\r\n\u003C\u002Ftr\u003E\r\n\u003C\u002Ftbody\u003E\r\n\u003C\u002Ftable\u003E\r\n\u003C\u002Ftd\u003E\r\n\u003C\u002Ftr\u003E\r\n\u003C\u002Ftbody\u003E\r\n\u003C\u002Ftable\u003E\r\n\u003C\u002Ftd\u003E\r\n\u003Ctd style=\"min-width: 40px; width: 10%; height: 542px;\"\u003E&nbsp;\u003C\u002Ftd\u003E\r\n\u003C\u002Ftr\u003E\r\n\u003Ctr style=\"min-height: 26px; background-color: #ffffff; height: 17px;\"\u003E\r\n\u003Ctd style=\"width: 104.097%; height: 17px;\" colspan=\"3\"\u003E&nbsp;\u003C\u002Ftd\u003E\r\n\u003C\u002Ftr\u003E\r\n\u003C\u002Ftbody\u003E\r\n\u003C\u002Ftable\u003E\r\n\u003C\u002Ftd\u003E\r\n\u003C\u002Ftr\u003E\r\n\u003C\u002Ftbody\u003E\r\n\u003C\u002Ftable\u003E\r\n\u003Cbr \u002F\u003E\r\n\u003Ctable class=\"jmTable-wrapper\" style=\"width: 100%;\" cellspacing=\"0\" cellpadding=\"0\"\u003E\r\n\u003Ctbody\u003E\r\n\u003Ctr style=\"display: none;\"\u003E\r\n\u003Ctd style=\"min-height: 64px;\" height=\"64\"\u003E&nbsp;\u003C\u002Ftd\u003E\r\n\u003C\u002Ftr\u003E\r\n\u003Ctr\u003E\r\n\u003Ctd align=\"center\"\u003E\r\n\u003Ctable style=\"max-width: 720px;\" width=\"100%\" cellspacing=\"0\" cellpadding=\"0\"\u003E\r\n\u003Ctbody\u003E\r\n\u003Ctr\u003E\r\n\u003Ctd style=\"line-height: 0; font-size: 0; border-radius: 4px 4px 0 0;\" bgcolor=\"#FF6100\" height=\"8\"\u003E&nbsp;\u003C\u002Ftd\u003E\r\n\u003C\u002Ftr\u003E\r\n\u003C\u002Ftbody\u003E\r\n\u003C\u002Ftable\u003E\r\n\u003Ctable class=\"jmTable\" style=\"min-width: 480px; max-width: 720px; width: 100%; background-color: #fff;\" width=\"100%\" cellspacing=\"0\" cellpadding=\"0\"\u003E\r\n\u003Ctbody\u003E\r\n\u003Ctr\u003E\r\n\u003Ctd style=\"width: 100%; max-width: 100%; min-width: 100%;\"\u003E\r\n\u003Ctable width=\"100%\" cellspacing=\"0\" cellpadding=\"0\"\u003E\r\n\u003Ctbody\u003E\r\n\u003Ctr style=\"min-height: 24px;\"\u003E\r\n\u003Ctd colspan=\"3\"\u003E&nbsp;\u003C\u002Ftd\u003E\r\n\u003C\u002Ftr\u003E\r\n\u003Ctr\u003E\r\n\u003Ctd style=\"min-width: 40px;\" width=\"40\"\u003E&nbsp;\u003C\u002Ftd\u003E\r\n\u003Ctd\u003E\u003Cspan id=\"jmTitle-container\" style=\"font-size: 18px; font-weight: bold; color: #0a1551;\"\u003E{form_title}\u003C\u002Fspan\u003E\u003C\u002Ftd\u003E\r\n\u003Ctd style=\"min-width: 40px;\" width=\"40\"\u003E&nbsp;\u003C\u002Ftd\u003E\r\n\u003C\u002Ftr\u003E\r\n\u003Ctr style=\"min-height: 16px;\"\u003E\r\n\u003Ctd style=\"min-width: 40px;\" width=\"40\"\u003E&nbsp;\u003C\u002Ftd\u003E\r\n\u003Ctd style=\"border-bottom: 1px solid #ECEDF2;\"\u003E&nbsp;\u003C\u002Ftd\u003E\r\n\u003Ctd style=\"min-width: 40px;\" width=\"40\"\u003E&nbsp;\u003C\u002Ftd\u003E\r\n\u003C\u002Ftr\u003E\r\n\u003Ctr\u003E\r\n\u003Ctd colspan=\"3\"\u003E\r\n\u003Ctable id=\"jmSubmission-container\" class=\"jmSubmissionTable\" style=\"width: 100%;\" cellspacing=\"0\" cellpadding=\"24\"\u003E\r\n\u003Ctbody id=\"emailFieldsTableBody\"\u003E\r\n\u003Ctr\u003E\r\n\u003Ctd\u003E\r\n\u003Ctable id=\"jmSubmission-container\" class=\"emailFieldsInnerTable\" width=\"100%\" cellspacing=\"0\" cellpadding=\"12\"\u003E\r\n\u003Ctbody id=\"emailFieldsTableInnerBody\"\u003E\r\n\u003Ctr id=\"row_6\" class=\"questionRow\"\u003E\r\n\u003Ctd id=\"question_6\" class=\"questionColumn\" style=\"color: #6f76a7; font-size: 14px;\" bgcolor=\"transparent\" width=\"40%\"\u003EInformations personnelles\u003C\u002Ftd\u003E\r\n\u003Ctd id=\"value_6\" class=\"valueColumn\" style=\"color: #0a1551; font-size: 14px;\" bgcolor=\"transparent\" width=\"60%\"\u003E{informationsPersonnelles}\u003C\u002Ftd\u003E\r\n\u003C\u002Ftr\u003E\r\n\u003Ctr id=\"row_8\" class=\"questionRow\"\u003E\r\n\u003Ctd id=\"question_8\" class=\"questionColumn\" style=\"color: #6f76a7; font-size: 14px;\" bgcolor=\"transparent\" width=\"40%\"\u003EVotre num&eacute;ro de t&eacute;l&eacute;phone\u003C\u002Ftd\u003E\r\n\u003Ctd id=\"value_8\" class=\"valueColumn\" style=\"color: #0a1551; font-size: 14px;\" bgcolor=\"transparent\" width=\"60%\"\u003E{votreNumero}\u003C\u002Ftd\u003E\r\n\u003C\u002Ftr\u003E\r\n\u003Ctr id=\"row_7\" class=\"questionRow\"\u003E\r\n\u003Ctd id=\"question_7\" class=\"questionColumn\" style=\"color: #6f76a7; font-size: 14px;\" bgcolor=\"transparent\" width=\"40%\"\u003EVotre email\u003C\u002Ftd\u003E\r\n\u003Ctd id=\"value_7\" class=\"valueColumn\" style=\"color: #0a1551; font-size: 14px;\" bgcolor=\"transparent\" width=\"60%\"\u003E{votreEmail}\u003C\u002Ftd\u003E\r\n\u003C\u002Ftr\u003E\r\n\u003Ctr id=\"row_2\" class=\"questionRow\"\u003E\r\n\u003Ctd id=\"question_2\" class=\"questionColumn\" style=\"color: #6f76a7; font-size: 14px;\" bgcolor=\"transparent\" width=\"40%\"\u003ES&eacute;lectionnez la date et l'heure de votre s&eacute;ance\u003C\u002Ftd\u003E\r\n\u003Ctd id=\"value_2\" class=\"valueColumn\" style=\"color: #0a1551; font-size: 14px;\" bgcolor=\"transparent\" width=\"60%\"\u003E{q2_appointment0}\u003C\u002Ftd\u003E\r\n\u003C\u002Ftr\u003E\r\n\u003Ctr id=\"row_10\" class=\"questionRow\"\u003E\r\n\u003Ctd id=\"question_10\" class=\"questionColumn\" style=\"color: #6f76a7; font-size: 14px;\" bgcolor=\"transparent\" width=\"40%\"\u003EChoix du psychologue\u003C\u002Ftd\u003E\r\n\u003Ctd id=\"value_10\" class=\"valueColumn\" style=\"color: #0a1551; font-size: 14px;\" bgcolor=\"transparent\" width=\"60%\"\u003E{choixDu}\u003C\u002Ftd\u003E\r\n\u003C\u002Ftr\u003E\r\n\u003Ctr id=\"row_12\" class=\"questionRow\"\u003E\r\n\u003Ctd id=\"question_12\" class=\"questionColumn\" style=\"color: #6f76a7; font-size: 14px;\" bgcolor=\"transparent\" width=\"40%\"\u003EMotivation\u003C\u002Ftd\u003E\r\n\u003Ctd id=\"value_12\" class=\"valueColumn\" style=\"color: #0a1551; font-size: 14px;\" bgcolor=\"transparent\" width=\"60%\"\u003E{votreMotivation}\u003C\u002Ftd\u003E\r\n\u003C\u002Ftr\u003E\r\n\u003Ctr id=\"row_13\" class=\"questionRow\"\u003E\r\n\u003Ctd id=\"question_13\" class=\"questionColumn\" style=\"color: #6f76a7; font-size: 14px;\" bgcolor=\"transparent\" width=\"40%\"\u003E&Eacute;motions\u003C\u002Ftd\u003E\r\n\u003Ctd id=\"value_13\" class=\"valueColumn\" style=\"color: #0a1551; font-size: 14px;\" bgcolor=\"transparent\" width=\"60%\"\u003E{Emotions}\u003C\u002Ftd\u003E\r\n\u003C\u002Ftr\u003E\r\n\u003Ctr id=\"row_14\" class=\"questionRow\"\u003E\r\n\u003Ctd id=\"question_14\" class=\"questionColumn\" style=\"color: #6f76a7; font-size: 14px;\" bgcolor=\"transparent\" width=\"40%\"\u003EDur&eacute;e des ressentis\u003C\u002Ftd\u003E\r\n\u003Ctd id=\"value_14\" class=\"valueColumn\" style=\"color: #0a1551; font-size: 14px;\" bgcolor=\"transparent\" width=\"60%\"\u003E{depuisCombien}\u003C\u002Ftd\u003E\r\n\u003C\u002Ftr\u003E\r\n\u003Ctr id=\"row_15\" class=\"questionRow\"\u003E\r\n\u003Ctd id=\"question_15\" class=\"questionColumn\" style=\"color: #6f76a7; font-size: 14px;\" bgcolor=\"transparent\" width=\"40%\"\u003E&Eacute;v&eacute;nement d&eacute;clencheur\u003C\u002Ftd\u003E\r\n\u003Ctd id=\"value_15\" class=\"valueColumn\" style=\"color: #0a1551; font-size: 14px;\" bgcolor=\"transparent\" width=\"60%\"\u003E{EvenementDeclencheur}\u003C\u002Ftd\u003E\r\n\u003C\u002Ftr\u003E\r\n\u003Ctr id=\"row_16\" class=\"questionRow\"\u003E\r\n\u003Ctd id=\"question_16\" class=\"questionColumn\" style=\"color: #6f76a7; font-size: 14px;\" bgcolor=\"transparent\" width=\"40%\"\u003EAttentes\u003C\u002Ftd\u003E\r\n\u003Ctd id=\"value_16\" class=\"valueColumn\" style=\"color: #0a1551; font-size: 14px;\" bgcolor=\"transparent\" width=\"60%\"\u003E{queSouhaiteriezvous}\u003C\u002Ftd\u003E\r\n\u003C\u002Ftr\u003E\r\n\u003Ctr id=\"row_17\" class=\"questionRow\"\u003E\r\n\u003Ctd id=\"question_17\" class=\"questionColumn\" style=\"color: #6f76a7; font-size: 14px;\" bgcolor=\"transparent\" width=\"40%\"\u003EPartage avec le psychologue\u003C\u002Ftd\u003E\r\n\u003Ctd id=\"value_17\" class=\"valueColumn\" style=\"color: #0a1551; font-size: 14px;\" bgcolor=\"transparent\" width=\"60%\"\u003E{partageAvec}\u003C\u002Ftd\u003E\r\n\u003C\u002Ftr\u003E\r\n\u003C\u002Ftbody\u003E\r\n\u003C\u002Ftable\u003E\r\n\u003C\u002Ftd\u003E\r\n\u003C\u002Ftr\u003E\r\n\u003C\u002Ftbody\u003E\r\n\u003C\u002Ftable\u003E\r\n\u003C\u002Ftd\u003E\r\n\u003C\u002Ftr\u003E\r\n\u003C\u002Ftbody\u003E\r\n\u003C\u002Ftable\u003E\r\n\u003C\u002Ftd\u003E\r\n\u003C\u002Ftr\u003E\r\n\u003C\u002Ftbody\u003E\r\n\u003C\u002Ftable\u003E\r\n\u003C\u002Ftd\u003E\r\n\u003C\u002Ftr\u003E\r\n\u003Ctr\u003E\r\n\u003Ctd style=\"min-height: 64px;\" height=\"64\"\u003E&nbsp;\u003C\u002Ftd\u003E\r\n\u003C\u002Ftr\u003E\r\n\u003C\u002Ftbody\u003E\r\n\u003C\u002Ftable\u003E\r\n\u003C\u002Ftd\u003E\r\n\u003C\u002Ftr\u003E\r\n\u003Ctr\u003E\r\n\u003Ctd style=\"min-height: 116px;\" height=\"116\"\u003E&nbsp;\u003C\u002Ftd\u003E\r\n\u003C\u002Ftr\u003E\r\n\u003C\u002Ftbody\u003E\r\n\u003C\u002Ftable\u003E\r\n\u003C\u002Ftd\u003E\r\n\u003Ctd style=\"width: 32px; min-width: 32px;\" width=\"32\"\u003E&nbsp;\u003C\u002Ftd\u003E\r\n\u003C\u002Ftr\u003E\r\n\u003C\u002Ftbody\u003E\r\n\u003C\u002Ftable\u003E\r\n\u003C\u002Fbody\u003E\r\n\u003C\u002Fhtml\u003E", "senderName": "Jotform", "replyTo": "psy@cabinetartdevivre.com", "branding21Email": "1", "senderEmail": "noreply@jotform.com", "hideEmptyFields": "false", "sendOnEdit": "false", "enablePDFPassword": "false", "isPDFPasswordRequiredOnHIPAA": "true", "usesNewPDF": "Yes", "recipientLimit": "0" } } }, "remoteCalendarAccountID": { "hidden": true, "value": "" }, "remoteCalendarID": { "hidden": true, "value": "" }, "remoteCalendarIntegrationID": { "hidden": true, "value": "" }, "remoteCalendarType": { "hidden": true, "value": "" }, "type": { "hidden": true, "value": "control_appointment" }, "useEmail": { "hidden": true, "value": "No" }, "useFullname": { "hidden": true, "value": "No" }, "useReminderEmails": { "hidden": true, "value": "Yes" }, "id": { "toolbar": false, "value": "2" }, "qname": { "toolbar": false, "value": "q2_q2_appointment0" }, "cdnconfig": { "CDN": "https:\u002F\u002Fcdn.jotfor.ms\u002F" }, "passive": false, "formProperties": { "highlightLine": "Enabled", "coupons": false, "useStripeCoupons": false, "taxes": false, "comparePaymentForm": "", "paymentListSettings": false, "newPaymentUIForNewCreatedForms": false, "formBackground": "#ffffff", "newAppointment": false, "isAutoCompleteEnabled": true }, "formID": 253072792938064, "isPaymentForm": false, "isOpenedInPortal": false, "isCheckoutForm": false, "isImportPDFForm": false, "isOfflineForms": false, "SSL_URL": "https:\u002F\u002Fwww.jotform.com\u002F", "themeVersion": "v2", "isEnterprise": false, "environment": "PRODUCTION" });
+                                    if (window.JotForm && JotForm.accessible) $('input_12').setAttribute('tabindex', 0);
+                                    if (window.JotForm && JotForm.accessible) $('input_14').setAttribute('tabindex', 0);
+                                    if (window.JotForm && JotForm.accessible) $('input_15').setAttribute('tabindex', 0);
+                                    if (window.JotForm && JotForm.accessible) $('input_16').setAttribute('tabindex', 0);
+                                    if (window.JotForm && JotForm.accessible) $('input_17').setAttribute('tabindex', 0);
+                                    JotForm.alterTexts({ "ageVerificationError": "Vous devez avoir plus de {Ageminimum} ans pour envoyer ce formulaire.", "alphabetic": "Ce champ ne peut contenir que des lettres", "alphanumeric": "Ce champ ne peut contenir que des lettres et des chiffres.", "cancelAppointment": "Annuler le rendez-vous", "cancelSelection": "Annuler la sélection", "ccDonationMinLimitError": "Le montant minimum est de {minAmount} {currency}", "ccInvalidCVC": "Le numéro CVC est invalide.", "ccInvalidExpireDate": "La date d'expiration est invalide.", "ccInvalidExpireMonth": "Expiration month is invalid.", "ccInvalidExpireYear": "Expiration year is invalid.", "ccInvalidNumber": "Le numéro de la carte bancaire est invalide.", "ccMissingDetails": "Please fill up the credit card details.", "ccMissingDonation": "Veuillez saisir des valeurs numériques pour le montant des dons.", "ccMissingProduct": "Veuillez sélectionner au moins un produit.", "characterLimitError": "Trop de caractères. La limite est de", "characterMinLimitError": "Nombre de caractères insuffisant. Le nombre minimum est de", "chooseAFile_infoMessage": "Choisir un fichier", "confirmClearForm": "Voulez-vous vraiment supprimer les inscriptions de ce formulaire ?", "confirmEmail": "L'adresse e-mail ne correspond pas", "confirmSelection": "Confirm Selection", "currency": "Ce champ ne peut contenir que des valeurs monétaires.", "cyrillic": "Ce champ ne peut contenir que des caractères cyrilliques", "dateInvalid": "Ce format de date n'est pas valide. Le format de la date est {format}", "dateInvalidSeparate": "Cette date n'est pas valide. Veuillez saisir une date valide {element}.", "dateLimited": "Cette date est indisponible.", "disallowDecimals": "Veuillez entrer un nombre entier.", "doneButton": "Terminé", "doneMessage": "Bien joué ! Toutes les erreurs sont résolues.", "dragAndDropFilesHere_infoMessage": "Glissez-déposez des fichiers ici", "email": "Saisir une adresse courriel valide", "error": "Erreur", "fieldError": "le champ contient une erreur.", "fillMask": "La valeur du champ doit remplir le masque.", "formerSelectedTime": "Ancien créneau", "freeEmailError": "Les comptes e-mail gratuits ne sont pas autorisés", "generalError": "Ce formulaire contient des erreurs. Veuillez les corriger avant de continuer.", "generalPageError": "Cette page contient des erreurs. Veuillez les corriger avant de continuer.", "geoNotAvailableDesc": "Location provider not available. Please enter the address manually.", "geoNotAvailableTitle": "Position Unavailable", "geoPermissionDesc": "Check your browser's privacy settings.", "geoPermissionTitle": "Permission Denied", "geoTimeoutDesc": "Please check your internet connection and try again.", "geoTimeoutTitle": "Timeout", "gradingScoreError": "Le score total devrais être moins ou égal à", "incompleteFields": "Des champs obligatoires ne sont pas remplis. Veuillez les compléter.", "inputCarretErrorA": "Le nombre saisi ne peut pas être inférieur à la valeur minimum :", "inputCarretErrorB": "Vous ne pouvez pas saisir une valeur supérieure à la valeur maximum :", "invalidTime": "Saisissez une heure valide", "justSoldOut": "Tout juste épuisé", "lessThan": "Votre note doit être inférieure ou égale à", "maxCharactersError": "The number of characters should not be more than the maximum value:", "maxDigitsError": "Le nombre de chiffres maximum autorisé est de", "maxFileSize_infoMessage": "Taille de fichier max.", "maxSelectionsError": "Le nombre maximum de sélections autorisées est de", "minCharactersError": "Le nombre de caractères ne doit pas être inférieur à :", "minSelectionsError": "Le nombre minimum requis de sélections est de", "multipleError": "Il y a {count} erreurs sur cette page. Veuillez les corriger pour continuer.", "multipleFileUploads_emptyError": "{file} est vide, veuillez sélectionner à nouveau les fichiers sans celui-ci.", "multipleFileUploads_fileLimitError": "Seuls {fileLimit} téléchargements de fichiers sont autorisés.", "multipleFileUploads_minSizeError": "{file} est trop petite, la taille de fichier minimale est {minSizeLimit}.", "multipleFileUploads_onLeave": "Les fichiers sont en cours de téléchargement, si vous quittez maintenant le téléchargement sera annulé.", "multipleFileUploads_sizeError": "{file} est trop volumineux, la taille maximale d'un fichier est de {sizeLimit}.", "multipleFileUploads_typeError": "L'extension de {file} est invalide. Seules les extensions {extensions} sont autorisées.", "multipleFileUploads_uploadFailed": "Le téléversement du fichier a échoué. Veuillez le supprimer et recommencer.", "nextButtonText": "Suivant", "noSlotsAvailable": "Aucun emplacement disponible", "notEnoughStock": "Pas assez de stock pour la sélection actuelle", "notEnoughStock_remainedItems": "Pas assez de stock pour la sélection actuelle ({count} articles restants)", "noUploadExtensions": "File has no extension file type (e.g. .txt, .png, .jpeg)", "numeric": "Ce champ ne peut contenir que des valeurs numériques", "oneError": "Il y a {count} erreur sur cette page. Veuillez la corriger pour continuer.", "pastDatesDisallowed": "La date ne doit pas se situer dans le passé.", "pleaseWait": "Veuillez patienter.", "prevButtonText": "Précédent", "progressMiddleText": "de", "required": "Ce champ est obligatoire.", "requiredLegend": "Tous les champs marqués d'un * sont obligatoires et doivent être remplis.", "requireEveryCell": "Toutes les cellules sont nécessaires.", "requireEveryRow": "Chaque ligne est obligatoire.", "requireOne": "Au moins un champ est requis", "restrictedDomain": "This domain is not allowed", "reviewBackText": "Retour au formulaire", "reviewSubmitText": "Revoir et Envoyer", "seeAllText": "Tout afficher", "seeErrorsButton": "Voir les erreurs", "selectedTime": "Créneau choisi", "selectionSoldOut": "Sélection épuisée", "slotUnavailable": "{heure} le {date} est déjà pris. Veuillez sélectionner un autre créneau.", "soldOut": "Épuisé", "startButtonText": "COMMENCER", "submissionLimit": "Désolé, vous ne pouvez soumettre ce formulaire qu'une seule fois. &lt;br&gt; Les soumissions multiples sont désactivées pour ce formulaire.", "submitButtonText": "Soumettre", "subProductItemsLeft": "({count} articles restants)", "uploadExtensions": "Vous ne pouvez uploader que les fichiers suivants :", "uploadFilesize": "La taille du fichier ne peut pas dépasser :", "uploadFilesizemin": "la taille du fichier ne peut pas être inférieure à :", "url": "Ce champ peut uniquement contenir une URL valide", "validateEmail": "Vous devez valider cet e-mail", "wordLimitError": "Trop de mots. Le nombre max. de mots est de", "wordMinLimitError": "Trop peu de mots. Le minimum est" });
+                                    /*INIT-END*/
+                                });
+
+                                setTimeout(function () {
+                                    JotForm.paymentExtrasOnTheFly([null, null, { "description": "", "name": "q2_appointment0", "qid": "2", "text": "Selectionnez la date et l'heure de votre seance", "type": "control_appointment" }, null, null, null, { "description": "", "name": "informationsPersonnelles", "qid": "6", "text": "Informations personnelles", "type": "control_fullname" }, { "description": "", "name": "votreEmail", "qid": "7", "subLabel": "example@example.com", "text": "Votre email", "type": "control_email" }, { "description": "", "name": "votreNumero", "qid": "8", "text": "Votre numero de telephone", "type": "control_phone" }, null, { "description": "", "name": "choixDu", "qid": "10", "subLabel": "", "text": "Choix du psychologue", "type": "control_dropdown" }, null, { "description": "", "mde": "No", "name": "votreMotivation", "qid": "12", "subLabel": "Repondez librement, il n’y a pas de bonne ou mauvaise reponse. Qu’est-ce qui vous a motive a prendre rendez-vous aujourd’hui ?", "text": "Votre motivation et emotions", "type": "control_textarea", "wysiwyg": "Disable" }, { "description": "", "name": "Emotions", "qid": "13", "text": "Emotions", "type": "control_checkbox" }, { "description": "", "mde": "No", "name": "depuisCombien", "qid": "14", "subLabel": "", "text": "Depuis combien de temps ressentez-vous cela ?", "type": "control_textarea", "wysiwyg": "Disable" }, { "description": "", "mde": "No", "name": "EvenementDeclencheur", "qid": "15", "subLabel": "", "text": "Y a-t-il eu un evenement declencheur ?", "type": "control_textarea", "wysiwyg": "Disable" }, { "description": "", "mde": "No", "name": "queSouhaiteriezvous", "qid": "16", "subLabel": "", "text": "Que souhaiteriez-vous obtenir grace a cet accompagnement ?", "type": "control_textarea", "wysiwyg": "Disable" }, { "description": "", "mde": "No", "name": "partageAvec", "qid": "17", "subLabel": "", "text": "Partage avec le psychologue", "type": "control_textarea", "wysiwyg": "Disable" }, { "name": "submit", "qid": "18", "text": "Submit", "type": "control_button" }]);
+                                }, 20); 
+                            </script>
+                            <link type="text/css" rel="stylesheet" href="https://cdn.jotfor.ms/stylebuilder/static/form-common.css?v=e6bb3ef
+" />
+                            <style type="text/css">
+                                @media print {
+                                    * {
+                                        -webkit-print-color-adjust: exact !important;
+                                        color-adjust: exact !important;
+                                    }
+
+                                    .form-section {
+                                        display: inline !important
+                                    }
+
+                                    .form-pagebreak {
+                                        display: none !important
+                                    }
+
+                                    .form-section-closed {
+                                        height: auto !important
+                                    }
+
+                                    .page-section {
+                                        position: initial !important
+                                    }
+                                }
+                            </style>
+                            <link id="custom-font" type="text/css" rel="stylesheet"
+                                href="//cdn.jotfor.ms/fonts/?family=Inter" />
+                            <link type="text/css" rel="stylesheet"
+                                href="https://cdn.jotfor.ms/themes/CSS/5e6b428acc8c4e222d1beb91.css?v=3.3.66491&themeRevisionID=65660e4b326633110492e01a" />
+                            <link type="text/css" rel="stylesheet"
+                                href="https://cdn.jotfor.ms/s/static/8d64daaba20/css/styles/payment/payment_styles.css?3.3.66491" />
+                            <link type="text/css" rel="stylesheet"
+                                href="https://cdn.jotfor.ms/s/static/8d64daaba20/css/styles/payment/payment_feature.css?3.3.66491" />
+                            <style type="text/css" id="form-designer-style">
+                                /* Injected CSS Code */
+                                /*PREFERENCES STYLE*/
+                                .form-all {
+                                    font-family: Inter, sans-serif;
+                                }
+
+                                .form-label.form-label-auto {
+
+                                    display: block;
+                                    float: none;
+                                    text-align: left;
+                                    width: 100%;
+
+                                }
+
+                                .form-line {
+                                    margin-top: 14px;
+                                    margin-bottom: 14px;
+                                }
+
+                                .form-all {
+                                    max-width: 750px;
+                                    width: 100%;
+                                }
+
+                                .form-label.form-label-left,
+                                .form-label.form-label-right,
+                                .form-label.form-label-left.form-label-auto,
+                                .form-label.form-label-right.form-label-auto {
+                                    width: 230px;
+                                }
+
+                                .form-all {
+                                    font-size: 18px
+                                }
+
+                                .supernova .form-all,
+                                .form-all {
+                                    background-color: #ffffff;
+                                }
+
+                                .form-all {
+                                    color: #000000;
+                                }
+
+                                .form-header-group .form-header {
+                                    color: #000000;
+                                }
+
+                                .form-header-group .form-subHeader {
+                                    color: #000000;
+                                }
+
+                                .form-label-top,
+                                .form-label-left,
+                                .form-label-right,
+                                .form-html,
+                                .form-checkbox-item label,
+                                .form-radio-item label,
+                                span.FITB .qb-checkbox-label,
+                                span.FITB .qb-radiobox-label,
+                                span.FITB .form-radio label,
+                                span.FITB .form-checkbox label,
+                                [data-blotid][data-type=checkbox] [data-labelid],
+                                [data-blotid][data-type=radiobox] [data-labelid],
+                                span.FITB-inptCont[data-type=checkbox] label,
+                                span.FITB-inptCont[data-type=radiobox] label {
+                                    color: #000000;
+                                }
+
+                                .form-sub-label {
+                                    color: #1a1a1a;
+                                }
+
+                                .supernova {
+                                    background-color: #f3f3fe;
+                                }
+
+                                .supernova body {
+                                    background: transparent;
+                                }
+
+                                .form-textbox,
+                                .form-textarea,
+                                .form-dropdown,
+                                .form-radio-other-input,
+                                .form-checkbox-other-input,
+                                .form-captcha input,
+                                .form-spinner input {
+                                    background-color: #ffffff;
+                                }
+
+
+                                .supernova {
+                                    background-repeat: no-repeat;
+                                    background-size: cover;
+                                    background-attachment: fixed;
+                                    background-position: center top;
+                                }
+
+                                .supernova,
+                                #stage {
+                                    background-image: none;
+                                }
+
+                                .form-all {
+                                    background-image: none;
+                                }
+
+                                /*PREFERENCES STYLE*/
+                                /*__INSPECT_SEPERATOR__*/
+                                .form-label.form-label-auto {
+
+                                    display: block;
+                                    float: none;
+                                    text-align: left;
+                                    width: 100%;
+
+                                }
+
+                                /* Injected CSS Code */
+                            </style>
+
+                            <form class="jotform-form"
+                                onsubmit="return typeof testSubmitFunction !== 'undefined' && testSubmitFunction();"
+                                action="https://submit.jotform.com/submit/253072792938064" method="post"
+                                name="form_253072792938064" id="253072792938064" accept-charset="utf-8"
+                                autocomplete="on"><input type="hidden" name="formID" value="253072792938064" /><input
+                                    type="hidden" id="JWTContainer" value="" /><input type="hidden"
+                                    id="cardinalOrderNumber" value="" /><input type="hidden" id="jsExecutionTracker"
+                                    name="jsExecutionTracker" value="build-date-1762268060317" /><input type="hidden"
+                                    id="submitSource" name="submitSource" value="unknown" /><input type="hidden"
+                                    id="submitDate" name="submitDate" value="undefined" /><input type="hidden"
+                                    id="buildDate" name="buildDate" value="1762268060317" /><input type="hidden"
+                                    name="uploadServerUrl" value="https://upload.jotform.com/upload" /><input
+                                    type="hidden" name="eventObserver" value="1" />
+                                <div id="formCoverLogo" style="margin-bottom:32px"
+                                    class="form-cover-wrapper form-has-cover form-page-cover-image-align-center">
+                                    <div class="form-page-cover-image-wrapper" style="max-width:750px"><img
+                                            src="https://www.jotform.com/uploads/devivre/form_files/logo2.6909f15f13c385.55736784.png"
+                                            class="form-page-cover-image" width="250" height="250"
+                                            alt="Réservation de séance avec votre psychologue Cabinet art de vivre Logo"
+                                            style="aspect-ratio:250/250" /></div>
                                 </div>
-
-                                <div class="row gy-3">
-                                    <div class="col-md-6">
-                                        <input type="text" name="name" class="form-control"
-                                            placeholder="Votre nom complet" required>
-                                    </div>
-                                    <div class="col-md-6">
-                                        <input type="email" name="email" class="form-control" placeholder="Votre email"
-                                            required>
-                                    </div>
-                                    <div class="col-md-6">
-                                        <input type="tel" name="phone" class="form-control"
-                                            placeholder="Votre numéro de téléphone" required>
-                                    </div>
-                                    <div class="col-md-6">
-                                        <input type="date" name="dob" class="form-control"
-                                            placeholder="Date de naissance">
-                                    </div>
+                                <div role="main" class="form-all">
+                                    <ul class="form-section page-section" role="presentation">
+                                        <li class="form-line jf-required" data-type="control_fullname" id="id_6"
+                                            data-compound-hint=","><label class="form-label form-label-top" id="label_6"
+                                                for="first_6" aria-hidden="false"> Informations personnelles<span
+                                                    class="form-required">*</span> </label>
+                                            <div id="cid_6" class="form-input-wide jf-required" data-layout="full">
+                                                <div data-wrapper-react="true"><span class="form-sub-label-container"
+                                                        style="vertical-align:top" data-input-type="first"><input
+                                                            type="text" id="first_6"
+                                                            name="q6_informationsPersonnelles[first]"
+                                                            class="form-textbox validate[required]" data-defaultvalue=""
+                                                            autoComplete="section-input_6 given-name" size="10"
+                                                            data-component="first"
+                                                            aria-labelledby="label_6 sublabel_6_first" required=""
+                                                            value="" /><label class="form-sub-label" for="first_6"
+                                                            id="sublabel_6_first"
+                                                            style="min-height:13px">Prenom</label></span><span
+                                                        class="form-sub-label-container" style="vertical-align:top"
+                                                        data-input-type="last"><input type="text" id="last_6"
+                                                            name="q6_informationsPersonnelles[last]"
+                                                            class="form-textbox validate[required]" data-defaultvalue=""
+                                                            autoComplete="section-input_6 family-name" size="15"
+                                                            data-component="last"
+                                                            aria-labelledby="label_6 sublabel_6_last" required=""
+                                                            value="" /><label class="form-sub-label" for="last_6"
+                                                            id="sublabel_6_last" style="min-height:13px">Nom
+                                                        </label></span></div>
+                                            </div>
+                                        </li>
+                                        <li class="form-line jf-required" data-type="control_phone" id="id_8"><label
+                                                class="form-label form-label-left" id="label_8" for="input_8_full">
+                                                Votre numéro de téléphone<span class="form-required">*</span> </label>
+                                            <div id="cid_8" class="form-input jf-required" data-layout="half"> <span
+                                                    class="form-sub-label-container" style="vertical-align:top"><input
+                                                        type="tel" id="input_8_full" name="q8_votreNumero[full]"
+                                                        data-type="mask-number"
+                                                        class="mask-phone-number form-textbox validate[required, Fill Mask]"
+                                                        data-defaultvalue="" autoComplete="section-input_8 tel-national"
+                                                        style="width:310px" data-masked="true"
+                                                        placeholder="(000) 000-0000" data-component="phone"
+                                                        aria-labelledby="label_8 sublabel_8_masked" required=""
+                                                        value="" /><label class="form-sub-label" for="input_8_full"
+                                                        id="sublabel_8_masked" style="min-height:13px">+229
+                                                        01XXXXXX</label></span> </div>
+                                        </li>
+                                        <li class="form-line jf-required" data-type="control_email" id="id_7"><label
+                                                class="form-label form-label-left" id="label_7" for="input_7"
+                                                aria-hidden="false"> Votre email<span class="form-required">*</span>
+                                            </label>
+                                            <div id="cid_7" class="form-input jf-required" data-layout="half"> <span
+                                                    class="form-sub-label-container" style="vertical-align:top"><input
+                                                        type="email" id="input_7" name="q7_votreEmail"
+                                                        class="form-textbox validate[required, Email]"
+                                                        data-defaultvalue="" autoComplete="section-input_7 email"
+                                                        style="width:310px" size="310" data-component="email"
+                                                        aria-labelledby="label_7 sublabel_input_7" required=""
+                                                        value="" /><br /><label class="form-sub-label"
+                                                        style="border:0;clip:rect(0 0 0 0);height:1px;margin:-1px;overflow:hidden;padding:0;position:absolute;width:1px;white-space:nowrap"
+                                                        for="input_7_confirm">Confirmation Email</label><input
+                                                        type="email" id="input_7_confirm" name="q7_votreEmail"
+                                                        class="form-textbox validate[required, Email, Email_Confirm]"
+                                                        data-defaultvalue="" autoComplete="nope"
+                                                        style="margin-top:8px;width:310px" size="310"
+                                                        placeholder="exemple@exemple.com"
+                                                        data-component="emailConfirmation" aria-labelledby=""
+                                                        value="" /><label class="form-sub-label" for="input_7"
+                                                        id="sublabel_input_7"
+                                                        style="min-height:13px">example@example.com</label></span>
+                                            </div>
+                                        </li>
+                                        <li class="form-line always-hidden" data-type="control_appointment" id="id_2">
+                                            <label class="form-label form-label-top" id="label_2" for="input_2"
+                                                aria-hidden="false"> Sélectionnez la date et l'heure de votre séance
+                                            </label>
+                                            <div id="cid_2" class="form-input-wide always-hidden" data-layout="full">
+                                                <div id="input_2" class="appointmentFieldWrapper jfQuestion-fields">
+                                                    <input class="appointmentFieldInput"
+                                                        name="q2_q2_appointment0[implementation]"
+                                                        id="input_2implementation" aria-hidden="true" type="hidden"
+                                                        value="new" /><input class="appointmentFieldInput "
+                                                        name="q2_q2_appointment0[date]" id="input_2_date"
+                                                        data-timeformat="24 Hour" aria-hidden="true"
+                                                        type="hidden" /><input class="appointmentFieldInput"
+                                                        name="q2_q2_appointment0[duration]" id="input_2_duration"
+                                                        aria-hidden="true" type="hidden" value="60" /><input
+                                                        class="appointmentFieldInput"
+                                                        name="q2_q2_appointment0[timezone]" id="input_2_timezone"
+                                                        aria-hidden="true" type="hidden"
+                                                        value="Africa/Porto-Novo (GMT+01:00)" />
+                                                    <div class="appointmentField"></div>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li class="form-line jf-required" data-type="control_dropdown" id="id_10"><label
+                                                class="form-label form-label-top form-label-auto" id="label_10"
+                                                for="input_10" aria-hidden="false"> Choix du psychologue<span
+                                                    class="form-required">*</span> </label>
+                                            <div id="cid_10" class="form-input-wide jf-required" data-layout="half">
+                                                <select class="form-dropdown validate[required]" id="input_10"
+                                                    name="q10_choixDu" style="width:310px" data-component="dropdown"
+                                                    required="" aria-label="Choix du psychologue">
+                                                    <option value="">Please Select</option>
+                                                    <option value="Stéphanie GBEHOUNHESSI – Psychologue clinicienne">
+                                                        Stéphanie GBEHOUNHESSI – Psychologue clinicienne</option>
+                                                    <option value="Rachel YABI – Psychologue clinicienne">Rachel YABI –
+                                                        Psychologue clinicienne</option>
+                                                    <option value="SOSSA IRÉNÉE TCHAOU – Psychologue clinicien">SOSSA
+                                                        IRÉNÉE TCHAOU – Psychologue clinicien</option>
+                                                    <option value="Thomase MEHINTO – Psychologue clinicienne">Thomase
+                                                        MEHINTO – Psychologue clinicienne</option>
+                                                    <option value="Arielle CODJIA – Psychologue clinicienne">Arielle
+                                                        CODJIA – Psychologue clinicienne</option>
+                                                </select>
+                                            </div>
+                                        </li>
+                                        <li class="form-line" data-type="control_textarea" id="id_12"><label
+                                                class="form-label form-label-top form-label-auto" id="label_12"
+                                                for="input_12" aria-hidden="false"> Votre motivation et émotions
+                                            </label>
+                                            <div id="cid_12" class="form-input-wide" data-layout="full"> <span
+                                                    class="form-sub-label-container"
+                                                    style="vertical-align:top"><textarea id="input_12"
+                                                        class="form-textarea" name="q12_votreMotivation"
+                                                        style="width:648px;height:163px" data-component="textarea"
+                                                        aria-labelledby="label_12 sublabel_input_12"></textarea><label
+                                                        class="form-sub-label" for="input_12" id="sublabel_input_12"
+                                                        style="min-height:13px">Répondez librement, il n’y a pas de
+                                                        bonne ou mauvaise réponse. Qu’est-ce qui vous a motivé à prendre
+                                                        rendez-vous aujourd’hui ?</label></span> </div>
+                                        </li>
+                                        <li class="form-line" data-type="control_checkbox" id="id_13"><label
+                                                class="form-label form-label-top form-label-auto" id="label_13"
+                                                aria-hidden="false"> Émotions </label>
+                                            <div id="cid_13" class="form-input-wide" data-layout="full">
+                                                <div class="form-single-column" role="group" aria-labelledby="label_13"
+                                                    data-component="checkbox"><span class="form-checkbox-item"
+                                                        style="clear:left"><span class="dragger-item"></span><input
+                                                            aria-describedby="label_13" type="checkbox"
+                                                            class="form-checkbox" id="input_13_0" name="q13_Emotions[]"
+                                                            value="Anxiété / Nervosité" /><label id="label_input_13_0"
+                                                            for="input_13_0">Anxiété / Nervosité</label></span><span
+                                                        class="form-checkbox-item" style="clear:left"><span
+                                                            class="dragger-item"></span><input
+                                                            aria-describedby="label_13" type="checkbox"
+                                                            class="form-checkbox" id="input_13_1" name="q13_Emotions[]"
+                                                            value="Tristesse" /><label id="label_input_13_1"
+                                                            for="input_13_1">Tristesse</label></span><span
+                                                        class="form-checkbox-item" style="clear:left"><span
+                                                            class="dragger-item"></span><input
+                                                            aria-describedby="label_13" type="checkbox"
+                                                            class="form-checkbox" id="input_13_2" name="q13_Emotions[]"
+                                                            value="Colère / Irritation" /><label id="label_input_13_2"
+                                                            for="input_13_2">Colère / Irritation</label></span><span
+                                                        class="form-checkbox-item" style="clear:left"><span
+                                                            class="dragger-item"></span><input
+                                                            aria-describedby="label_13" type="checkbox"
+                                                            class="form-checkbox" id="input_13_3" name="q13_Emotions[]"
+                                                            value="Fatigue / Épuisement" /><label id="label_input_13_3"
+                                                            for="input_13_3">Fatigue / Épuisement</label></span><span
+                                                        class="form-checkbox-item" style="clear:left"><span
+                                                            class="dragger-item"></span><input
+                                                            aria-describedby="label_13" type="checkbox"
+                                                            class="form-checkbox" id="input_13_4" name="q13_Emotions[]"
+                                                            value="Autre" /><label id="label_input_13_4"
+                                                            for="input_13_4">Autre</label></span></div>
+                                            </div>
+                                        </li>
+                                        <li class="form-line" data-type="control_textarea" id="id_14"><label
+                                                class="form-label form-label-top form-label-auto" id="label_14"
+                                                for="input_14" aria-hidden="false"> Depuis combien de temps
+                                                ressentez-vous cela ? </label>
+                                            <div id="cid_14" class="form-input-wide" data-layout="full"> <textarea
+                                                    id="input_14" class="form-textarea" name="q14_depuisCombien"
+                                                    style="width:648px;height:163px" data-component="textarea"
+                                                    aria-labelledby="label_14"></textarea> </div>
+                                        </li>
+                                        <li class="form-line" data-type="control_textarea" id="id_15"><label
+                                                class="form-label form-label-top form-label-auto" id="label_15"
+                                                for="input_15" aria-hidden="false"> Y a-t-il eu un événement déclencheur
+                                                ? </label>
+                                            <div id="cid_15" class="form-input-wide" data-layout="full"> <textarea
+                                                    id="input_15" class="form-textarea" name="q15_EvenementDeclencheur"
+                                                    style="width:648px;height:163px" data-component="textarea"
+                                                    aria-labelledby="label_15"></textarea> </div>
+                                        </li>
+                                        <li class="form-line" data-type="control_textarea" id="id_16"><label
+                                                class="form-label form-label-top form-label-auto" id="label_16"
+                                                for="input_16" aria-hidden="false"> Que souhaiteriez-vous obtenir grâce
+                                                à cet accompagnement ? </label>
+                                            <div id="cid_16" class="form-input-wide" data-layout="full"> <textarea
+                                                    id="input_16" class="form-textarea" name="q16_queSouhaiteriezvous"
+                                                    style="width:648px;height:163px" data-component="textarea"
+                                                    aria-labelledby="label_16"></textarea> </div>
+                                        </li>
+                                        <li class="form-line" data-type="control_textarea" id="id_17"><label
+                                                class="form-label form-label-top form-label-auto" id="label_17"
+                                                for="input_17" aria-hidden="false"> Partage avec le psychologue </label>
+                                            <div id="cid_17" class="form-input-wide" data-layout="full"> <textarea
+                                                    id="input_17" class="form-textarea" name="q17_partageAvec"
+                                                    style="width:648px;height:163px" data-component="textarea"
+                                                    aria-labelledby="label_17"></textarea> </div>
+                                        </li>
+                                        <li class="form-line" data-type="control_button" id="id_18">
+                                            <div id="cid_18" class="form-input-wide" data-layout="full">
+                                                <div data-align="auto"
+                                                    class="form-buttons-wrapper form-buttons-auto   jsTest-button-wrapperField">
+                                                    <button id="input_18" type="submit"
+                                                        class="form-submit-button submit-button jf-form-buttons jsTest-submitField legacy-submit"
+                                                        data-component="button" data-content="">Submit</button>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li style="display:none">Should be Empty: <input type="text" name="website"
+                                                value="" type="hidden" /></li>
+                                    </ul>
                                 </div>
-
-                                <!-- Choisir un psychologue et une date -->
-                                <div class="form-header mt-4">
-                                    <h4><i class="bi bi-person-badge"></i> Choisissez votre psychologue</h4>
-                                </div>
-
-                                <div class="row gy-3">
-                                    <div class="col-12">
-                                        <select name="psychologist" class="form-select" required>
-                                            <option value="">Sélectionner un psychologue</option>
-                                            <option value="stephanie">Stéphanie GBEHOUNHESSI – Psychologue clinicienne
-                                            </option>
-                                            <option value="rachel">Rachel YABI – Psychologue clinicienne</option>
-                                            <option value="irenee">SOSSA IRÉNÉE TCHAOU – Psychologue clinicien</option>
-                                            <option value="armand">Thomase MEHINTO – Psychologue clinicien</option>
-                                            <option value="fatoumata">Arielle CODJIA – Psychologue clinicienne
-                                            </option>
-                                        </select>
-                                    </div>
-                                    <div class="col-md-6">
-                                        <input type="date" name="date" class="form-control" required>
-                                    </div>
-                                    <div class="col-md-6">
-                                        <select name="time" class="form-select" required>
-                                            <option value="">Sélectionner l’heure</option>
-                                            <option value="09:00">09h00</option>
-                                            <option value="10:30">10h30</option>
-                                            <option value="14:00">14h00</option>
-                                            <option value="16:00">16h00</option>
-                                            <option value="18:00">18h00</option>
-                                        </select>
-                                    </div>
-                                </div>
-
-                                <!-- Motivation, émotions et historique -->
-                                <div class="form-header mt-4">
-                                    <h4><i class="bi bi-chat-square-heart"></i> Votre motivation et émotions</h4>
-                                    <p class="small text-muted">
-                                        Répondez librement, il n’y a pas de bonne ou mauvaise réponse.
-                                    </p>
-                                </div>
-
-                                <div class="row gy-3">
-                                    <div class="col-12">
-                                        <label class="form-label">Qu’est-ce qui vous a motivé à prendre rendez-vous
-                                            aujourd’hui ?</label>
-                                        <textarea name="motivation" class="form-control" rows="3"
-                                            placeholder="Exemple : je me sens stressé au travail, j’ai du mal à dormir, je traverse une séparation…"></textarea>
-                                    </div>
-
-                                    <div class="col-12">
-                                        <label class="form-label">Quelles émotions ressentez-vous le plus souvent en ce
-                                            moment ?</label>
-                                        <div class="form-check">
-                                            <input class="form-check-input" type="checkbox" name="emotions"
-                                                value="Anxiété"> Anxiété / Nervosité
-                                        </div>
-                                        <div class="form-check">
-                                            <input class="form-check-input" type="checkbox" name="emotions"
-                                                value="Tristesse"> Tristesse
-                                        </div>
-                                        <div class="form-check">
-                                            <input class="form-check-input" type="checkbox" name="emotions"
-                                                value="Colère"> Colère / Irritation
-                                        </div>
-                                        <div class="form-check">
-                                            <input class="form-check-input" type="checkbox" name="emotions"
-                                                value="Fatigue"> Fatigue / Épuisement
-                                        </div>
-                                        <div class="form-check">
-                                            <input class="form-check-input" type="checkbox" name="emotions"
-                                                value="Autre"> Autre
-                                        </div>
-                                    </div>
-
-                                    <div class="col-12">
-                                        <label class="form-label">Depuis combien de temps ressentez-vous cela ?</label>
-                                        <select name="duree" class="form-select">
-                                            <option value="">Sélectionner</option>
-                                            <option value="quelques-jours">Quelques jours</option>
-                                            <option value="quelques-semaines">Quelques semaines</option>
-                                            <option value="plusieurs-mois">Plusieurs mois</option>
-                                            <option value="plus-dun-an">Plus d’un an</option>
-                                        </select>
-                                    </div>
-
-                                    <div class="col-12">
-                                        <label class="form-label">Y a-t-il eu un événement déclencheur ?</label>
-                                        <textarea name="declencheur" class="form-control" rows="2"
-                                            placeholder="Exemple : un changement de travail, une rupture, un conflit familial, un deuil…"></textarea>
-                                    </div>
-
-                                    <div class="col-12">
-                                        <label class="form-label">Que souhaiteriez-vous obtenir grâce à cet
-                                            accompagnement ?</label>
-                                        <textarea name="objectif" class="form-control" rows="2"
-                                            placeholder="Exemple : retrouver le sommeil, gérer mon anxiété, mieux communiquer avec mes proches…"></textarea>
-                                    </div>
-                                </div>
-
-                                <!-- Message supplémentaire -->
-                                <div class="col-12">
-                                    <textarea name="message" class="form-control" rows="4"
-                                        placeholder="Qu’aimeriez-vous partager avec votre psy ? (Vos attentes, vos émotions, vos difficultés…)"
-                                        required></textarea>
-                                </div>
-
-                                <!-- Bouton de soumission -->
-                                <div class="text-center mt-4">
-                                    <button type="submit" class="btn-book"><i class="bi bi-calendar-check"></i>
-                                        Réserver</button>
-                                </div>
+                                <script>
+                                    JotForm.showJotFormPowered = "new_footer";
+                                </script>
+                                <script>
+                                    JotForm.poweredByText = "Propulsé par Jotform";
+                                </script><input type="hidden" class="simple_spc" id="simple_spc" name="simple_spc"
+                                    value="253072792938064" />
+                                <script type="text/javascript">
+                                    var all_spc = document.querySelectorAll("form[id='253072792938064'] .si" + "mple" + "_spc");
+                                    for (var i = 0; i < all_spc.length; i++) {
+                                        all_spc[i].value = "253072792938064-253072792938064";
+                                    }
+                                </script>
                             </form>
+                            <link id=color-scheme-style
+                                href="https://cdn.jotfor.ms/stylebuilder/static/color-scheme.css?v=3.3.66491"
+                                type="text/css" rel="stylesheet" />
+
                         </div>
                     </div>
 
@@ -607,6 +1109,29 @@ Stack: ML/DL • React/Node • Flutter • DevOps
 
     <!-- Main JS File -->
     <script src="assets/js/main.js"></script>
+    <script type="text/javascript">JotForm.ownerView = true;</script>
+    <script type="text/javascript">JotForm.isNewSACL = true;</script>
+    <script
+        type="text/javascript">window.GOOGLE_SIGNON = "172124630376-qk1qmdfmur2ojaf39e070iqhpt2foaip.apps.googleusercontent.com"</script>
+    <script type="text/javascript">window.FACEBOOK_SIGNON_APP_ID = "1140740696088074"</script>
+    <script type="text/javascript">window.MICROSOFT_SIGNON_CLIENT_ID = "482577e8-f8d0-4a09-bbbb-15de3d05eebe"</script>
+    <script>window.JotFormAPIEndpoint = "https://api.jotform.com"; </script>
+    <script>window.JFForm = { "id": "253072792938064", "draftID": "", "skippable": true, "isHipaa": "", "enforceHIPAARuleSet": false };</script>
+    <script defer src="https://cdn.jotfor.ms/s/umd/d1b135e3adc/for-formuser.js"></script>
+
+    <script>window.enableEventObserver = true</script>
+    <script src="https://cdn.jotfor.ms/s/static/8d64daaba20/static/prototype.forms.js" type="text/javascript"></script>
+    <script src="https://cdn.jotfor.ms/s/static/8d64daaba20/static/jotform.forms.js" type="text/javascript"></script>
+    <script src="https://cdn.jotfor.ms/s/static/8d64daaba20/js/vendor/maskedinput_5.0.9.min.js"
+        type="text/javascript"></script>
+    <script src="https://cdn.jotfor.ms/s/static/8d64daaba20/js/punycode-1.4.1.min.js" type="text/javascript"
+        defer></script>
+    <script src="https://cdn.jotfor.ms/s/umd/d1b135e3adc/for-appointment-field.js" type="text/javascript"></script>
+    <script src="https://cdn.jotfor.ms/s/umd/d1b135e3adc/for-form-branding-footer.js" type="text/javascript"
+        defer></script>
+    <script src="https://cdn.jotfor.ms/s/static/8d64daaba20/js/vendor/smoothscroll.min.js"
+        type="text/javascript"></script>
+    <script src="https://cdn.jotfor.ms/s/static/8d64daaba20/js/errorNavigation.js" type="text/javascript"></script>
 
 </body>
 
